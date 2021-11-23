@@ -1,0 +1,126 @@
+.all-page {
+  background-color: #040404;
+  font-family: "Open Sans Condensed", "Arial", sans-serif;
+  color: #eaeaea;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+.page {
+  padding-left: 100px;
+  padding-right: 83px;
+}
+
+.header {
+  min-height: 60px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__logo {
+  width: 132px;
+  height: 40px;
+}
+
+.header__column-links {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  font-size: 20px;
+  padding: 0px 0 0 2px;
+}
+
+.header__list-item {
+  padding: 10px 50px 0 0;
+}
+
+.header__link {
+  text-decoration: none;
+  color: white;
+}
+
+.header__language {
+  display: flex;
+  align-items: self-end;
+  margin: 0;
+  list-style: none;
+  font-size: 20px;
+  line-height: 27px;
+  padding: 1px 0 0;
+}
+
+.header__language-item {
+  padding: 0 26px 0 0;
+}
+.header__language-item:last-child {
+  padding-right: 0;
+}
+
+.header__language-link {
+  text-decoration: none;
+  color: white;
+}
+
+.header__language-link_active {
+  font-size: 36px;
+  line-height: 29px;
+}
+
+.promo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.promo__container {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    #101010 194px,
+    #070707 194px,
+    #070707 213px,
+    #101010 213px,
+    #101010 216px,
+    #070707 216px,
+    #070707 230px,
+    #0A0A0A 230px,
+    #0A0A0A 301px,
+    #101010 301px,
+    #101010 303px,
+    #070707 303px,
+    #070707 345px,
+    #101010 345px,
+    #101010 348px,
+    #0A0A0A 348px,
+    #0A0A0A 375px
+  );
+}
+
+.promo__picture {
+  width: 304px;
+  height: 304px;
+}
+
+.promo__caption {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 55px;
+}
+
+.button {
+  font-size: 24px;
+  line-height: 33px;
+  background-color: black;
+  color: #eaeaea;
+  border: 1px solid #eaeaea;
+  border-radius: 50px;
+  padding: 19px 74px;
+}
