@@ -7,12 +7,26 @@ import beach from "../images/products/beach.png";
 import security from "../images/products/security.png";
 import monitoring from "../images/products/monitoring.png";
 import promo from "../images/promo/promo.png";
-import percent_1440px from "../images/advantage-icon/percent-1140px.svg";
-import coat_of_arms_1440px from "../images/advantage-icon/coat-of-arms-1440px.svg";
-import customization_1440px from "../images/advantage-icon/customization-1440px.svg";
-import like_1440px from "../images/advantage-icon/like-1440px.svg";
-import module_1440px from "../images/advantage-icon/module-1440px.svg";
-import support_1440px from "../images/advantage-icon/support-1440px.svg";
+
+import percent_1440px from "../images/advantage-icon/percent-1140px.png";
+import coat_of_arms_1440px from "../images/advantage-icon/coat-of-arms-1440px.png";
+import customization_1440px from "../images/advantage-icon/customization-1440px.png";
+import like_1440px from "../images/advantage-icon/like-1440px.png";
+import module_1440px from "../images/advantage-icon/module-1440px.png";
+import support_1440px from "../images/advantage-icon/support-1440px.png";
+
+import design from "../images/services/design.png";
+import research from "../images/services/research.png";
+
+import megafon from "../images/partners/megafon.png";
+import protey from "../images/partners/protey.png";
+import rostelecom from "../images/partners/rostelecom.png";
+import skolkovo from "../images/partners/skolkovo.png";
+
+import blog_image1 from "../images/blog/blog-image1.png";
+import blog_image2 from "../images/blog/blog-image2.png";
+import blog_image3 from "../images/blog/blog-image3.png";
+
 
 function App() {
   return (
@@ -41,11 +55,6 @@ function App() {
                 <li className="header__list-item">
                   <Link to="#" className="header__link">
                     Блог
-                  </Link>
-                </li>
-                <li className="header__list-item">
-                  <Link to="#" className="header__link">
-                    Партнеры и клиенты
                   </Link>
                 </li>
               </ul>
@@ -238,9 +247,157 @@ function App() {
                   </p>
                 </li>
               </ul>
-              <button className="button">Связаться с нами</button>
+              <button className="button button_advantage">
+                Связаться с нами
+              </button>
+            </section>
+
+            <section className="services">
+              <h2 className="chapter">НАШИ УСЛУГИ</h2>
+              <ul className="cards">
+                <li className="card">
+                  <p className="card__status card__status_services">Предложение</p>
+                  <img
+                    className="card__logo card__logo_services"
+                    src={logo}
+                    alt="Логотип 'VideoFor'"
+                  />
+                  <p className="card__subtitle card__subtitle_services">
+                  Проектирование систем видеоаналитики
+                  <br/>
+по идивидуальному заказу
+                  </p>
+                  <img
+                    className="card__image"
+                    src={design}
+                    alt="Логотип 'VideoFor'"
+                  />
+                  <button className="button button_card button_card-services">
+                  Подробнее об услуге
+                  </button>
+                </li>
+
+                <li className="card">
+                  <p className="card__status card__status_services">Предложение</p>
+                  <img
+                    className="card__logo"
+                    src={logo}
+                    alt="Логотип 'VideoFor'"
+                  />
+                  <p className="card__subtitle card__subtitle_services">
+                  Выполнение научно-исследовательских и опытно-конструкторских работ
+по индивидуальному заказу
+                  </p>
+                  <img
+                    className="card__image"
+                    src={research}
+                    alt="Логотип 'VideoFor'"
+                  />
+                  <button className="button button_card button_card-services">
+                  Подробнее об услуге
+                  </button>
+                </li>
+              </ul>
+            </section>
+
+            <section className="info">
+              <h2 className="chapter">Запросить подробную информацию</h2>
+              <form className="form">
+                <div className="form__container">
+                  <input className="form__input" type="email" value="E-mail"></input>
+                  <button className="button form__button" type="submit">Получить</button>
+                </div>
+                <checbox className="form__checbox">Согласие на обработку персональных данных</checbox>              
+              </form>
+            </section>
+
+            <section className="blog">
+              <h2 className="chapter">SMART БЛОГ</h2>
+              <ul className="blog__card-list">
+                <li className="blog__card">
+                  <img
+                    className="blog__image"
+                    src={blog_image1}
+                    alt="Логотип 'VideoFor'"
+                  />
+                  <p className="blog__data">19.11.2021</p>
+                  <p className="blog__subtitle">Tenzerflou и еще какие-то умные слова
+ заголовок</p>
+                </li>
+                <li className="blog__card">
+                  <img
+                    className="blog__image"
+                    src={blog_image2}
+                    alt="Логотип 'VideoFor'"
+                  />
+                  <p className="blog__data">19.11.2021</p>
+                  <p className="blog__subtitle">Tenzerflou и еще какие-то умные слова
+ заголовок</p>
+                </li>
+                <li className="blog__card">
+                  <img
+                    className="blog__image"
+                    src={blog_image3}
+                    alt="Логотип 'VideoFor'"
+                  />
+                  <p className="blog__data">19.11.2021</p>
+                  <p className="blog__subtitle">Tenzerflou и еще какие-то умные слова
+ заголовок</p>
+                </li>
+              </ul>
+            </section>
+
+            <section className="partners">
+              <h2 className="chapter">ПАРТНЕРЫ И КЛИЕНТЫ</h2>
+              <ul className="partners__logo-zone">
+                <li className="partners__list-item">
+                  <a href="https://msk.rt.ru/" className="partners__logo-link">
+                    <img className="partners__logo" src={rostelecom}  alt="Логотип Ростелеком"/>
+                  </a>
+                </li>
+                <li className="partners__list-item">
+                  <a href="https://spb.megafon.ru/" className="partners__logo-link">
+                    <img className="partners__logo" src={megafon}  alt="Логотип Мегафон"/>
+                  </a>
+                </li>
+                <li className="partners__list-item">
+                  <a href="https://protei.ru/" className="partners__logo-link">
+                    <img className="partners__logo" src={protey}  alt="Логотип Мегафон"/>
+                  </a>
+                </li>
+              </ul>
             </section>
           </main>
+
+          <footer className="footer">
+            <div className="">
+            <p>Резидент</p>
+            <img className="footer__logo" src={skolkovo}  alt="Логотип Мегафон"/>
+            </div>
+            <ul className="footer__column-links">
+              <li className="footer__link">Транспортная аналитика</li>
+              <li className="footer__link">Безопасность на воде</li>
+              <li className="footer__link">Безопасная территория</li>
+              <li className="footer__link">Эксплуатация контейнеров</li>
+              </ul>
+
+            <ul className="footer__column-links">
+              <li className="footer__link">Проектирование систем</li>
+              <li className="footer__link">Выполнение НИОКР</li>
+              <li className="footer__link">Smart блог</li>
+              </ul>
+
+            <ul className="footer__column-links">
+              <li className="footer__link">info@videofor.ru</li>
+              <li className="footer__link">+7 (908) 088-80-08</li>
+              <li className="footer__link">г. Санкт-Петербург, 
+Константиновский пр. 11, оф. 314
+</li>
+            </ul>
+            <button className="button">Связаться с нами</button>
+            <img className="footer__promo" src={promo}  alt="Логотип Мегафон"/>
+
+          </footer>
         </Route>
       </Switch>
     </div>

@@ -36,11 +36,11 @@
   margin: 0;
   list-style: none;
   font-size: 20px;
-  padding: 0px 0 0 3px;
+  padding: 0px 0 0 2px;
 }
 
 .header__list-item {
-  padding: 10px 50px 0 0;
+  padding: 9px 50px 0 0;
 }
 
 .header__link {
@@ -121,12 +121,12 @@
 }
 
 .promo__title {
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 300;
-  line-height: 54px;
+  line-height: 60px;
   margin: 0;
   padding-bottom: 53px;
-  padding-top: 250px;
+  padding-top: 238px;
   width: 65%;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .products {
-  padding-top: 99px;
+  padding-top: 149px;
 }
 
 .chapter {
@@ -199,7 +199,7 @@
   color: #3E7EDE;
   text-align: center;
   margin: 0;
-  padding: 9px 5px 0px 0;
+  padding: 9px 2px 0px 0;
 }
 
 .card__logo {
@@ -230,16 +230,17 @@
 }
 
 .advantage {
-  padding-top: 76px;
+  padding-top: 91px;
 }
 
 .advantage__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 52px;
-  margin: 0;
-  padding: 75px 0 0;
+  justify-content: center;
+  grid-template-columns: repeat(3, 315px);
+  grid-column-gap: 108px;
+  grid-row-gap: 51px;
+  margin: 0 auto;
+  padding: 49px 0 0;
   font-size: 24px;
   line-height: 32px;
   color: rgba(62, 126, 222, 1);
@@ -251,10 +252,158 @@
 }
 
 .advantage__icon {
-  width: 149px;
-  height: 84px;
+  width: 141px;
+  height: 85px;
 }
 
 .advantage__subtitle {
   margin: 0;
+  padding: 4px 0px 0 0;
+}
+
+.button_advantage {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 50px;
+}
+
+.services {
+  padding-top: 91px;
+}
+
+.card__status_services {
+  padding: 12px 1px 8px 0;
+}
+
+.card__subtitle_services {
+  padding: 8px 0px 40px 0;
+}
+
+.button_card-services {
+  padding: 12px 59px 13px 59px;
+}
+
+.info {
+  padding: 91px 0 0 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+  padding: 24px 0 0;
+  align-items: center;
+}
+
+.form__container {
+  display: flex;
+  padding: 0 0 0 12px;
+}
+
+.form__input {
+  background: rgba(234, 234, 234, 0);
+  border: 1px solid #EAEAEA;
+  border-radius: 50px;
+  color: #EAEAEA;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0 20px 0 0;
+  padding: 17px 201px 19px 38px;
+  text-align: start;
+}
+
+.form__button {
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0 0 0 0px;
+  padding: 0 58px 0 57px;
+}
+
+.form__checbox {
+  font-size: 20px;
+  line-height: 27px;
+  padding: 20px 0 0 0;
+}
+
+.card__logo_services {
+  width: 155px;
+  height: 56px;
+}
+
+.blog {
+  padding-top: 90px;
+}
+
+.blog__card-list {
+  margin: 0;
+  padding: 50px 100px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 393px);
+  grid-column-gap: 30px;
+}
+
+.blog__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 393px;
+  height: 269px;
+  background: rgba(208, 222, 231, 0.09);
+}
+
+.blog__image {
+  width: 393px;
+  height: 150px;
+}
+
+.blog__data {
+  font-size: 12px;
+  line-height: 16px;
+  color: #3E7EDE;
+  padding: 12px 0 0 23px;
+  margin: 0;
+}
+
+.blog__subtitle {
+  font-size: 24px;
+  line-height: 33px;
+  padding: 9px 0 0 23px;
+  margin: 0;
+}
+
+.partners {
+  padding: 90px 0 0;
+}
+
+.partners__logo-zone {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 6px 254px 0px;
+}
+
+.footer {
+  padding: 64px 0 0;
+  display: flex;
+}
+
+.footer__column-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.footer__logo {
+  width: 119px;
+  height: 119px;
+}
+
+.footer__promo {
+  width: 60px;
+  height: 60px;
 }
