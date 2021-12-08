@@ -7,6 +7,7 @@ import beach from "../images/products/beach.png";
 import security from "../images/products/security.png";
 import monitoring from "../images/products/monitoring.png";
 import promo from "../images/promo/promo.png";
+import girl from "../images/promo/girl.png";
 
 import percent_1440px from "../images/advantage-icon/percent-1140px.png";
 import coat_of_arms_1440px from "../images/advantage-icon/coat-of-arms-1440px.png";
@@ -26,6 +27,12 @@ import skolkovo from "../images/partners/skolkovo.png";
 import blog_image1 from "../images/blog/blog-image1.png";
 import blog_image2 from "../images/blog/blog-image2.png";
 import blog_image3 from "../images/blog/blog-image3.png";
+
+import email from "../images/footer/email.svg";
+import phone from "../images/footer/phone.svg";
+import place from "../images/footer/place.svg";
+
+
 
 
 function App() {
@@ -307,7 +314,11 @@ function App() {
                   <input className="form__input" type="email" value="E-mail"></input>
                   <button className="button form__button" type="submit">Получить</button>
                 </div>
-                <checbox className="form__checbox">Согласие на обработку персональных данных</checbox>              
+                
+                <div className="checkbox__container">
+                  <input type="checkbox" className="form__checbox" id="checkbox" checked="checked" />
+                  <label className="form__checbox-text" for="checkbox"><span></span>Согласие на обработку персональных данных</label>
+                </div>
               </form>
             </section>
 
@@ -370,10 +381,14 @@ function App() {
           </main>
 
           <footer className="footer">
-            <div className="">
-            <p>Резидент</p>
+            <div>
+            <p className="footer__resident">Резидент</p>
+
             <img className="footer__logo" src={skolkovo}  alt="Логотип Мегафон"/>
+
             </div>
+            <div className="footer__column">
+
             <ul className="footer__column-links">
               <li className="footer__link">Транспортная аналитика</li>
               <li className="footer__link">Безопасность на воде</li>
@@ -387,15 +402,24 @@ function App() {
               <li className="footer__link">Smart блог</li>
               </ul>
 
-            <ul className="footer__column-links">
-              <li className="footer__link">info@videofor.ru</li>
-              <li className="footer__link">+7 (908) 088-80-08</li>
-              <li className="footer__link">г. Санкт-Петербург, 
-Константиновский пр. 11, оф. 314
-</li>
+            <ul className="footer__column-links-info">
+              <li className="footer__link-info">
+                <img className="footer__info-icon" src={email}  alt="Логотип Мегафон"/>
+                <p className="footer__info-text">  info@videofor.ru</p>
+              </li>
+              <li className="footer__link-info">
+                <img className="footer__info-icon" src={phone}  alt="Логотип Мегафон"/>
+                <p className="footer__info-text">+7 (908) 088-80-08</p>
+              </li>
+              <li className="footer__link-info">
+                <img className="footer__info-icon" src={place}  alt="Логотип Мегафон"/>
+                <p className="footer__info-text">г. Санкт-Петербург, 
+Константиновский пр. 11, оф. 314</p>
+              </li>
             </ul>
-            <button className="button">Связаться с нами</button>
-            <img className="footer__promo" src={promo}  alt="Логотип Мегафон"/>
+            </div>
+            <button className="button button_footer">Связаться с нами</button>
+            <img className="footer__promo" src={girl}  alt="Логотип Мегафон"/>
 
           </footer>
         </Route>
