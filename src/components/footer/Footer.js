@@ -6,6 +6,9 @@ import phone from "../../images/footer/phone.svg";
 import place from "../../images/footer/place.svg";
 
 function Footer() {
+
+  
+
   return (
     <footer className="footer">
       <div className="footer__resident-container">

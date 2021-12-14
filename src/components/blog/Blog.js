@@ -19,7 +19,7 @@ function Blog() {
             Tenzerflou и еще какие-то умные слова заголовок
           </p>
         </li>
-        <li className="blog__card">
+        <li className="blog__card" id="1">
           <img
             className="blog__image"
             src={blog_image2}
@@ -30,7 +30,7 @@ function Blog() {
             Tenzerflou и еще какие-то умные слова заголовок
           </p>
         </li>
-        <li className="blog__card">
+        <li className="blog__card" id="2">
           <img
             className="blog__image"
             src={blog_image3}

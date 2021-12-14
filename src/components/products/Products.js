@@ -6,6 +6,8 @@ import security from "../../images/products/security.png";
 import monitoring from "../../images/products/monitoring.png";
 
 function Products() {
+  const windowWidtn = window.innerWidth;
+
   return (
     <section className="products">
       <h2 className="chapter">НАШИ ПРОДУКТЫ</h2>
@@ -17,10 +19,17 @@ function Products() {
             src={logo_sova}
             alt="Логотип 'VideoFor'"
           />
-          <p className="card__subtitle">
-            Анализ трафика, нарушения правил дорожного движения, регистрация
-            аварий
-          </p>
+          {windowWidtn <= 320 ? (
+            <p className="card__subtitle">
+              Анализ трафика, нарушения правил дорожного движения, регистрация
+              аварий
+            </p>
+          ) : (
+            <p className="card__subtitle">
+              Анализ трафика, нарушения правил дорожного движения, регистрация
+              аварий
+            </p>
+          )}
           <img className="card__image" src={trafic} alt="Логотип 'VideoFor'" />
           <button className="button button_card">Подробнее о продукте</button>
         </li>
@@ -32,10 +41,17 @@ function Products() {
             src={logo_sova}
             alt="Логотип 'VideoFor'"
           />
-          <p className="card__subtitle">
-            Отслеживание тонущих, нахождение в запрещенных зонах,
-            автоматизированная трансляция объявлений и вызов спасателей
-          </p>
+          {windowWidtn <= 320 ? (
+            <p className="card__subtitle">
+              Отслеживание тонущих, нахождение в запрещенных зонах, трансляция
+              объявлений и вызов спасателей
+            </p>
+          ) : (
+            <p className="card__subtitle">
+              Отслеживание тонущих, нахождение в запрещенных зонах,
+              автоматизированная трансляция объявлений и вызов спасателей
+            </p>
+          )}
           <img className="card__image" src={beach} alt="Логотип 'VideoFor'" />
           <button className="button button_card">Подробнее о продукте</button>
         </li>
@@ -47,10 +63,17 @@ function Products() {
             src={logo_sova}
             alt="Логотип 'VideoFor'"
           />
-          <p className="card__subtitle">
-            Охрана памятников, общественных пространств и детских площадок
-            Охрана от вандализма и ситуаций, угрожающих здоровью посетителей
-          </p>
+          {windowWidtn <= 320 ? (
+            <p className="card__subtitle">
+              Охрана памятников, общественных пространств и детских площадок от
+              вандализма и опасных ситуаций
+            </p>
+          ) : (
+            <p className="card__subtitle">
+              Охрана памятников, общественных пространств и детских площадок от
+              вандализма и ситуаций, угрожающих здоровью посетителей
+            </p>
+          )}
           <img
             className="card__image"
             src={security}
@@ -66,10 +89,17 @@ function Products() {
             src={logo_sova}
             alt="Логотип 'VideoFor'"
           />
-          <p className="card__subtitle">
-            Мониторинг эксплуатации контейнеров твердых бытовых отходов,
-            идентификация нарушений, оценка наполненности
-          </p>
+          {windowWidtn <= 320 ? (
+            <p className="card__subtitle">
+              Мониторинг эксплуатации контейнеров твердых бытовых отходов,
+              идентификация нарушений, оценка наполненности
+            </p>
+          ) : (
+            <p className="card__subtitle">
+              Мониторинг эксплуатации контейнеров твердых бытовых отходов,
+              идентификация нарушений, оценка наполненности
+            </p>
+          )}
           <img
             className="card__image"
             src={monitoring}

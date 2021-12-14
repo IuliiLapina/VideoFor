@@ -6,7 +6,7 @@ function Info() {
       <h2 className="chapter">Запросить подробную информацию</h2>
       <form className="form">
         <div className="form__container">
-          <input className="form__input" type="email" value="E-mail"></input>
+          <input className="form__input" id="info__checkbox" type="email" value="E-mail"></input>
           <button className="button form__button" type="submit">
             Получить
           </button>

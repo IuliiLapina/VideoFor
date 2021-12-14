@@ -3,10 +3,17 @@ import { Link } from "react-router-dom";
 import logo from "../../images/logo/logo.svg";
 
 function Header() {
+
+
   return (
     <header className="header">
       <img className="header__logo" src={logo} alt="Логотип 'VideoFor'" />
       <nav className="header__menu">
+        <input id="header__menu-toggle" type="checkbox" />
+        <label className="header__menu-btn" htmlFor="header__menu-toggle">
+          <span className="header__menu-btn-before"></span>
+        </label>
+
         <ul className="header__column-links">
           <li className="header__list-item">
             <Link to="#" className="header__link">
