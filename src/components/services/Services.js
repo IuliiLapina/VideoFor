@@ -5,7 +5,7 @@ import logo from "../../images/logo/logo.svg";
 
 function Services() {
   return (
-    <section className="services">
+    <section className="services" id="services">
       <h2 className="chapter">НАШИ УСЛУГИ</h2>
       <ul className="cards">
         <li className="card">

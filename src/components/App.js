@@ -10,25 +10,46 @@ import Info from "./info/Info";
 import Blog from "./blog/Blog";
 import Partners from "./partners/Partners";
 import Footer from "./footer/Footer";
+import InfoTooltip from "./infoTooltip/InfoTooltip";
 
 function App() {
+  const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
+    React.useState(false);
+
+  //Обработчики открытия попапов
+  function handleInfoTooltipPopupOpen() {
+    setInfoTooltipPopupOpen(true);
+  }
+
+  //Обработчик закрытия попапов
+  function closeAllPopups() {
+    setInfoTooltipPopupOpen(false);
+  }
+
   return (
     <div className="page">
       <Switch>
         <Route exact path="/">
           <Header />
           <main className="content">
-            <Promo />
+            <Promo 
+              onContactForm={handleInfoTooltipPopupOpen}/>
             <Products />
-            <Advantage />
+            <Advantage 
+              onContactForm={handleInfoTooltipPopupOpen}/>
             <Services />
             <Info />
             <Blog />
             <Partners />
           </main>
-          <Footer />
+          <Footer 
+            onContactForm={handleInfoTooltipPopupOpen}/>
         </Route>
       </Switch>
+      <InfoTooltip
+          isOpen={isInfoTooltipPopupOpen}
+          onClose={closeAllPopups}
+        />
     </div>
   );
 }

@@ -4,11 +4,9 @@ import skolkovo from "../../images/partners/skolkovo.png";
 import email from "../../images/footer/email.svg";
 import phone from "../../images/footer/phone.svg";
 import place from "../../images/footer/place.svg";
+import { HashLink as Link } from 'react-router-hash-link';
 
-function Footer() {
-
-  
-
+function Footer({onContactForm}) {
   return (
     <footer className="footer">
       <div className="footer__resident-container">
@@ -59,7 +57,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <button className="button button_footer">Связаться с нами</button>
+      <button className="button button_footer" onClick={onContactForm}>Связаться с нами</button>
       <img className="footer__promo" src={girl} alt="Логотип Мегафон" />
     </footer>
   );

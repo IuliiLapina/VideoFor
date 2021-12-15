@@ -1,10 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import logo from "../../images/logo/logo.svg";
 
 function Header() {
-
-
   return (
     <header className="header">
       <img className="header__logo" src={logo} alt="Логотип 'VideoFor'" />
@@ -16,22 +14,22 @@ function Header() {
 
         <ul className="header__column-links">
           <li className="header__list-item">
-            <Link to="#" className="header__link">
+            <Link to="#products" className="header__link">
               Продукты
             </Link>
           </li>
           <li className="header__list-item">
-            <Link to="#" className="header__link">
+            <Link to="advantage" className="header__link">
               Преимущества
             </Link>
           </li>
           <li className="header__list-item">
-            <Link to="#" className="header__link">
+            <Link to="#services" className="header__link">
               Услуги
             </Link>
           </li>
           <li className="header__list-item">
-            <Link to="#" className="header__link">
+            <Link to="#blog" className="header__link">
               Блог
             </Link>
           </li>

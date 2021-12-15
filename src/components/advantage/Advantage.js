@@ -6,12 +6,12 @@ import like_1440px from "../../images/advantage-icon/like-1440px.png";
 import module_1440px from "../../images/advantage-icon/module-1440px.png";
 import support_1440px from "../../images/advantage-icon/support-1440px.png";
 
-function Advantage() {
+function Advantage({onContactForm}) {
   const windowWidtn = window.innerWidth;
 
   return (
-    <section className="advantage">
-      <h2 className="chapter">ПРЕИМУЩЕСТВА НАШЕЙ СИСТЕМЫ</h2>
+    <section className="advantage" id="advantage">
+      <h2 className="chapter">ПРЕИМУЩЕСТВА СОТРУДНИЧЕСТВА С НАМИ</h2>
       <ul className="advantage__list">
         <li className="advantage__list-iteam">
           <img
@@ -67,7 +67,8 @@ function Advantage() {
             </p>
           ) : (
             <p className="advantage__subtitle">
-              Разработан с учетом user intelligence и user experience технологий
+            Разработан с учетом user intelligence и user experience технологий
+
             </p>
           )}
         </li>
@@ -79,11 +80,12 @@ function Advantage() {
           />
           {windowWidtn <= 320 ? (
             <p className="advantage__subtitle">
-              Встроим в существующую систему
+              Встроим в установленную систему
             </p>
           ) : (
             <p className="advantage__subtitle">
-              Возможность встраивания модулей в уже существующие системы
+              Возможность встраивания модулей 
+в уже установленные системы
             </p>
           )}
         </li>
@@ -95,16 +97,16 @@ function Advantage() {
           />
           {windowWidtn <= 320 ? (
             <p className="advantage__subtitle">
-              Бесплатные обновления и техподдержка
+              Бесплатные обновления, поддержка и сопровождение
             </p>
           ) : (
             <p className="advantage__subtitle">
-              Бесплатные обновления и техническая поддержка
+              Бесплатные обновления, техническая поддержка и сопровождение клиентов
             </p>
           )}
         </li>
       </ul>
-      <button className="button button_advantage">Связаться с нами</button>
+      <button className="button button_advantage" onClick={onContactForm}>Связаться с нами</button>
     </section>
   );
 }
