@@ -1,6 +1,6 @@
 import React from "react";
 
-function InfoTooltip({ isOpen, onClose, handleSubmit, onEmail, onPhone }) {
+function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
   const [isChoicePhone, setIsChoicePhone] = React.useState(false);
   const [isChoiceEmail, setIsChoiceEmail] = React.useState(false);
 
@@ -11,6 +11,7 @@ function InfoTooltip({ isOpen, onClose, handleSubmit, onEmail, onPhone }) {
   function handleEmail() {
     setIsChoiceEmail(true);
   }
+
   return (
     <div className={`popup ${isOpen ? "popup_opened" : ""} }`}>
       <div className="popup__container">
@@ -23,13 +24,16 @@ function InfoTooltip({ isOpen, onClose, handleSubmit, onEmail, onPhone }) {
         <h3
           className={`popup__title ${
             isChoicePhone ? "popup__title_disabled" : ""
-          } ${isChoiceEmail ? "popup__title_disabled" : ""}`}
+          } ${
+            isChoiceEmail ? "popup__title_disabled" : ""
+          }`}
         >
           ПРЕДПОЧИТАЕМЫЙ СПОСОБ СВЯЗИ
         </h3>
+
         <div className="popup__contact-container">
           <button
-            className={`button button_form ${
+            className={`button_form ${
               isChoicePhone ? "button_form-disabled" : ""
             } ${isChoiceEmail ? "button_form-disabled" : ""}`}
             type="button"
@@ -38,7 +42,7 @@ function InfoTooltip({ isOpen, onClose, handleSubmit, onEmail, onPhone }) {
             Телефон
           </button>
           <button
-            className={`button button_form ${
+            className={`button_form ${
               isChoicePhone ? "button_form-disabled" : ""
             } ${isChoiceEmail ? "button_form-disabled" : ""}`}
             type="button"
@@ -68,14 +72,14 @@ function InfoTooltip({ isOpen, onClose, handleSubmit, onEmail, onPhone }) {
 
             <div className="checkbox__container checkbox__container_popup-area">
               <input type="checkbox" id="checkbox" className="form__checbox" />
-              <label className="form__checbox-text" for="checkbox">
+              <label className="form__checbox-text form__checbox-text_radio" for="checkbox">
                 <span className="checkbox_radio"></span>Оставить комментарий
               </label>
             </div>
 
             <input
               type="submit"
-              className="button button_form button_form-submit"
+              className="button_form button_form-submit"
               value="Перезвонить"
             />
 
@@ -118,7 +122,7 @@ function InfoTooltip({ isOpen, onClose, handleSubmit, onEmail, onPhone }) {
 
             <input
               type="submit"
-              className="button button_form button_form-submit"
+              className="button_form button_form-submit"
               value="Связаться"
             />
 

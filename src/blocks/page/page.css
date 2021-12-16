@@ -272,12 +272,12 @@
 }
 
 .promo__picture {
-  width: 304px;
-  height: 304px;
+  width: 750px;
+  height: 750px;
   border-radius: 50%;
   position:absolute;
-  top: 224px;
-  right: 224px;
+  top: 1px;
+  right: 1px;
 }
 
 .promo__title {
@@ -329,10 +329,10 @@
   }
 
   .promo__picture {
-    width: 194px;
-    height: 194px;
-    top: 143px;
-    right: 143px;
+    width: 479px;
+    height: 479px;
+    top: 1px;
+    right: 1px;
   }
 
   .promo__title {
@@ -420,10 +420,10 @@
   }
 
   .promo__picture {
-    width: 123px;
-    height: 123px;
-    top: 91px;
-    right: 89px;
+    width: 304px;
+    height: 304px;
+    top: 0px;
+    right: 0px;
   }
 
   .promo__title {
@@ -676,6 +676,14 @@
     line-height: 16px;
     margin: 17px 127px 0 0;
     padding: 6px 41px 6px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .card__subtitle {
+    font-size: 12px;
+    line-height: 16px;
+    min-height: 28px;
+    padding: 6px 1px 23px 0;
   }
 }
 
@@ -1156,6 +1164,7 @@
   .blog__card-list {
     grid-template-columns: repeat(1, 251px);
     padding: 16px 8px 0;
+    justify-content: center;
   }
   
   .blog__card {
@@ -1568,6 +1577,12 @@
 }
 
 .button_form {
+  font-size: 24px;
+line-height: 33px;
+background-color: #040404;
+color: #eaeaea;
+border-radius: 50px;
+padding: 18px 74px;
   border: none;
   width: 293px;
   height: 75px;
@@ -1593,10 +1608,6 @@
   align-items: center;
   flex-direction: column;
   padding: 31px 38px 0;
-}
-
-.popup__input-text {
-  color:red;
 }
 
 .form__input_popup {
@@ -1650,4 +1661,74 @@
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1160px) {
+  .form__input_popup {
+    padding: 20px 130px 21px 21px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+.popup__container {
+  max-width: 300px;
+  height: 400px;
+}
+.popup__close-btn {
+  top: 22px;
+  right: 18px;
+}
+
+.popup__title {
+  font-size: 20px;
+  line-height: 27px;
+  padding: 94px 0 10px;
+}
+
+.popup__contact-container {
+  padding: 21px 0 0;
+}
+
+.button_form {
+  font-size: 14px;
+  line-height: 19px;
+  padding: 18px 74px;
+  width: 250px;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.button_form-submit {
+  margin: 0;
+}
+
+.popup__form {
+  padding: 31px 38px 0;
+}
+
+.form__input_popup {
+  padding: 20px 130px 21px 21px;
+}
+
+.checkbox__container_popup {
+  padding: 10px 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+.form__checbox-text_popup{
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form__checbox-text_radio {
+  font-size: 14px;
+  line-height: 18px;
+
+}
+
+.checkbox__container_popup-area {
+  padding: 19px 0 14px;
+  width: 75%;
+}
 }

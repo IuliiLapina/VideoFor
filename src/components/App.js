@@ -15,6 +15,8 @@ import InfoTooltip from "./infoTooltip/InfoTooltip";
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
     React.useState(false);
+  const [isInfoTooltipPopupClear, setIsInfoTooltipPopupClear] =
+    React.useState(false);
 
   //Обработчики открытия попапов
   function handleInfoTooltipPopupOpen() {
@@ -24,6 +26,7 @@ function App() {
   //Обработчик закрытия попапов
   function closeAllPopups() {
     setInfoTooltipPopupOpen(false);
+    setIsInfoTooltipPopupClear(true)
   }
 
   return (
@@ -33,23 +36,18 @@ function App() {
           <Header />
           <main className="content">
             <Promo 
-              onContactForm={handleInfoTooltipPopupOpen}/>
+              onContactForm={handleInfoTooltipPopupOpen} />
             <Products />
-            <Advantage 
-              onContactForm={handleInfoTooltipPopupOpen}/>
+            <Advantage onContactForm={handleInfoTooltipPopupOpen} />
             <Services />
             <Info />
             <Blog />
             <Partners />
           </main>
-          <Footer 
-            onContactForm={handleInfoTooltipPopupOpen}/>
+          <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
       </Switch>
-      <InfoTooltip
-          isOpen={isInfoTooltipPopupOpen}
-          onClose={closeAllPopups}
-        />
+      <InfoTooltip isOpen={isInfoTooltipPopupOpen} onClose={closeAllPopups} isClear={isInfoTooltipPopupClear} />
     </div>
   );
 }

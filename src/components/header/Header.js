@@ -19,7 +19,7 @@ function Header() {
             </Link>
           </li>
           <li className="header__list-item">
-            <Link to="advantage" className="header__link">
+            <Link to="#advantage" className="header__link">
               Преимущества
             </Link>
           </li>
