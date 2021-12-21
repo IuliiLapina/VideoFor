@@ -9,7 +9,7 @@ function Promo() {
       <h2 className="chapter">ПАРТНЕРЫ И КЛИЕНТЫ</h2>
       <ul className="partners__logo-zone">
         <li className="partners__list-item">
-          <a href="https://msk.rt.ru/" className="partners__logo-link">
+          <a href="https://msk.rt.ru/" className="partners__logo-link" target="_blank" rel="noreferrer">
             <img
               className="partners__logo"
               src={rostelecom}
@@ -18,7 +18,7 @@ function Promo() {
           </a>
         </li>
         <li className="partners__list-item">
-          <a href="https://spb.megafon.ru/" className="partners__logo-link">
+          <a href="https://spb.megafon.ru/" className="partners__logo-link" target="_blank" rel="noreferrer">
             <img
               className="partners__logo"
               src={megafon}
@@ -27,7 +27,7 @@ function Promo() {
           </a>
         </li>
         <li className="partners__list-item">
-          <a href="https://protei.ru/" className="partners__logo-link">
+          <a href="https://protei.ru/" className="partners__logo-link" target="_blank" rel="noreferrer">
             <img
               className="partners__logo"
               src={protey}

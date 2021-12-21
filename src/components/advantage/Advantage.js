@@ -31,7 +31,7 @@ function Advantage({onContactForm}) {
             src={coat_of_arms_1440px}
             alt="Логотип 'VideoFor'"
           />
-          {windowWidtn <= 320 ? (
+          {windowWidtn <= 560 ? (
             <p className="advantage__subtitle">Российская разработка</p>
           ) : (
             <p className="advantage__subtitle">
@@ -68,7 +68,6 @@ function Advantage({onContactForm}) {
           ) : (
             <p className="advantage__subtitle">
             Разработан с учетом user intelligence и user experience технологий
-
             </p>
           )}
         </li>

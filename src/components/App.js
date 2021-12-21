@@ -11,11 +11,10 @@ import Blog from "./blog/Blog";
 import Partners from "./partners/Partners";
 import Footer from "./footer/Footer";
 import InfoTooltip from "./infoTooltip/InfoTooltip";
+import BlogBeach from "./BlogBeach";
 
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
-    React.useState(false);
-  const [isInfoTooltipPopupClear, setIsInfoTooltipPopupClear] =
     React.useState(false);
 
   //Обработчики открытия попапов
@@ -26,7 +25,6 @@ function App() {
   //Обработчик закрытия попапов
   function closeAllPopups() {
     setInfoTooltipPopupOpen(false);
-    setIsInfoTooltipPopupClear(true)
   }
 
   return (
@@ -35,19 +33,30 @@ function App() {
         <Route exact path="/">
           <Header />
           <main className="content">
-            <Promo 
-              onContactForm={handleInfoTooltipPopupOpen} />
+            <Promo onContactForm={handleInfoTooltipPopupOpen} />
             <Products />
             <Advantage onContactForm={handleInfoTooltipPopupOpen} />
             <Services />
-            <Info />
+            <Info title={"Запросить подробную информацию"}/>
             <Blog />
             <Partners />
           </main>
           <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
+        <Route path="/blog-beach">
+          <Header />
+          <main className="content">
+            <BlogBeach />
+            <Info title={"Получать новые публикации"}/>
+          </main>
+          <Footer onContactForm={handleInfoTooltipPopupOpen} />
+        </Route>
       </Switch>
-      <InfoTooltip isOpen={isInfoTooltipPopupOpen} onClose={closeAllPopups} isClear={isInfoTooltipPopupClear} />
+      <InfoTooltip
+        isOpen={isInfoTooltipPopupOpen}
+        onClose={closeAllPopups}
+        handleSubmit={closeAllPopups}
+      />
     </div>
   );
 }

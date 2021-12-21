@@ -1,23 +1,31 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import blog_image1 from "../../images/blog/blog-image1.png";
 import blog_image2 from "../../images/blog/blog-image2.png";
 import blog_image3 from "../../images/blog/blog-image3.png";
 
 function Blog() {
+  const location = useLocation();
   return (
     <section className="blog" id="blog">
-      <h2 className="chapter">VIDEOFOR БЛОГ</h2>
+      {location.pathname === '/' ? (<h2 className="chapter">VIDEOFOR БЛОГ</h2>) : ""}
+      
       <ul className="blog__card-list">
         <li className="blog__card">
+          <Link to="/blog-beach">
           <img
             className="blog__image"
             src={blog_image1}
             alt="Логотип 'VideoFor'"
           />
-          <p className="blog__data">19.11.2021</p>
+          <p className="blog__data">8 декабря 2021</p>
           <p className="blog__subtitle">
-            Tenzerflou и еще какие-то умные слова заголовок
+          «Умный пляж» или как обеспечить комплексную безопасность людей 
+на водоеме
+
           </p>
+          </Link>
+
         </li>
         <li className="blog__card" id="1">
           <img
@@ -25,9 +33,10 @@ function Blog() {
             src={blog_image2}
             alt="Логотип 'VideoFor'"
           />
-          <p className="blog__data">19.11.2021</p>
+          <p className="blog__data">18 декабря 2021</p>
           <p className="blog__subtitle">
-            Tenzerflou и еще какие-то умные слова заголовок
+          Когда начнет работать раздельный сбор мусора, и зачем нужен видеомониторинг площадок для мусорных контейнеров
+
           </p>
         </li>
         <li className="blog__card" id="2">
@@ -36,9 +45,11 @@ function Blog() {
             src={blog_image3}
             alt="Логотип 'VideoFor'"
           />
-          <p className="blog__data">19.11.2021</p>
+          <p className="blog__data">20 декабря 2021</p>
           <p className="blog__subtitle">
-            Tenzerflou и еще какие-то умные слова заголовок
+          Как новейшие технологии помогают Москве решить проблему пробок 
+на дорогах?
+
           </p>
         </li>
       </ul>

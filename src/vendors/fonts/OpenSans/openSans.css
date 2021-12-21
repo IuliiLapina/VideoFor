@@ -6,3 +6,10 @@
     src: url(./OpenSansCondensed-Light.ttf)
   }
   
+  @font-face {
+    font-family: 'Open Sans Condensed';
+    font-style:  weight;
+    font-weight: 700;
+    font-display: swap;
+    src: url(./OpenSansCondensed-Bold.ttf)
+  }

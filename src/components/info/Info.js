@@ -1,9 +1,12 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
-function Info() {
+function Info({title}) {
+  const location = useLocation();
+
   return (
-    <section className="info">
-      <h2 className="chapter">Запросить подробную информацию</h2>
+    <section className={`info ${location.pathname === "/blog-beach" ? 'info_blog' : ''}`}>
+      <h2 className="chapter">{title}</h2>
       <form className="form">
         <div className="form__container">
           <input className="form__input" id="info__checkbox" type="email" value="E-mail"></input>

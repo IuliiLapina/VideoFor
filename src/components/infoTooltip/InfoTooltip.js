@@ -3,13 +3,16 @@ import React from "react";
 function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
   const [isChoicePhone, setIsChoicePhone] = React.useState(false);
   const [isChoiceEmail, setIsChoiceEmail] = React.useState(false);
+  const [checked, setChecked] = React.useState(false);
 
   function handlePhone() {
     setIsChoicePhone(true);
   }
-
   function handleEmail() {
     setIsChoiceEmail(true);
+  }
+  function chengeCheckbox() {
+    setChecked(!checked);
   }
 
   return (
@@ -24,9 +27,7 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
         <h3
           className={`popup__title ${
             isChoicePhone ? "popup__title_disabled" : ""
-          } ${
-            isChoiceEmail ? "popup__title_disabled" : ""
-          }`}
+          } ${isChoiceEmail ? "popup__title_disabled" : ""}`}
         >
           ПРЕДПОЧИТАЕМЫЙ СПОСОБ СВЯЗИ
         </h3>
@@ -51,6 +52,7 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
             E-mail
           </button>
         </div>
+
         {isChoicePhone ? (
           <form
             className="popup__form"
@@ -71,11 +73,28 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
             />
 
             <div className="checkbox__container checkbox__container_popup-area">
-              <input type="checkbox" id="checkbox" className="form__checbox" />
-              <label className="form__checbox-text form__checbox-text_radio" for="checkbox">
+              <input
+                type="checkbox"
+                id="checkbox-area"
+                className="form__checbox"
+                onChange={chengeCheckbox}
+              />
+              <label
+                className="form__checbox-text form__checbox-text_radio"
+                for="checkbox-area"
+              >
                 <span className="checkbox_radio"></span>Оставить комментарий
               </label>
             </div>
+            {checked ? (
+              <textarea
+                className="form__textarea"
+                placeholder="Ваш комментарий..."
+                cols="40"
+              ></textarea>
+            ) : (
+              ""
+            )}
 
             <input
               type="submit"
@@ -84,9 +103,18 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
             />
 
             <div className="checkbox__container checkbox__container_popup">
-              <input type="checkbox" id="checkbox" checked="checked" className="form__checbox" />
-              <label className="form__checbox-text form__checbox-text_popup" for="checkbox">
-                <span className="checkbox_form"></span>Согласие на обработку персональных данных
+              <input
+                type="checkbox"
+                id="checkbox"
+                checked="checked"
+                className="form__checbox"
+              />
+              <label
+                className="form__checbox-text form__checbox-text_popup"
+                for="checkbox"
+              >
+                <span className="checkbox_form"></span>Согласие на обработку
+                персональных данных
               </label>
             </div>
           </form>
@@ -114,11 +142,28 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
             />
 
             <div className="checkbox__container checkbox__container_popup-area">
-              <input type="checkbox" id="checkbox" className="checkbox_radio" />
-              <label className="form__checbox-text" for="checkbox">
-                <span></span>Оставить комментарий
+              <input
+                type="checkbox"
+                id="checkbox-area"
+                className="form__checbox"
+                onChange={chengeCheckbox}
+              />
+              <label
+                className="form__checbox-text form__checbox-text_radio"
+                for="checkbox-area"
+              >
+                <span className="checkbox_radio"></span>Оставить комментарий
               </label>
             </div>
+            {checked ? (
+              <textarea
+                className="form__textarea"
+                placeholder="Ваш комментарий..."
+                cols="40"
+              ></textarea>
+            ) : (
+              ""
+            )}
 
             <input
               type="submit"
@@ -127,9 +172,18 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
             />
 
             <div className="checkbox__container checkbox__container_popup">
-              <input type="checkbox" id="checkbox" checked="checked" className="form__checbox" />
-              <label className="form__checbox-text form__checbox-text_popup" for="checkbox">
-                <span className="checkbox_form"></span>Согласие на обработку персональных данных
+              <input
+                type="checkbox"
+                id="checkbox"
+                checked="checked"
+                className="form__checbox"
+              />
+              <label
+                className="form__checbox-text form__checbox-text_popup"
+                for="checkbox"
+              >
+                <span className="checkbox_form"></span>Согласие на обработку
+                персональных данных
               </label>
             </div>
           </form>
