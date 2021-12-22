@@ -22,10 +22,10 @@ function BlogBeach() {
         <img className="article__image" src={beach} alt="Логотип 'VideoFor'" />
         <div className="article__container-text">
           <p className="article__time">9 мин 08 декабря 2021</p>
-          <h2 className="article__title">
+          <h1 className="article__title">
             «Умный пляж» или как обеспечить комплексную безопасность людей на
             водоеме
-          </h2>
+          </h1>
           <p className="article__text">
             Ежегодно в мире от утопления погибает около 320 тысяч человек. Это
             третья по значимости причина смерти, на долю которой приходится
@@ -55,9 +55,9 @@ function BlogBeach() {
         предупреждение о шторме или наводнении (голосовое, и смс-оповещение).
       </p>
 
-      <h3 className="article__subtitle article__text-right-column">
+      <h2 className="article__subtitle article__text-right-column">
         Достаточно ли принимаемых мер по обеспечению безопасности на водоемах
-      </h3>
+      </h2>
       <div className="article__container">
         <img className="article__image" src={hand} alt="Логотип 'VideoFor'" />
         <div className="article__container-text">
@@ -135,9 +135,9 @@ function BlogBeach() {
         использовании видеоаналитики.
       </p>
 
-      <h3 className="article__subtitle article__text-right-column">
+      <h2 className="article__subtitle article__text-right-column">
         Классификация алгоритмов видеоаналитики
-      </h3>
+      </h2>
       <div className="article__container article__container-minus">
         <img className="article__image" src={circle} alt="Логотип 'VideoFor'" />
         <div className="article__container-text article__container-tex-plus">
@@ -145,9 +145,9 @@ function BlogBeach() {
             По сложности реализации алгоритмов видеоаналитики их можно условно
             разделить на три класса задач мониторинга:
           </p>
-          <h4 className="article__list-item-title">
+          <h3 className="article__list-item-title">
             1. Стандартные средства видеоаналитики
-          </h4>
+          </h3>
           <p className="article__text article__text-list">
             Теоретически могут быть реализованы большинством «умных камер»
             популярных вендоров (Hikvision, Dahua, Axis и т.д.):
@@ -208,10 +208,10 @@ function BlogBeach() {
       <div className="article__container article__container-minus">
         <img className="article__image" src={jump} alt="Логотип 'VideoFor'" />
         <div className="article__container-text">
-          <h4 className="article__list-item-title article__list-item-title_minus">
+          <h3 className="article__list-item-title article__list-item-title_minus">
             2. Видеокамеры с видеоаналитикой на основе технологий DEEPMIND
             <span className="article__title-span">(например: IVA Bosch)</span>
-          </h4>
+          </h3>
           <p className="article__text-list">
             Формально являясь накамерной аналитикой, по факту работают при
             участии ресиверов, обладающих достаточной мощностью для
@@ -226,9 +226,9 @@ function BlogBeach() {
             не предназначенных для этих целей средствах;
           </p>
 
-          <h4 className="article__list-item-title article__list-item-title_plus">
+          <h3 className="article__list-item-title article__list-item-title_plus">
             3. Задачи, требующие частного решения:
-          </h4>
+          </h3>
           <p className="article__text-list">
             3.1 Человек, терпящий бедствие на воде (риск утопления); 
             </p>

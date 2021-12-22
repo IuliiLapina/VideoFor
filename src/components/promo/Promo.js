@@ -9,7 +9,7 @@ function Promo({onContactForm}) {
         ДЛЯ БИЗНЕСА, ГОРОДА И ДЛЯ ВАС
       </h1>
       <p className="promo__subtitle">Уникальные решения и программное обеспечение на основе 
-технологий компьютерного зрения и искусственного интеллекта</p>
+      <br/>технологий компьютерного зрения и искусственного интеллекта</p>
       <div className="promo__container">
         <img
           className="promo__picture"

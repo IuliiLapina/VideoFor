@@ -43,6 +43,7 @@ function App() {
           </main>
           <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
+
         <Route path="/blog-beach">
           <Header />
           <main className="content">
@@ -51,6 +52,25 @@ function App() {
           </main>
           <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
+
+        <Route path="/blog-recyclable-materials">
+          <Header />
+          <main className="content">
+            <BlogBeach />
+            <Info title={"Получать новые публикации"}/>
+          </main>
+          <Footer onContactForm={handleInfoTooltipPopupOpen} />
+        </Route>
+
+        <Route path="/blog-traffic-jams">
+          <Header />
+          <main className="content">
+            <BlogBeach />
+            <Info title={"Получать новые публикации"}/>
+          </main>
+          <Footer onContactForm={handleInfoTooltipPopupOpen} />
+        </Route>
+
       </Switch>
       <InfoTooltip
         isOpen={isInfoTooltipPopupOpen}

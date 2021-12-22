@@ -5,7 +5,7 @@ function Info({title}) {
   const location = useLocation();
 
   return (
-    <section className={`info ${location.pathname === "/blog-beach" ? 'info_blog' : ''}`}>
+    <section className={`info ${location.pathname !== "/" ? 'info_blog' : ''}`}>
       <h2 className="chapter">{title}</h2>
       <form className="form">
         <div className="form__container">
