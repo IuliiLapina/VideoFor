@@ -30,10 +30,10 @@ function Blog() {
           </Link>
         </li>
         <li className="blog__card" id="1">
-          <Link className="blog__card-link" to="/blog-recyclable-materials">
+          <Link className="blog__card-link" to="/blog-recycle">
             <img
               className="blog__image"
-              src={blog_image2}
+              src={blog_image3}
               alt="Логотип 'VideoFor'"
             />
             <p className="blog__data">18 декабря 2021</p>
@@ -44,10 +44,10 @@ function Blog() {
           </Link>
         </li>
         <li className="blog__card" id="2">
-          <Link className="blog__card-link" to="/blog-traffic-jams">
+          <Link className="blog__card-link" to="/blog-traffic">
             <img
               className="blog__image"
-              src={blog_image3}
+              src={blog_image2}
               alt="Логотип 'VideoFor'"
             />
             <p className="blog__data">20 декабря 2021</p>

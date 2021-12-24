@@ -12,6 +12,8 @@ import Partners from "./partners/Partners";
 import Footer from "./footer/Footer";
 import InfoTooltip from "./infoTooltip/InfoTooltip";
 import BlogBeach from "./BlogBeach";
+import BlogRecycle from "./BlogRecycle";
+import BlogTraffic from "./BlogTraffic";
 
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
@@ -53,19 +55,19 @@ function App() {
           <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
 
-        <Route path="/blog-recyclable-materials">
+        <Route path="/blog-recycle">
           <Header />
           <main className="content">
-            <BlogBeach />
+            <BlogRecycle />
             <Info title={"Получать новые публикации"}/>
           </main>
           <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
 
-        <Route path="/blog-traffic-jams">
+        <Route path="/blog-traffic">
           <Header />
           <main className="content">
-            <BlogBeach />
+            <BlogTraffic />
             <Info title={"Получать новые публикации"}/>
           </main>
           <Footer onContactForm={handleInfoTooltipPopupOpen} />

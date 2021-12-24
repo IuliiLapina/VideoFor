@@ -1,11 +1,13 @@
 import React from "react";
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as Link } from "react-router-hash-link";
 import logo from "../../images/logo/logo.svg";
 
 function Header() {
   return (
     <header className="header">
-      <img className="header__logo" src={logo} alt="Логотип 'VideoFor'" />
+      <Link className="header__link" to="/">
+        <img className="header__logo" src={logo} alt="Логотип 'VideoFor'" />
+      </Link>
       <nav className="header__menu">
         <input id="header__menu-toggle" type="checkbox" />
         <label className="header__menu-btn" htmlFor="header__menu-toggle">
