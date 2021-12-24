@@ -1843,7 +1843,11 @@
 .article__subtitle_left {
   width: 100%;
   letter-spacing: 0.025em;
-  padding-bottom: 48px;
+  padding-bottom: 47px;
+}
+
+.article__subtitle_text-container{
+  padding-top: 0;
 }
 
 .article__subtitle-list{
@@ -1851,7 +1855,7 @@
   line-height: 58px;
 }
 
-.article__text-second{
+.article__text-second {
   padding: 33px 0 0px;
 }
 
@@ -1872,6 +1876,14 @@
   font-weight: 300;
 }
 
+.article__list_container-disc {
+  padding: 0 0 0 27px;
+}
+
+.article__list_under-disc {
+  padding: 45px 0 0 27px;
+
+}
 .article__list_container {
   padding-bottom: 0;
 }
@@ -1882,6 +1894,15 @@
   line-height: 29px;
   letter-spacing: 0.05em;
   padding-bottom: 2px;
+}
+
+.article__list-item_style-disc {
+  list-style: disc;
+  padding-bottom: 33px;
+}
+
+.article__list-item_style-disc:last-child {
+  padding-bottom: 0px;
 }
 
 .article__list-title {

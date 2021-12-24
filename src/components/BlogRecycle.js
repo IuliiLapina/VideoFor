@@ -40,7 +40,7 @@ function BlogRecycle() {
           </div>
         </div>
 
-        <div className="article__text_under">
+        <div className="article__under-text-container">
           <p className="article__text">
             Решение проблемы оказалось непростым, ведь весь накопленный мусор
             невозможно просто сжечь. Во-первых, после сжигания остается ядовитый
@@ -77,12 +77,12 @@ function BlogRecycle() {
               Мебиуса» можно значительно сократить объемы мусора, который
               требует сжигания или захоронения.
             </p>
-            <p className="article__text article__text-medium">
+            <p className="article__text article__text-last">
               На практике попытки коммерческих и общественных организаций, и
               даже целых регионов России организовать раздельный сбор мусора
               столкнулись с рядом сложностей.
             </p>
-            <p className="article__text">
+            <p className="article__text article__text-second">
               Во-первых, по прежнему невысокая доля участия населения в
               процессе. Труд той части населения, которая осуществляет
               раздельный сбор мусора, нивелируется той частью населения, которая
@@ -98,7 +98,7 @@ function BlogRecycle() {
           </div>
         </div>
 
-        <div className="article__text_under">
+        <div className="article__under-text-container">
           <p className="article__text">
             В-третьих, несвоевременный вывоз мусора с площадок для размещения
             мусорных контейнеров приводит к замусоренности окружающей
@@ -168,7 +168,7 @@ function BlogRecycle() {
           </div>
         </div>
 
-        <div className="article__text_under">
+        <div className="article__under-text-container">
           <ul className="article__list">
             <p className="article__text">
               Переиспользование этих данных для мониторинга переполнения
@@ -217,7 +217,7 @@ function BlogRecycle() {
             контейнерам (приводящим к замусориванию территории, жалобам жителей
             и санкциям со стороны муниципальных властей).
           </p>
-          <p className="article__text article__text-second">
+          <p className="article__text article__text-last">
             Так как российское законодательство в настоящее время не предъявляет
             требований к обеспечению площадок для хранения бытовых отходов
             средствами мониторинга, эта деятельность регулируется рынком. Именно
@@ -264,7 +264,7 @@ function BlogRecycle() {
           </div>
         </div>
 
-        <div className="article__text_under">
+        <div className="article__under-text-container">
           <p className="article__text">
             Поэтому региональным операторам необходимо начинать уже сегодня
             создавать систему мониторинга, которая будет жизненно необходима
@@ -272,7 +272,7 @@ function BlogRecycle() {
             метрики мониторинга будут в ней обрабатываться, каждый регоператор
             будет решать исходя из места, времени и обстоятельств.
           </p>
-          <p className="article__text">
+          <p className="article__text article__text-second ">
             Единственное, о чем можно говорить с уверенностью, это о том, что
             время раздельного обращения с мусором в нашей стране пришло, а
             отступать нам некуда, позади – планета, здоровье и наша жизнь.
