@@ -9,7 +9,7 @@ function Info({title}) {
       <h2 className="chapter">{title}</h2>
       <form className="form">
         <div className="form__container">
-          <input className="form__input" id="info__checkbox" type="email" value="E-mail"></input>
+          <input className="form__input" id="info__checkbox" type="email" placeholder="E-mail"></input>
           <button className="button form__button" type="submit">
             Получить
           </button>
