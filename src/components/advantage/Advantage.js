@@ -57,7 +57,7 @@ function Advantage({ onContactForm }) {
               alt="Логотип 'VideoFor'"
             />
               <p className="advantage__subtitle">
-                Встроим в установленную систему
+                Встроим в уже установленную систему
               </p>
           </li>
           <li className="advantage__list-iteam">
@@ -67,7 +67,7 @@ function Advantage({ onContactForm }) {
               alt="Логотип 'VideoFor'"
             />
               <p className="advantage__subtitle">
-                Бесплатные обновления, поддержка и сопровождение
+              Использование собственных ноу-хау 
               </p>
           </li>
         </ul>
@@ -119,7 +119,7 @@ function Advantage({ onContactForm }) {
               alt="Логотип 'VideoFor'"
             />
               <p className="advantage__subtitle">
-                Возможность встраивания модулей в уже установленные системы
+              Встроим в уже установленную систему
               </p>
           </li>
           <li className="advantage__list-iteam">
@@ -129,8 +129,7 @@ function Advantage({ onContactForm }) {
               alt="Логотип 'VideoFor'"
             />
               <p className="advantage__subtitle">
-                Бесплатные обновления, техническая поддержка и сопровождение
-                клиентов
+              Использование собственных ноу-хау 
               </p>
           </li>
         </ul>

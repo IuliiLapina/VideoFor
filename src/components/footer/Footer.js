@@ -16,16 +16,15 @@ function Footer({onContactForm}) {
       </div>
       <div className="footer__column">
         <ul className="footer__column-links">
-          <li className="footer__link">Транспортная аналитика</li>
-          <li className="footer__link">Безопасность на воде</li>
-          <li className="footer__link">Безопасная территория</li>
-          <li className="footer__link">Эксплуатация контейнеров</li>
+          <li className="footer__link"><Link className="footer__link-item" to="/smart-city">Умный город</Link></li>
+          <li className="footer__link">Умный пляж</li>
+          <li className="footer__link">Умная территория</li>
+          <li className="footer__link">Умные станции сбора мусора</li>
         </ul>
 
         <ul className="footer__column-links">
           <li className="footer__link">Проектирование систем</li>
           <li className="footer__link">Выполнение НИОКР</li>
-          <li className="footer__link">Smart блог</li>
         </ul>
 
         <ul className="footer__column-links-info">
