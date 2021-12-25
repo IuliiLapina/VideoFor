@@ -1,0 +1,279 @@
+.footer {
+  padding: 0px 0 18px 100px;
+  display: flex;
+  align-items: flex-start;
+  border-top: 1px solid rgba(234, 234, 234, 0.1);
+}
+
+.footer__column {
+  display: flex;
+}
+
+.footer__column-links {
+  margin: 0;
+  padding: 17px 15px 0 0;
+  list-style: none;
+}
+
+.footer__link {
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0;
+  padding: 0 0 5px 0px;
+}
+
+.footer__link-item {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+.footer__link-item:hover {
+  opacity: 0.8;
+}
+
+.footer__logo {
+  width: 119px;
+  height: 119px;
+  padding: 0 78px 0 15px;
+}
+
+.footer__promo {
+  width: 60px;
+  height: 60px;
+}
+
+.footer__column-links-info {
+  margin: 0;
+  padding: 23px 0 0px 35px;
+  width: 37%;
+}
+
+.button_footer {
+  padding: 13px 60px 11px 60px;
+  margin: 27px 0px 0 0;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  min-width: fit-content;
+}
+
+.footer__resident {
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link-info {
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: baseline;
+  padding: 0 0 10px 0;
+}
+
+.footer__info-text {
+  margin: 0;
+}
+
+.footer__info-icon {
+  padding: 0px 8px 0 0;
+}
+
+.footer__promo {
+  width: 146px;
+  height: 146px;
+  padding: 0 18px 0 32px;
+}
+
+@media screen and (max-width: 1290px) {
+  .footer {
+    padding: 0px 0 275px 100px;
+    position: relative;
+  }
+  .footer__promo {
+    position: absolute;
+    left: 38%;
+    top: 45%;
+    width: 170px;
+    height: 170px;
+  }
+  .button_footer {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .button_footer {
+    left: 12%;
+  }
+  .footer__logo {
+    padding: 0px 20px 0 0;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .footer {
+    padding: 0px 0 275px 100px;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .footer__promo {
+    left: 35%;
+    top: 30%;
+  }
+
+  .button_footer {
+    position: absolute;
+    top: -103px;
+    left: 51%;
+    padding: 13px 51px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .footer__resident-container {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 23px 0 0;
+  }
+
+  .footer__resident {
+    text-align: center;
+  }
+
+  .footer__link {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0 0 10px 0;
+  }
+
+  .footer__logo {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+  }
+
+  .footer__column {
+    justify-content: flex-start;
+  }
+
+  .footer__column-links {
+    padding: 19px 0px 0 0;
+  }
+
+  .footer__column-links:first-child {
+    padding: 19px 58px 0 0;
+  }
+
+  .footer__column-links-info {
+    margin: 0;
+    padding: 15px 0 0px 85px;
+    width: 31%;
+  }
+
+  .footer__info-icon {
+    padding: 0px 7px 0 0;
+    width: 14px;
+    height: 14px;
+  }
+
+  .footer__resident {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .footer__link-info {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 0 7px 0;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .footer__column-links {
+    padding: 5px 0px 0 0;
+  }
+  .footer__column-links:first-child {
+    padding: 5px 0px 0 0;
+  }
+
+  .footer__column-links-info {
+    margin: 0;
+    padding: 6px 0 0;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__column-links {
+    display: none;
+    padding: 17px 80px 0 0;
+  }
+  .footer__column-links-info {
+    width: 70%;
+  }
+
+  .footer__promo {
+    display: none;
+  }
+  .footer {
+    padding: 0px 0 10px 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .button_footer {
+    top: -196px;
+    left: 50%;
+    padding: 9px 47px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding: 0px 0 10px 10px;
+  }
+
+  .footer__resident-container {
+    flex-direction: row;
+    padding: 7px 12px 0 0;
+  }
+
+  .footer__resident {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .footer__logo {
+    width: 47px;
+    height: 47px;
+    padding: 3px 0 0;
+  }
+
+  .footer__column {
+    justify-content: flex-start;
+  }
+
+  .footer__column-links-info {
+    margin: 0;
+    padding: 6px 0 0;
+    width: 75%;
+  }
+
+  .footer__info-icon {
+    padding: 0px 7px 0 0;
+    width: 12px;
+    height: 12px;
+  }
+
+  .footer__link-info {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0;
+  }
+}

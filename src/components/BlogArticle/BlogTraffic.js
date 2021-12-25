@@ -1,9 +1,9 @@
 import React from "react";
-import road from "../images/article/road.png";
-import traffic_lights from "../images/article/traffic_lights.png";
-import lattice from "../images/article/lattice.png";
-import traffic_jam from "../images/article/traffic_jam.png";
-import Blog from "./blog/Blog";
+import road from "../../images/article/road.png";
+import traffic_lights from "../../images/article/traffic_lights.png";
+import lattice from "../../images/article/lattice.png";
+import traffic_jam from "../../images/article/traffic_jam.png";
+import Blog from "../blog/Blog";
 
 function BlogRecycle() {
   const [isOpenBlog, setIsOpenBlog] = React.useState(false);

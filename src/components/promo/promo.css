@@ -1,0 +1,250 @@
+.button {
+  font-size: 24px;
+  line-height: 33px;
+  background-color: #040404;
+  color: #eaeaea;
+  border: 1px solid #eaeaea;
+  border-radius: 50px;
+  padding: 18px 74px;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.25);
+}
+
+@media screen and (max-width: 1170px) {
+  .button {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 13px 51px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .button {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 7px 58px;
+  }
+}
+.promo {
+  position: relative;
+  overflow: hidden;
+  padding: 70px 0px 200px 100px;
+}
+
+.promo__container {
+  overflow: hidden;
+  width: 750px;
+  height: 750px;
+  position: absolute;
+  top: -50px;
+  right: -15px;
+  z-index: -20;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    #101010 196px,
+    #070707 196px,
+    #070707 210px,
+    #101010 210px,
+    #101010 213px,
+    #070707 213px,
+    #070707 230px,
+    #0a0a0a 230px,
+    #0a0a0a 301px,
+    #101010 301px,
+    #101010 303px,
+    #070707 303px,
+    #070707 344px,
+    #101010 344px,
+    #101010 347px,
+    #0a0a0a 347px,
+    #0a0a0a 375px
+  );
+}
+
+.promo__picture {
+  width: 750px;
+  height: 750px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.promo__title {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 68px;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 200px;
+  width: 60%;
+}
+
+.promo__subtitle {
+  font-size: 26px;
+  line-height: 39px;
+  margin: 0;
+  padding-bottom: 38px;
+  letter-spacing: 0.019em;
+}
+
+@media screen and (max-width: 1170px) {
+  .promo {
+    position: relative;
+    overflow: hidden;
+    padding: 61px 0px 10px 0px;
+  }
+
+  .promo__container {
+    width: 479px;
+    height: 479px;
+    left: 30%;
+    top: -12px;
+  }
+
+  .promo__picture {
+    width: 479px;
+    height: 479px;
+    top: 1px;
+    right: 1px;
+  }
+
+  .promo__title {
+    font-size: 40px;
+    line-height: 54px;
+    width: 77%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 17px;
+    padding-top: 348px;
+  }
+
+  .promo__subtitle {
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.019em;
+    padding-bottom: 28px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .promo__container {
+    left: 28%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .promo__container {
+    left: 26%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .promo__container {
+    left: 24%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .promo__container {
+    left: 21%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .promo__container {
+    left: 18%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .promo__container {
+    left: 16%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .promo__container {
+    left: 14%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .promo {
+    padding: 37px 0px 10px 0px;
+  }
+
+  .promo__container {
+    width: 304px;
+    height: 304px;
+    left: 25%;
+    top: 17px;
+  }
+
+  .promo__picture {
+    width: 304px;
+    height: 304px;
+    top: 0px;
+    right: 0px;
+  }
+
+  .promo__title {
+    font-size: 24px;
+    line-height: 31px;
+    width: 90%;
+    padding-bottom: 4px;
+    padding-top: 278px;
+  }
+
+  .promo__subtitle {
+    font-size: 12px;
+    line-height: 21px;
+    padding-bottom: 22px;
+    text-align: center;
+    letter-spacing: 0.009em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .promo__container {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .promo__container {
+    left: 17%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .promo__container {
+    left: 12%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .promo__container {
+    left: 8%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .promo__container {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .promo__container {
+    left: 2%;
+  }
+}

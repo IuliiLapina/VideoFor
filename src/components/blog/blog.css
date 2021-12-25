@@ -1,0 +1,138 @@
+.blog {
+  padding-top: 85px;
+}
+
+.blog__card-list {
+  margin: 0;
+  padding: 50px 100px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-column-gap: 30px;
+}
+
+.blog__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 99%;
+  height: auto;
+  background: rgba(208, 222, 231, 0.09);
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.blog__card:hover {
+  background: rgba(234, 234, 234, 0.15);
+}
+
+.blog__image {
+  width: 100%;
+  height: 150px;
+}
+
+.blog__data {
+  font-size: 12px;
+  line-height: 16px;
+  color: #3e7ede;
+  padding: 12px 0 0 23px;
+  margin: 0;
+}
+
+.blog__subtitle {
+  font-size: 24px;
+  line-height: 33px;
+  padding: 9px 0 0 23px;
+  margin: 0;
+}
+
+.blog__card-link {
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+@media screen and (max-width: 1000px) {
+  .blog {
+    padding-top: 65px;
+  }
+
+  .blog__card-list {
+    grid-template-columns: repeat(3, 30%);
+    grid-column-gap: 11px;
+    padding: 22px 0px 0 49px;
+  }
+
+  .blog__image {
+    height: 94px;
+  }
+
+  .blog__data {
+    padding: 12px 0 0 10px;
+  }
+
+  .blog__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 9px 0 0 13px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .blog__card:nth-child(2) {
+    display: none;
+  }
+  .blog__card:nth-child(1) {
+    display: none;
+  }
+  .blog {
+    padding-top: 28px;
+  }
+
+  .blog__card-list {
+    grid-template-columns: repeat(1, 251px);
+    padding: 16px 8px 0;
+    justify-content: center;
+  }
+
+  .blog__card {
+    width: 251px;
+  }
+
+  .blog__image {
+    width: 251px;
+    height: 90px;
+  }
+
+  .blog__data {
+    padding: 12px 0 0 10px;
+    line-height: 14px;
+  }
+
+  .blog__subtitle {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 9px 0 0 13px;
+  }
+}
+
+.blog__button {
+  font-size: 40px;
+  line-height: 54px;
+  font-weight: 300;
+  background-color: #040404;
+  color: #eaeaea;
+  width: 100%;
+  border: 1px solid rgba(234, 234, 234, 0.1);
+  border-left: none;
+  border-right: none;
+  padding: 7px 0 7px;
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog__button {
+    font-size: 24px;
+    line-height: 33px;
+    padding: 7px 0 7px;
+    margin-top: 90px;
+  }
+}

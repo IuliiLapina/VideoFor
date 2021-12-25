@@ -1,9 +1,9 @@
 import React from "react";
-import garbage_in_the_sea from "../images/article/garbage_in_the_sea.png";
-import garbage_bottle from "../images/article/garbage_bottle.png";
-import trash_can from "../images/article/trash_can.png";
-import trash_can_mini from "../images/article/trash_can_mini.png";
-import Blog from "./blog/Blog";
+import garbage_in_the_sea from "../../images/article/garbage_in_the_sea.png";
+import garbage_bottle from "../../images/article/garbage_bottle.png";
+import trash_can from "../../images/article/trash_can.png";
+import trash_can_mini from "../../images/article/trash_can_mini.png";
+import Blog from "../blog/Blog";
 
 function BlogRecycle() {
   const [isOpenBlog, setIsOpenBlog] = React.useState(false);

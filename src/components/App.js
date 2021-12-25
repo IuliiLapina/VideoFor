@@ -11,9 +11,10 @@ import Blog from "./blog/Blog";
 import Partners from "./partners/Partners";
 import Footer from "./footer/Footer";
 import InfoTooltip from "./infoTooltip/InfoTooltip";
-import BlogBeach from "./BlogBeach";
-import BlogRecycle from "./BlogRecycle";
-import BlogTraffic from "./BlogTraffic";
+
+import BlogBeach from "./BlogArticle/BlogBeach.js";
+import BlogRecycle from "./BlogArticle/BlogRecycle";
+import BlogTraffic from "./BlogArticle/BlogTraffic";
 
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
