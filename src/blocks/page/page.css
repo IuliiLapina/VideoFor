@@ -103,9 +103,11 @@
   width: fit-content;
 }
 
+.advantage-page__conteiner-button {
+  display: flex;
+}
 .advantage-page__button_right {
-  position: relative;
-  left: 69.3%;
+  margin: 16px 0 0 auto;
 }
 
 .advantage-page__image_right {

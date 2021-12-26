@@ -58,12 +58,15 @@ function AdvantageSmartBeach({ onContactForm }) {
           </ul>
         </div>
       </div>
+      <div className="advantage-page__conteiner-button">
       <button
         className="advantage-page__button advantage-page__button_right"
         onClick={onContactForm}
       >
         Связаться с нами
       </button>
+      </div>
+
 
       <h2 className="advantage-page__title advantage-page__title_center">
         Преимущества продукта

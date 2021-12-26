@@ -62,21 +62,22 @@ function AdvantageSmartSpace({ onContactForm }) {
           </ul>
         </div>
       </div>
-      <button
-        className="advantage-page__button advantage-page__button_right"
-        onClick={onContactForm}
-      >
-        Связаться с нами
-      </button>
-
+      <div className="advantage-page__conteiner-button">
+        <button
+          className="advantage-page__button advantage-page__button_right"
+          onClick={onContactForm}
+        >
+          Связаться с нами
+        </button>
+      </div>
       <h2 className="advantage-page__title advantage-page__title_center">
         Преимущества продукта
       </h2>
       <div className="advantage-page__container advantage-page__container_center smart-space-background-image">
         <div className="advantage-page__container-products">
           <p className="advantage-page__text advantage-page__text_product">
-          Минимизирует риск возникновения
-          <br/> опасных ситуаций
+            Минимизирует риск возникновения
+            <br /> опасных ситуаций
           </p>
           <p className="advantage-page__text advantage-page__text_product">
             Система разработана с учётом
@@ -90,7 +91,8 @@ function AdvantageSmartSpace({ onContactForm }) {
           </p>
 
           <p className="advantage-page__text advantage-page__text_product">
-          Полный комплекс технологий, способный обеспечить максимальную безопасность
+            Полный комплекс технологий, способный обеспечить максимальную
+            безопасность
           </p>
         </div>
       </div>
