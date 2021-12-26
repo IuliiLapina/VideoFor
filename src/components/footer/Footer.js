@@ -18,7 +18,7 @@ function Footer({onContactForm}) {
         <ul className="footer__column-links">
           <li className="footer__link"><Link className="footer__link-item" to="/smart-city">Умный город</Link></li>
           <li className="footer__link"><Link className="footer__link-item" to="/smart-beach">Умный пляж</Link></li>
-          <li className="footer__link">Умная территория</li>
+          <li className="footer__link"><Link className="footer__link-item" to="/smart-space">Умная территория</Link></li>
           <li className="footer__link">Умные станции сбора мусора</li>
         </ul>
 

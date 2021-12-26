@@ -17,6 +17,7 @@ import BlogRecycle from "./BlogArticle/BlogRecycle";
 import BlogTraffic from "./BlogArticle/BlogTraffic";
 import AdvantageSmartCity from "./AdvantageSmartCity";
 import AdvantageSmartBeach from "./AdvantageSmartBeach";
+import AdvantageSmartSpace from "./AdvantageSmartSpace";
 
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
@@ -89,6 +90,15 @@ function App() {
           <Header />
           <main className="content">
             <AdvantageSmartBeach onContactForm={handleInfoTooltipPopupOpen}/>
+            <Info title={"Запросить подробную информацию"}/>
+          </main>
+          <Footer onContactForm={handleInfoTooltipPopupOpen} />
+        </Route>
+
+        <Route path="/smart-space">
+          <Header />
+          <main className="content">
+            <AdvantageSmartSpace onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
           <Footer onContactForm={handleInfoTooltipPopupOpen} />

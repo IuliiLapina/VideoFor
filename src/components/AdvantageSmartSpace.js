@@ -1,22 +1,25 @@
 import React from "react";
-import women from "../images/advantage-pages/women.png";
-import beach from "../images/advantage-pages/beach.png";
+import house from "../images/advantage-pages/house.png";
+import place from "../images/advantage-pages/place.png";
 
-function AdvantageSmartBeach({ onContactForm }) {
+function AdvantageSmartSpace({ onContactForm }) {
   return (
     <section className="advantage-page">
       <div className="advantage-page__container">
         <img
           className="advantage-page__image"
-          src={women}
+          src={house}
           alt="Логотип 'VideoFor'"
         />
         <div className="advantage-page__container-text">
-          <h2 className="advantage-page__title">УМНЫЙ ПЛЯЖ</h2>
+          <h2 className="advantage-page__title">УМНОЕ ПРОСТРАНСТВО</h2>
           <p className="advantage-page__text">
-            Ежегодно в России в водоемах гибнет более четырех тысяч человек.
-            Задача системы онлайн-видеоанализа «Умный Пляж» — предупредить и
-            предотвратить трагедию
+            Безопасность в общественных местах — это приоритет для любого
+            города. Чем больше собирается людей в одном месте, тем большему
+            риску они подвергаются. Общественные места без охраны и
+            видеонаблюдения становятся местом вспышек преступной активности.
+            Система онлайн-видеоанализа «Умное пространство» — залог
+            безопасности посетителей общественных мест
           </p>
         </div>
       </div>
@@ -27,7 +30,7 @@ function AdvantageSmartBeach({ onContactForm }) {
       <div className="advantage-page__container advantage-page__container_right">
         <img
           className="advantage-page__image advantage-page__image_right"
-          src={beach}
+          src={place}
           alt="Логотип 'VideoFor'"
         />
         <div className="advantage-page__container-text advantage-page__container-text_right">
@@ -36,23 +39,24 @@ function AdvantageSmartBeach({ onContactForm }) {
           </h2>
           <ul className="advantage-page__list">
             <li className="advantage-page__list-item">
-            Детектировать утопающих людей
+              Следить за детьми и сообщать, если кто-то остался без присмотра
             </li>
             <li className="advantage-page__list-item">
-            Фиксировать нахождение человека в запрещенной зоне
+              Фиксировать и контролировать перемещения разных типов объектов
             </li>
             <li className="advantage-page__list-item">
-            Координировать спасателей  и сообщать спецслужбам об угрозах
+              Анализировать загруженность общественного пространства
             </li>
             <li className="advantage-page__list-item">
-            Фиксировать и контролировать перемещения разных типов объектов
+              Предупреждать о возможных нарушениях
             </li>
             <li className="advantage-page__list-item">
-            Автоматически транслировать голосовые 
-            <br/>предупреждения через громкоговорители
+              Фиксировать необычную активность
             </li>
             <li className="advantage-page__list-item">
-            Предупреждать о появлении судов
+              Посылать тревожный сигнал в случае
+              <br />
+              обнаружения бесхозного предмета
             </li>
             <li className="advantage-page__list-item">Хранить видеоархив</li>
           </ul>
@@ -68,11 +72,11 @@ function AdvantageSmartBeach({ onContactForm }) {
       <h2 className="advantage-page__title advantage-page__title_center">
         Преимущества продукта
       </h2>
-      <div className="advantage-page__container advantage-page__container_center smart-beach-background-image">
+      <div className="advantage-page__container advantage-page__container_center smart-space-background-image">
         <div className="advantage-page__container-products">
           <p className="advantage-page__text advantage-page__text_product">
-            Полный комплекс технологий, способный обеспечить максимальную
-            безопасность
+          Минимизирует риск возникновения
+          <br/> опасных ситуаций
           </p>
           <p className="advantage-page__text advantage-page__text_product">
             Система разработана с учётом
@@ -86,7 +90,7 @@ function AdvantageSmartBeach({ onContactForm }) {
           </p>
 
           <p className="advantage-page__text advantage-page__text_product">
-          Система анализирует комплекс факторов риска для людей на водных объектах
+          Полный комплекс технологий, способный обеспечить максимальную безопасность
           </p>
         </div>
       </div>
@@ -97,4 +101,4 @@ function AdvantageSmartBeach({ onContactForm }) {
   );
 }
 
-export default AdvantageSmartBeach;
+export default AdvantageSmartSpace;

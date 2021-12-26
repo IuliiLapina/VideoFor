@@ -90,13 +90,17 @@
   font-size: 24px;
   line-height: 34px;
   letter-spacing: 0.02em;
+  display: flex;
   text-align: end;
+  flex-direction: column;
+  align-items: end;
 }
 
 .advantage-page__list-item {
   border-bottom: 1px solid rgba(234, 234, 234, 0.1);
   padding: 0 0 4px;
   margin-bottom: 13px;
+  width: fit-content;
 }
 
 .advantage-page__button_right {
@@ -121,6 +125,7 @@
   background-position-x: center;
   background-position-y: -5px;
   padding-bottom: 47px;
+  justify-content: space-between;
 }
 
 .smart-sity-background-image {
@@ -130,6 +135,11 @@
 .smart-beach-background-image{
   background-image: url("../../images/advantage-pages/background-smart-beach.png");
   background-position-y: -98px;
+}
+
+.smart-space-background-image {
+  background-image: url("../../images/advantage-pages/background-smart-space.png");
+  background-position-y: -105px;
 }
 
 .advantage-page__text_center {
@@ -144,16 +154,20 @@
 
 }
 .advantage-page__text_product {
-  width: 55%;
+  width: auto;
   text-align: center;
   padding: 24px 0 0 5px;
   letter-spacing: 0.00em;
 }
 
-.advantage-page__container-products_right {
+.advantage-page__container-products{
   display: flex;
   flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+
+.advantage-page__container-products_right {
   align-items: flex-end;
-  padding: 0 42px 0 0;
 }
 
