@@ -18,7 +18,7 @@ function Services() {
           <p className="card__subtitle card__subtitle_services">
             Проектирование систем видеоаналитики
             <br />
-            по идивидуальному заказу
+            по индивидуальному заказу
           </p>
           <img className="card__image" src={design} alt="Логотип 'VideoFor'" />
           <button className="button button_card button_card-services">
