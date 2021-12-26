@@ -4,6 +4,7 @@ import trafic from "../../images/products/trafic.png";
 import beach from "../../images/products/beach.png";
 import security from "../../images/products/security.png";
 import monitoring from "../../images/products/monitoring.png";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Products() {
   const windowWidtn = window.innerWidth;
@@ -31,7 +32,9 @@ function Products() {
             </p>
           )}
           <img className="card__image" src={trafic} alt="Логотип 'VideoFor'" />
-          <button className="button button_card">Подробнее о продукте</button>
+          <Link className="card__link" to="/smart-city" target="_top">
+            <button className="button button_card">Подробнее о продукте</button>
+          </Link>
         </li>
 
         <li className="card">
@@ -54,7 +57,9 @@ function Products() {
             </p>
           )}
           <img className="card__image" src={beach} alt="Логотип 'VideoFor'" />
-          <button className="button button_card">Подробнее о продукте</button>
+          <Link className="card__link" to="/smart-beach" target="_top">
+            <button className="button button_card">Подробнее о продукте</button>
+          </Link>
         </li>
 
         <li className="card">
@@ -80,7 +85,9 @@ function Products() {
             src={security}
             alt="Логотип 'VideoFor'"
           />
-          <button className="button button_card">Подробнее о продукте</button>
+          <Link className="card__link" to="/smart-space" target="_top">
+            <button className="button button_card">Подробнее о продукте</button>
+          </Link>
         </li>
 
         <li className="card">
@@ -107,7 +114,9 @@ function Products() {
             src={monitoring}
             alt="Логотип 'VideoFor'"
           />
-          <button className="button button_card">Подробнее о продукте</button>
+          <Link className="card__link" to="/smart-waste-sites" target="_top">
+            <button className="button button_card">Подробнее о продукте</button>
+          </Link>
         </li>
       </ul>
     </section>

@@ -2,6 +2,7 @@ import React from "react";
 import design from "../../images/services/design.png";
 import research from "../../images/services/research.png";
 import logo from "../../images/logo/logo.svg";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Services() {
   return (
@@ -21,9 +22,11 @@ function Services() {
             по индивидуальному заказу
           </p>
           <img className="card__image" src={design} alt="Логотип 'VideoFor'" />
-          <button className="button button_card button_card-services">
-            Подробнее об услуге
-          </button>
+          <Link className="card__link" to="/design-service" target="_top">
+            <button className="button button_card button_card-services">
+              Подробнее об услуге
+            </button>
+          </Link>
         </li>
 
         <li className="card">
@@ -42,9 +45,11 @@ function Services() {
             src={research}
             alt="Логотип 'VideoFor'"
           />
-          <button className="button button_card button_card-services">
-            Подробнее об услуге
-          </button>
+          <Link className="card__link" to="/r-d-service" target="_top">
+            <button className="button button_card button_card-services">
+              Подробнее об услуге
+            </button>
+          </Link>
         </li>
       </ul>
     </section>
