@@ -42,6 +42,10 @@
   border-bottom: 1px solid rgba(234, 234, 234, 0.1);
 }
 
+.advantage-page__title_big {
+  padding-top: 74px;
+}
+
 .advantage-page__text {
   font-size: 24px;
   line-height: 33px;
@@ -144,6 +148,11 @@
   background-position-y: -105px;
 }
 
+.smart-waste-sites-background-image {
+  background-image: url("../../images/advantage-pages/background-smart-waste-sites.png");
+  background-position-y: -1px;
+}
+
 .advantage-page__text_center {
   text-align: center;
   padding-bottom: 20px;
@@ -169,7 +178,6 @@
   align-items: center;
 }
 
-.advantage-page__container-products_right {
-  align-items: flex-end;
+.advantage-page__container_waste {
+  padding-bottom: 100px;
 }
-

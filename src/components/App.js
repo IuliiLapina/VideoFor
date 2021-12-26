@@ -18,6 +18,7 @@ import BlogTraffic from "./BlogArticle/BlogTraffic";
 import AdvantageSmartCity from "./AdvantageSmartCity";
 import AdvantageSmartBeach from "./AdvantageSmartBeach";
 import AdvantageSmartSpace from "./AdvantageSmartSpace";
+import AdvantageSmartWasteSites from "./AdvantageSmartWasteSites";
 
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
@@ -35,9 +36,10 @@ function App() {
 
   return (
     <div className="page">
+      <Header />
+
       <Switch>
         <Route exact path="/">
-          <Header />
           <main className="content">
             <Promo onContactForm={handleInfoTooltipPopupOpen} />
             <Products />
@@ -47,64 +49,60 @@ function App() {
             <Blog />
             <Partners />
           </main>
-          <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
 
         <Route path="/blog-beach">
-          <Header />
           <main className="content">
             <BlogBeach />
             <Info title={"Получать новые публикации"}/>
           </main>
-          <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
 
         <Route path="/blog-recycle">
-          <Header />
           <main className="content">
             <BlogRecycle />
             <Info title={"Получать новые публикации"}/>
           </main>
-          <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
 
         <Route path="/blog-traffic">
-          <Header />
           <main className="content">
             <BlogTraffic />
             <Info title={"Получать новые публикации"}/>
           </main>
-          <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
 
         <Route path="/smart-city">
-          <Header />
           <main className="content">
             <AdvantageSmartCity onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
-          <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
 
         <Route path="/smart-beach">
-          <Header />
           <main className="content">
             <AdvantageSmartBeach onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
-          <Footer onContactForm={handleInfoTooltipPopupOpen} />
         </Route>
 
         <Route path="/smart-space">
-          <Header />
           <main className="content">
             <AdvantageSmartSpace onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
-          <Footer onContactForm={handleInfoTooltipPopupOpen} />
+        </Route>
+
+        <Route path="/smart-waste-sites">
+          <main className="content">
+            <AdvantageSmartWasteSites onContactForm={handleInfoTooltipPopupOpen}/>
+            <Info title={"Запросить подробную информацию"}/>
+          </main>
         </Route>
 
       </Switch>
+      <Footer onContactForm={handleInfoTooltipPopupOpen} />
+
       <InfoTooltip
         isOpen={isInfoTooltipPopupOpen}
         onClose={closeAllPopups}
