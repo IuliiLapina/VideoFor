@@ -32,6 +32,10 @@
   width: 48%;
 }
 
+.advantage-page__container-text_services {
+  width: 57%;
+} 
+
 .advantage-page__title {
   margin: 0;
   padding: 128px 0px 8px;
@@ -53,6 +57,10 @@
   opacity: 0.8;
   margin: 0;
   padding-top: 45px;
+}
+
+.advantage-page__text_services {
+  width: 83%;
 }
 
 .advantage-page__button {
@@ -151,6 +159,16 @@
 .smart-waste-sites-background-image {
   background-image: url("../../images/advantage-pages/background-smart-waste-sites.png");
   background-position-y: -1px;
+}
+
+.services-design-background-image {
+  background-image: url("../../images/services-pages/background-services-design.png");
+  background-position-y: -90px;
+}
+
+.services-rd-background-image {
+  background-image: url("../../images/services-pages/background-services-RD.png");
+  background-position-y: -90px;
 }
 
 .advantage-page__text_center {

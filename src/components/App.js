@@ -19,6 +19,8 @@ import AdvantageSmartCity from "./AdvantageSmartCity";
 import AdvantageSmartBeach from "./AdvantageSmartBeach";
 import AdvantageSmartSpace from "./AdvantageSmartSpace";
 import AdvantageSmartWasteSites from "./AdvantageSmartWasteSites";
+import ServiceDesign from "./ServiceDesign";
+import ServiceRD from "./ServiceRD";
 
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
@@ -96,6 +98,20 @@ function App() {
         <Route path="/smart-waste-sites">
           <main className="content">
             <AdvantageSmartWasteSites onContactForm={handleInfoTooltipPopupOpen}/>
+            <Info title={"Запросить подробную информацию"}/>
+          </main>
+        </Route>
+
+        <Route path="/design-service">
+          <main className="content">
+            <ServiceDesign onContactForm={handleInfoTooltipPopupOpen}/>
+            <Info title={"Запросить подробную информацию"}/>
+          </main>
+        </Route>
+
+        <Route path="/r-d-service">
+          <main className="content">
+            <ServiceRD onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
         </Route>

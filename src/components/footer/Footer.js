@@ -23,8 +23,8 @@ function Footer({onContactForm}) {
         </ul>
 
         <ul className="footer__column-links">
-          <li className="footer__link">Проектирование систем</li>
-          <li className="footer__link">Выполнение НИОКР</li>
+          <li className="footer__link"><Link className="footer__link-item" to="/design-service" target="_top">Проектирование систем</Link></li>
+          <li className="footer__link"><Link className="footer__link-item" to="/r-d-service" target="_top">Выполнение НИОКР</Link></li>
         </ul>
 
         <ul className="footer__column-links-info">
