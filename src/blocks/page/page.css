@@ -80,6 +80,7 @@
 .advantage-page__container-text_right {
   align-items: end;
   padding: 0 55px 0 0px;
+  width: 50%;
 }
 
 .advantage-page__list {
@@ -124,6 +125,11 @@
 
 .smart-sity-background-image {
   background-image: url("../../images/advantage-pages/background-smart-city.png");
+}
+
+.smart-beach-background-image{
+  background-image: url("../../images/advantage-pages/background-smart-beach.png");
+  background-position-y: -98px;
 }
 
 .advantage-page__text_center {

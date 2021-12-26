@@ -16,6 +16,7 @@ import BlogBeach from "./BlogArticle/BlogBeach.js";
 import BlogRecycle from "./BlogArticle/BlogRecycle";
 import BlogTraffic from "./BlogArticle/BlogTraffic";
 import AdvantageSmartCity from "./AdvantageSmartCity";
+import AdvantageSmartBeach from "./AdvantageSmartBeach";
 
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
@@ -79,6 +80,15 @@ function App() {
           <Header />
           <main className="content">
             <AdvantageSmartCity onContactForm={handleInfoTooltipPopupOpen}/>
+            <Info title={"Запросить подробную информацию"}/>
+          </main>
+          <Footer onContactForm={handleInfoTooltipPopupOpen} />
+        </Route>
+
+        <Route path="/smart-beach">
+          <Header />
+          <main className="content">
+            <AdvantageSmartBeach onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
           <Footer onContactForm={handleInfoTooltipPopupOpen} />
