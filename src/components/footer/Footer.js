@@ -5,8 +5,11 @@ import email from "../../images/footer/email.svg";
 import phone from "../../images/footer/phone.svg";
 import place from "../../images/footer/place.svg";
 import { HashLink as Link } from 'react-router-hash-link';
+import { useLocation } from "react-router-dom";
 
 function Footer({onContactForm}) {
+  const location = useLocation();
+
   return (
     <footer className="footer">
       <div className="footer__resident-container">
@@ -16,15 +19,15 @@ function Footer({onContactForm}) {
       </div>
       <div className="footer__column">
         <ul className="footer__column-links">
-          <li className="footer__link"><Link className="footer__link-item" to="/smart-city" target="_top">Умный город</Link></li>
-          <li className="footer__link"><Link className="footer__link-item" to="/smart-beach" target="_top">Умный пляж</Link></li>
-          <li className="footer__link"><Link className="footer__link-item" to="/smart-space" target="_top">Умная территория</Link></li>
-          <li className="footer__link"><Link className="footer__link-item" to="/smart-waste-sites" target="_top">Умные станции сбора мусора</Link></li>
+          <li className="footer__link"><Link className="footer__link-item" to="/smart-city">Умный город</Link></li>
+          <li className="footer__link"><Link className="footer__link-item" to="/smart-beach">Умный пляж</Link></li>
+          <li className="footer__link"><Link className="footer__link-item" to="/smart-space">Умная территория</Link></li>
+          <li className="footer__link"><Link className="footer__link-item" to="/smart-waste-sites">Умные станции сбора мусора</Link></li>
         </ul>
 
         <ul className="footer__column-links">
-          <li className="footer__link"><Link className="footer__link-item" to="/design-service" target="_top">Проектирование систем</Link></li>
-          <li className="footer__link"><Link className="footer__link-item" to="/r-d-service" target="_top">Выполнение НИОКР</Link></li>
+          <li className="footer__link"><Link className="footer__link-item" to="/design-service">Проектирование систем</Link></li>
+          <li className="footer__link"><Link className="footer__link-item" to="/r-d-service">Выполнение НИОКР</Link></li>
         </ul>
 
         <ul className="footer__column-links-info">
@@ -56,7 +59,7 @@ function Footer({onContactForm}) {
           </li>
         </ul>
       </div>
-      <button className="button button_footer" onClick={onContactForm}>Связаться с нами</button>
+      <button className={`button button_footer ${location !== '/' ? 'button_disabled' : ''}`} onClick={onContactForm}>Связаться с нами</button>
       <img className="footer__promo" src={girl} alt="Логотип Мегафон" />
     </footer>
   );

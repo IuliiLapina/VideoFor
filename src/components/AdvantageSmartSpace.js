@@ -23,10 +23,11 @@ function AdvantageSmartSpace({ onContactForm }) {
           </p>
         </div>
       </div>
-      <button className="advantage-page__button" onClick={onContactForm}>
-        Связаться с нами
-      </button>
-
+      <div className="advantage-page__conteiner-button">
+        <button className="advantage-page__button" onClick={onContactForm}>
+          Связаться с нами
+        </button>
+      </div>
       <div className="advantage-page__container advantage-page__container_right">
         <img
           className="advantage-page__image advantage-page__image_right"
@@ -38,22 +39,22 @@ function AdvantageSmartSpace({ onContactForm }) {
             ЧТО УМЕЕТ НАША СИСТЕМА
           </h2>
           <ul className="advantage-page__list">
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Следить за детьми и сообщать, если кто-то остался без присмотра
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Фиксировать и контролировать перемещения разных типов объектов
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Анализировать загруженность общественного пространства
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Предупреждать о возможных нарушениях
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Фиксировать необычную активность
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Посылать тревожный сигнал в случае
               <br />
               обнаружения бесхозного предмета
@@ -87,12 +88,14 @@ function AdvantageSmartSpace({ onContactForm }) {
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right">
           <p className="advantage-page__text advantage-page__text_product">
-            Возможность встраивания модулей в уже установленные системы
+            Возможность встраивания модулей
+            <br />в уже установленные системы
           </p>
 
           <p className="advantage-page__text advantage-page__text_product">
-            Полный комплекс технологий, способный обеспечить максимальную
-            безопасность
+            Полный комплекс технологий, способный
+            <br />
+            обеспечить максимальную безопасность
           </p>
         </div>
       </div>

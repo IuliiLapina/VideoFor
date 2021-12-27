@@ -20,10 +20,11 @@ function AdvantageSmartBeach({ onContactForm }) {
           </p>
         </div>
       </div>
-      <button className="advantage-page__button" onClick={onContactForm}>
-        Связаться с нами
-      </button>
-
+      <div className="advantage-page__conteiner-button">
+        <button className="advantage-page__button" onClick={onContactForm}>
+          Связаться с нами
+        </button>
+      </div>
       <div className="advantage-page__container advantage-page__container_right">
         <img
           className="advantage-page__image advantage-page__image_right"
@@ -35,38 +36,38 @@ function AdvantageSmartBeach({ onContactForm }) {
             ЧТО УМЕЕТ НАША СИСТЕМА
           </h2>
           <ul className="advantage-page__list">
-            <li className="advantage-page__list-item">
-            Детектировать утопающих людей
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Детектировать утопающих людей
             </li>
-            <li className="advantage-page__list-item">
-            Фиксировать нахождение человека в запрещенной зоне
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Фиксировать нахождение человека в запрещенной зоне
             </li>
-            <li className="advantage-page__list-item">
-            Координировать спасателей  и сообщать спецслужбам об угрозах
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Координировать спасателей и сообщать спецслужбам об угрозах
             </li>
-            <li className="advantage-page__list-item">
-            Фиксировать и контролировать перемещения разных типов объектов
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Фиксировать и контролировать перемещения разных типов объектов
             </li>
-            <li className="advantage-page__list-item">
-            Автоматически транслировать голосовые 
-            <br/>предупреждения через громкоговорители
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Автоматически транслировать голосовые
+              <br />
+              предупреждения через громкоговорители
             </li>
-            <li className="advantage-page__list-item">
-            Предупреждать о появлении судов
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Предупреждать о появлении судов
             </li>
-            <li className="advantage-page__list-item">Хранить видеоархив</li>
+            <li className="advantage-page__list-item advantage-page__list-item_beach">Хранить видеоархив</li>
           </ul>
         </div>
       </div>
       <div className="advantage-page__conteiner-button">
-      <button
-        className="advantage-page__button advantage-page__button_right"
-        onClick={onContactForm}
-      >
-        Связаться с нами
-      </button>
+        <button
+          className="advantage-page__button advantage-page__button_right"
+          onClick={onContactForm}
+        >
+          Связаться с нами
+        </button>
       </div>
-
 
       <h2 className="advantage-page__title advantage-page__title_center">
         Преимущества продукта
@@ -74,8 +75,8 @@ function AdvantageSmartBeach({ onContactForm }) {
       <div className="advantage-page__container advantage-page__container_center smart-beach-background-image">
         <div className="advantage-page__container-products">
           <p className="advantage-page__text advantage-page__text_product">
-            Полный комплекс технологий, способный обеспечить максимальную
-            безопасность
+            Полный комплекс технологий, способный 
+            <br/>обеспечить максимальную безопасность
           </p>
           <p className="advantage-page__text advantage-page__text_product">
             Система разработана с учётом
@@ -85,11 +86,14 @@ function AdvantageSmartBeach({ onContactForm }) {
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right">
           <p className="advantage-page__text advantage-page__text_product">
-            Возможность встраивания модулей в уже установленные системы
+            Возможность встраивания модулей 
+            <br/>в уже установленные системы
           </p>
 
           <p className="advantage-page__text advantage-page__text_product">
-          Система анализирует комплекс факторов риска для людей на водных объектах
+            Система анализирует комплекс факторов 
+            <br/>риска для людей на водных
+            объектах
           </p>
         </div>
       </div>

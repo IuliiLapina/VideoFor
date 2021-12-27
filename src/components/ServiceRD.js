@@ -12,7 +12,7 @@ function ServiceRD({ onContactForm }) {
           alt="Логотип 'VideoFor'"
         />
         <div className="advantage-page__container-text advantage-page__container-text_services">
-          <h2 className="advantage-page__title advantage-page__title_big">
+          <h2 className="advantage-page__title advantage-page__title_big advantage-page__title_services">
             ВЫПОЛНЕНИЕ НИОКР ПО ИНДИВИДУАЛЬНОМУ ЗАКАЗУ
           </h2>
           <p className="advantage-page__text advantage-page__text_services ">
@@ -23,9 +23,12 @@ function ServiceRD({ onContactForm }) {
           </p>
         </div>
       </div>
+      <div className="advantage-page__conteiner-button">
+
       <button className="advantage-page__button" onClick={onContactForm}>
         Связаться с нами
       </button>
+      </div>
 
       <div className="advantage-page__container advantage-page__container_right">
         <img
@@ -34,27 +37,28 @@ function ServiceRD({ onContactForm }) {
           alt="Логотип 'VideoFor'"
         />
         <div className="advantage-page__container-text advantage-page__container-text_right">
-          <h2 className="advantage-page__title advantage-page__title_right">
+          <h2 className="advantage-page__title advantage-page__title_right advantage-page__title_right-rd">
             ЧТО МЫ ПРЕДЛАГАЕМ
           </h2>
-          <ul className="advantage-page__list">
-            <li className="advantage-page__list-item">
+          <ul className="advantage-page__list advantage-page__list_rd">
+            
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Научно-исследовательские и опытно-конструкторские работы <br />
               выполняются специалистами высокого класса
             </li>
-            <li className="advantage-page__list-item">
-              Всесторонняя разработка системы сообразно с индивидуальными <br />{" "}
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Всесторонняя разработка системы сообразно с <br />индивидуальными 
               задачами
             </li>
-            <li className="advantage-page__list-item">
-              Разработка концептуально новых и адаптация существующих <br />
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Разработка концептуально новых и адаптация  <br />существующих
               модулей видеоаналитики
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Предусмотрена возможность переиспользования <br />
               существующих систем видеонаблюдения
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Разработка уникальных решений
             </li>
           </ul>
@@ -74,15 +78,16 @@ function ServiceRD({ onContactForm }) {
       <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center services-rd-background-image">
         <div className="advantage-page__container-products">
           <p className="advantage-page__text advantage-page__text_product">
-            Анализ обширного комплекса факторов риска для людей и объектов
+            Анализ обширного комплекса факторов риска <br/>для людей и объектов
           </p>
           <p className="advantage-page__text advantage-page__text_product">
-            Возможность реализации самых амбициозных проектов
+            Возможность реализации самых<br/> амбициозных проектов
           </p>
         </div>
-        <div className="advantage-page__container-products advantage-page__container-products_right">
+        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design">
           <p className="advantage-page__text advantage-page__text_product">
-            Проект, эффективный по тем параметрам, которые важны именно вам
+            Проект, эффективный по тем параметрам, 
+            <br/>которые важны именно вам
           </p>
           <p className="advantage-page__text advantage-page__text_product">
             Индивидуальный подход к каждой задаче

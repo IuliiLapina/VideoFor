@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1170px) {
   .button_footer {
     left: 12%;
   }
@@ -189,6 +189,9 @@
     font-size: 14px;
     line-height: 21px;
     padding: 0 0 7px 0;
+  }
+  .button_disabled {
+    display: none;
   }
 }
 

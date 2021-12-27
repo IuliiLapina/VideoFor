@@ -15,7 +15,7 @@ function AdvantageSmartSites({ onContactForm }) {
           <h2 className="advantage-page__title advantage-page__title_big">
             УМНЫЕ ПЛОЩАДКИ РАЗДЕЛЬНОГО СБОРА МУСОРА И ОТХОДОВ
           </h2>
-          <p className="advantage-page__text">
+          <p className="advantage-page__text advantage-page__subtitle_waste">
             Вопрос экологии — это один из важнейших и резко нависших над
             человечеством вопросов. Что делать с горами мусора? Как оставить
             потомкам не мусорный полигон, а живую планету? Первый шаг к спасению
@@ -24,10 +24,11 @@ function AdvantageSmartSites({ onContactForm }) {
           </p>
         </div>
       </div>
-      <button className="advantage-page__button" onClick={onContactForm}>
-        Связаться с нами
-      </button>
-
+      <div className="advantage-page__conteiner-button">
+        <button className="advantage-page__button" onClick={onContactForm}>
+          Связаться с нами
+        </button>
+      </div>
       <div className="advantage-page__container advantage-page__container_right">
         <img
           className="advantage-page__image advantage-page__image_right"
@@ -39,23 +40,27 @@ function AdvantageSmartSites({ onContactForm }) {
             ЧТО УМЕЕТ НАША СИСТЕМА
           </h2>
           <ul className="advantage-page__list">
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Сообщать о наполненности контейнеров
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Оповещать о наилучшем для прибытия спецтранспорта времени
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Фиксировать любые нарушения в эксплуатации станций
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Анализировать и выдавать рекомендации по логистике
             </li>
-            <li className="advantage-page__list-item">Защита от вандализма</li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Защита от вандализма
+            </li>
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Фиксировать необычную активность
             </li>
-            <li className="advantage-page__list-item">Хранить видеоархив</li>
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Хранить видеоархив
+            </li>
           </ul>
         </div>
       </div>
@@ -83,7 +88,8 @@ function AdvantageSmartSites({ onContactForm }) {
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right">
           <p className="advantage-page__text advantage-page__text_product">
-            Возможность встраивания модулей в уже установленные системы
+            Возможность встраивания модулей
+            <br />в уже установленные системы
           </p>
           <p className="advantage-page__text advantage-page__text_product">
             Полностью российская разработка

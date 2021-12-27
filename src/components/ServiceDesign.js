@@ -12,7 +12,7 @@ function ServiceDesign({ onContactForm }) {
           alt="Логотип 'VideoFor'"
         />
         <div className="advantage-page__container-text advantage-page__container-text_services">
-          <h2 className="advantage-page__title advantage-page__title_big">
+          <h2 className="advantage-page__title advantage-page__title_big advantage-page__title_services">
             ПРОЕКТИРОВАНИЕ СИСТЕМ ВИДЕОАНАЛИТИКИ ПО ИНДИВИДУАЛЬНОМУ ЗАКАЗУ
           </h2>
           <p className="advantage-page__text advantage-page__text_services ">
@@ -24,10 +24,11 @@ function ServiceDesign({ onContactForm }) {
           </p>
         </div>
       </div>
-      <button className="advantage-page__button" onClick={onContactForm}>
-        Связаться с нами
-      </button>
-
+      <div className="advantage-page__conteiner-button">
+        <button className="advantage-page__button" onClick={onContactForm}>
+          Связаться с нами
+        </button>
+      </div>
       <div className="advantage-page__container advantage-page__container_right">
         <img
           className="advantage-page__image advantage-page__image_right"
@@ -39,27 +40,36 @@ function ServiceDesign({ onContactForm }) {
             ЧТО МЫ ПРЕДЛАГАЕМ
           </h2>
           <ul className="advantage-page__list">
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Всесторонняя разработка проекта системы видеоаналитики
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Индивидуальный подбор параметров в зависимости от целей
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Подбор спецификаций необходимого для проекта оборудования
             </li>
-            <li className="advantage-page__list-item">
-              Предусмотрена возможность переиспользования существующей
-              <br />
-              системы видеонаблюдения
-            </li>
-            <li className="advantage-page__list-item">
+
+            {window.innerWidth <= 768 ? (
+              <li className="advantage-page__list-item advantage-page__list-item_beach">
+                Предусмотрена возможность <br />
+                переиспользования существующей системы
+              </li>
+            ) : (
+              <li className="advantage-page__list-item advantage-page__list-item_beach">
+                Предусмотрена возможность переиспользования существующей
+                <br />
+                системы видеонаблюдения
+              </li>
+            )}
+
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Разбор требований к АПК и оборудованию
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Подбор необходимых программных модулей видеоаналитики
             </li>
-            <li className="advantage-page__list-item">
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
               Аналитика размещения видеокамер
             </li>
           </ul>
@@ -85,7 +95,7 @@ function ServiceDesign({ onContactForm }) {
             Анализ обширного комплекса факторов риска для людей и объектов
           </p>
         </div>
-        <div className="advantage-page__container-products advantage-page__container-products_right">
+        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design">
           <p className="advantage-page__text advantage-page__text_product">
             Проект, эффективный по тем параметрам, которые важны именно вам
           </p>
