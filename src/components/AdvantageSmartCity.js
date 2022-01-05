@@ -47,9 +47,6 @@ function AdvantageSmartCity({ onContactForm }) {
             <li className="advantage-page__list-item">
               Определять дорожные заторы
             </li>
-            {window.innerWidth <= 320 ? (<li className="advantage-page__list-item">
-              Предупреждать о возможных заторах
-            </li> ) : ('')}
             <li className="advantage-page__list-item">
               Фиксировать нарушения ПДД
             </li>

@@ -11,9 +11,9 @@ function AdvantageSmartSpace({ onContactForm }) {
           src={house}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text">
+        <div className="advantage-page__container-text advantage-page__container-text_big-heaght">
           <h2 className="advantage-page__title">УМНОЕ ПРОСТРАНСТВО</h2>
-          <p className="advantage-page__text">
+          <p className="advantage-page__text advantage-page__text">
             Безопасность в общественных местах — это приоритет для любого
             города. Чем больше собирается людей в одном месте, тем большему
             риску они подвергаются. Общественные места без охраны и
@@ -24,17 +24,17 @@ function AdvantageSmartSpace({ onContactForm }) {
         </div>
       </div>
       <div className="advantage-page__conteiner-button">
-        <button className="advantage-page__button" onClick={onContactForm}>
+        <button className="advantage-page__button advantage-page__button_under-big-text" onClick={onContactForm}>
           Связаться с нами
         </button>
       </div>
       <div className="advantage-page__container advantage-page__container_right">
         <img
-          className="advantage-page__image advantage-page__image_right"
+          className="advantage-page__image advantage-page__image_right advantage-page__image_smart-space"
           src={place}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text advantage-page__container-text_right">
+        <div className="advantage-page__container-text advantage-page__container-text_right advantage-page__container-text_smart-space">
           <h2 className="advantage-page__title advantage-page__title_right">
             ЧТО УМЕЕТ НАША СИСТЕМА
           </h2>
@@ -63,7 +63,7 @@ function AdvantageSmartSpace({ onContactForm }) {
           </ul>
         </div>
       </div>
-      <div className="advantage-page__conteiner-button">
+      <div className="advantage-page__conteiner-button advantage-page__conteiner-button_left">
         <button
           className="advantage-page__button advantage-page__button_right"
           onClick={onContactForm}
@@ -76,10 +76,17 @@ function AdvantageSmartSpace({ onContactForm }) {
       </h2>
       <div className="advantage-page__container advantage-page__container_center smart-space-background-image">
         <div className="advantage-page__container-products">
-          <p className="advantage-page__text advantage-page__text_product">
-            Минимизирует риск возникновения
-            <br /> опасных ситуаций
-          </p>
+          {window.innerWidth <= 320 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+              Минимизирует риск <br /> возникновения опасных <br /> ситуаций
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              Минимизирует риск возникновения
+              <br /> опасных ситуаций
+            </p>
+          )}
+
           <p className="advantage-page__text advantage-page__text_product">
             Система разработана с учётом
             <br />
@@ -87,16 +94,24 @@ function AdvantageSmartSpace({ onContactForm }) {
           </p>
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right">
+          
           <p className="advantage-page__text advantage-page__text_product">
             Возможность встраивания модулей
             <br />в уже установленные системы
           </p>
-
-          <p className="advantage-page__text advantage-page__text_product">
-            Полный комплекс технологий, способный
-            <br />
-            обеспечить максимальную безопасность
-          </p>
+          {window.innerWidth <= 320 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+              Полный комплекс технологий,
+              <br />
+              способный обеспечить максимальную безопасность
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              Полный комплекс технологий, способный
+              <br />
+              обеспечить максимальную безопасность
+            </p>
+          )}
         </div>
       </div>
       <p className="advantage-page__text advantage-page__text_center">

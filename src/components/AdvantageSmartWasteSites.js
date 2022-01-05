@@ -11,9 +11,11 @@ function AdvantageSmartSites({ onContactForm }) {
           src={full_tank}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text">
+        <div className="advantage-page__container-text  advantage-page__container-text_big-heaght">
           <h2 className="advantage-page__title advantage-page__title_big">
-            УМНЫЕ ПЛОЩАДКИ РАЗДЕЛЬНОГО СБОРА МУСОРА И ОТХОДОВ
+            УМНЫЕ ПЛОЩАДКИ
+            <br />
+            РАЗДЕЛЬНОГО СБОРА МУСОРА И ОТХОДОВ
           </h2>
           <p className="advantage-page__text advantage-page__subtitle_waste">
             Вопрос экологии — это один из важнейших и резко нависших над
@@ -25,7 +27,10 @@ function AdvantageSmartSites({ onContactForm }) {
         </div>
       </div>
       <div className="advantage-page__conteiner-button">
-        <button className="advantage-page__button" onClick={onContactForm}>
+        <button
+          className="advantage-page__button advantage-page__button_under-big-text"
+          onClick={onContactForm}
+        >
           Связаться с нами
         </button>
       </div>
@@ -35,7 +40,7 @@ function AdvantageSmartSites({ onContactForm }) {
           src={iron_tank}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text advantage-page__container-text_right">
+        <div className="advantage-page__container-text advantage-page__container-text_right advantage-page__container-text_smart-space">
           <h2 className="advantage-page__title advantage-page__title_right">
             ЧТО УМЕЕТ НАША СИСТЕМА
           </h2>
@@ -64,7 +69,7 @@ function AdvantageSmartSites({ onContactForm }) {
           </ul>
         </div>
       </div>
-      <div className="advantage-page__conteiner-button">
+      <div className="advantage-page__conteiner-button advantage-page__conteiner-button_left">
         <button
           className="advantage-page__button advantage-page__button_right"
           onClick={onContactForm}
@@ -77,9 +82,18 @@ function AdvantageSmartSites({ onContactForm }) {
       </h2>
       <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center smart-waste-sites-background-image">
         <div className="advantage-page__container-products">
-          <p className="advantage-page__text advantage-page__text_product">
-            Экономия ресурсов и средств за счет логистических рекомендаций
-          </p>
+          {window.innerWidth <= 320 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+              Экономия ресурсов и средств <br />
+              за счет логистических
+              <br /> рекомендаций
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              Экономия ресурсов и средств за счет логистических рекомендаций
+            </p>
+          )}
+
           <p className="advantage-page__text advantage-page__text_product">
             Система разработана с учётом
             <br />
@@ -87,13 +101,28 @@ function AdvantageSmartSites({ onContactForm }) {
           </p>
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right">
-          <p className="advantage-page__text advantage-page__text_product">
-            Возможность встраивания модулей
-            <br />в уже установленные системы
+          {window.innerWidth <= 320 ? (
+            <p className="advantage-page__text advantage-page__text_product ">
+              Возможность встраивания <br />
+              модулей в уже установленные <br />
+              системы
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product ">
+              Возможность встраивания модулей
+              <br />в уже установленные системы
+            </p>
+          )}
+          {window.innerWidth <= 320 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+            Полностью российская <br/>разработка
           </p>
-          <p className="advantage-page__text advantage-page__text_product">
+          ) : (
+<p className="advantage-page__text advantage-page__text_product">
             Полностью российская разработка
           </p>
+          )}
+          
         </div>
       </div>
     </section>

@@ -56,11 +56,13 @@ function AdvantageSmartBeach({ onContactForm }) {
             <li className="advantage-page__list-item advantage-page__list-item_beach">
               Предупреждать о появлении судов
             </li>
-            <li className="advantage-page__list-item advantage-page__list-item_beach">Хранить видеоархив</li>
+            <li className="advantage-page__list-item advantage-page__list-item_beach">
+              Хранить видеоархив
+            </li>
           </ul>
         </div>
       </div>
-      <div className="advantage-page__conteiner-button">
+      <div className="advantage-page__conteiner-button advantage-page__conteiner-button_left">
         <button
           className="advantage-page__button advantage-page__button_right"
           onClick={onContactForm}
@@ -74,10 +76,20 @@ function AdvantageSmartBeach({ onContactForm }) {
       </h2>
       <div className="advantage-page__container advantage-page__container_center smart-beach-background-image">
         <div className="advantage-page__container-products">
-          <p className="advantage-page__text advantage-page__text_product">
-            Полный комплекс технологий, способный 
-            <br/>обеспечить максимальную безопасность
-          </p>
+          {window.innerWidth <= 320 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+              Полный комплекс технологий,
+              <br />
+              способный обеспечить максимальную безопасность
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              Полный комплекс технологий, способный
+              <br />
+              обеспечить максимальную безопасность
+            </p>
+          )}
+
           <p className="advantage-page__text advantage-page__text_product">
             Система разработана с учётом
             <br />
@@ -86,15 +98,21 @@ function AdvantageSmartBeach({ onContactForm }) {
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right">
           <p className="advantage-page__text advantage-page__text_product">
-            Возможность встраивания модулей 
-            <br/>в уже установленные системы
+            Возможность встраивания модулей
+            <br />в уже установленные системы
           </p>
-
-          <p className="advantage-page__text advantage-page__text_product">
-            Система анализирует комплекс факторов 
-            <br/>риска для людей на водных
-            объектах
-          </p>
+          {window.innerWidth <= 320 ? (
+            <p className="advantage-page__text advantage-page__text_product ">
+              Система анализирует комплекс <br /> факторов риска для людей на
+              <br /> водных объектах
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              Система анализирует комплекс факторов
+              <br />
+              риска для людей на водных объектах
+            </p>
+          )}
         </div>
       </div>
       <p className="advantage-page__text advantage-page__text_center">
