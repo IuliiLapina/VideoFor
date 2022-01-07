@@ -65,7 +65,8 @@
 
 .advantage-page__button {
   margin: 20px 0 0;
-  padding: 18px 121px;
+  padding: 18px 0;
+  width: 30.6%;
   font-size: 24px;
   line-height: 33px;
   background-color: #040404;
@@ -87,6 +88,7 @@
 .advantage-page__title_right {
   padding: 0 8px 0 0px;
   border: none;
+  text-align: end;
 }
 
 .advantage-page__container-text_right {
@@ -196,14 +198,16 @@
 .advantage-page__container-products {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 31%;
   align-items: center;
 }
 
 .advantage-page__container_waste {
   padding-bottom: 100px;
 }
-
+.advantage-page__title_services-rd {
+  width: 84%;
+}
 @media screen and (max-width: 1350px) {
   .advantage-page__container-products {
     width: 36%;
@@ -221,9 +225,18 @@
     line-height: 25px;
     padding-top: 20px;
   }
-
   .advantage-page__image {
     width: 40%;
+  }
+  .advantage-page__button {
+    width: 40%;
+  }
+  .advantage-page__container-text_right {
+    width: 100%;
+  }
+  .smart-space-background-image {
+    background-position-y: 65%;
+    background-size: 78%;
   }
 }
 
@@ -300,6 +313,7 @@
   .advantage-page__button {
     margin: 30px auto 0;
     padding: 13px 91px;
+    width: auto;
     font-size: 16px;
     line-height: 22px;
   }
@@ -320,14 +334,14 @@
 
   .advantage-page__conteiner-button {
     margin: 0 auto;
-    width: 77%;
+    width: 81%;
   }
   .advantage-page__button_right {
     margin: 34px 0 0 auto;
   }
 
   .advantage-page__image_right {
-    width: 42%;
+    width: 34%;
     height: 50%;
   }
 
@@ -343,22 +357,20 @@
   }
 
   .smart-space-background-image {
-    background-image: url("../../images/advantage-pages/background-smart-space.png");
-    background-position-y: -2px;
+    background-position-y: 48%;
+    background-size: 57%;
   }
 
   .smart-waste-sites-background-image {
-    background-image: url("../../images/advantage-pages/background-smart-waste-sites.png");
     background-position-y: -1px;
   }
 
   .services-design-background-image {
-    background-image: url("../../images/services-pages/background-services-design.png");
-    background-position-y: 12px;
+    background-position-y: 0%;
+    background-size: 57%;
   }
 
   .services-rd-background-image {
-    background-image: url("../../images/services-pages/background-services-RD.png");
     background-position-y: -9px;
     background-size: 60%;
   }
@@ -396,7 +408,36 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
+  .advantage-page__list {
+    width: 84%;
+  }
+  .advantage-page__image_right {
+    width: 42%;
+    height: 50%;
+  }
+  .advantage-page__conteiner-button {
+    margin: 0 auto;
+    width: 77%;
+  }
+  .smart-waste-sites-background-image {
+    background-position-y: 36px;
+  }
+  .smart-beach-background-image {
+    background-size: 66%;
+    background-position-y: -37px;
+  }
+  .smart-space-background-image {
+    background-position-y: 22%;
+    background-size: 60%;
+}
+.advantage-page__list_rd {
+  padding: 0px 9px 0 0;
+  width: 77%;
+}
+}
+
+@media screen and (max-width: 620px) {
   .advantage-page__list-item {
     font-size: 12px;
     line-height: 16px;
@@ -405,10 +446,20 @@
     padding: 0px 0 1px;
     margin-bottom: 5px;
   }
-
+  .smart-beach-background-image {
+    background-position-y: -10px;
+  }
+  .smart-space-background-image {
+    background-size: 72%;
+}
+.services-rd-background-image {
+  background-position-y: 19%;
+  background-size: 66%;
+}
 }
 
-@media screen and (max-width: 520px) {
+
+@media screen and (max-width: 530px) {
   .advantage-page {
     padding: 47px 0px 0;
   }
@@ -429,7 +480,6 @@
     font-size: 20px;
     line-height: 27px;
   }
-
   .advantage-page__text {
     font-size: 14px;
     line-height: 16px;
@@ -459,7 +509,7 @@
   }
 
   .advantage-page__button_right {
-    margin: 13px auto 0 0;
+    margin: 13px auto 0 7%;
   }
 
   .advantage-page__image_right {
@@ -486,14 +536,63 @@
   .advantage-page__conteiner-button_left {
     width: 90%;
   }
+  .smart-waste-sites-background-image {
+    background-size: 50%;
+    background-position-y: 12px;
+  }
+  .advantage-page__container-text_litle {
+    top: 85%;
+  }
+  .smart-beach-background-image {
+    background-position-y: -27px;
+  }
+  .smart-space-background-image {
+    background-size: 78%;
+    background-position-y: 42%;
+}
+.advantage-page__container_center {
+  background-size: 67%;
+  background-position-y: 28%;
+}
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 480px) {
+  .advantage-page__button_under-big-text {
+    margin: 50px auto 0;
+  }
+  .smart-waste-sites-background-image {
+    background-position-y: 26px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .advantage-page__button_under-big-text {
+    margin: 70px auto 0;
+  }
+  .smart-waste-sites-background-image {
+    background-position-y: 26px;
+    background-size: 62%;
+  }
   .advantage-page__text {
     font-size: 12px;
     line-height: 16px;
     padding-top: 6px;
   }
+  .advantage-page__container-text_litle {
+    top: 78%;
+  }
+.smart-beach-background-image {
+  background-position-y: -7px;
+}
+
+}
+
+@media screen and (max-width: 405px) {
+  .advantage-page__container-text_services {
+    top: 69%;
+  }
+}
+@media screen and (max-width: 360px) {
   .advantage-page__container_center {
     background-size: 90%;
     background-position-y: 59px;
@@ -503,9 +602,7 @@
     width: 48%;
     padding: 0 0px 0;
   }
-  .advantage-page__text_product:first-child {
-    padding: 21px 0 89px 0px;
-  }
+
   .advantage-page__text_product-top {
     padding: 22px 0 0;
   }
@@ -514,7 +611,7 @@
   }
   .smart-beach-background-image {
     background-size: 92%;
-    background-position-y: 35px;
+    background-position-y: -9px;
     padding: 0 0 5px;
   }
   .advantage-page__container-text_big-heaght {
@@ -538,4 +635,75 @@
     font-size: 19px;
     width: 100%;
   }
+  .advantage-page__button_right {
+    margin: 13px auto 0 0;
+  }
+  .smart-waste-sites-background-image {
+    background-size: 62%;
+    background-position-y: 30px;
+  }
+  .smart-sity-background-image {
+    background-position-y: 9px;
+  }
+  .smart-space-background-image {
+    background-size: 94%;
+    background-position-y: 36%;
+}
+.advantage-page__container-text_services-rd {
+  top: 73.5%;
+}
+.advantage-page__container_center {
+  background-size: 100%;
+  background-position-y: 28%;
+}
+
+.advantage-page__container-text_services {
+  top: 67%;
+}
+.advantage-page__button_services {
+  margin: 38px auto 0;
+}
+}
+
+@media screen and (max-width: 320px) {
+  .advantage-page__text_product:first-child {
+    padding: 21px 0 89px 0px;
+  }
+  .smart-waste-sites-background-image {
+    background-size: 89%;
+    background-position-y: 54px;
+  }
+  .smart-sity-background-image {
+    background-position-y: 60px;
+}
+.smart-beach-background-image {
+  background-position-y: 34px;
+}
+.smart-space-background-image {
+  background-size: 108%;
+  background-position-y: 119%;
+}
+
+.advantage-page__container-text_services {
+  top: 66%;
+}
+
+.advantage-page__container-text_services-right {
+  top: 14px;
+}
+.advantage-page__image_services {
+  padding: 7px 104px 0 0px;
+}
+.services-design-background-image {
+  background-size: 100%;
+  background-position-y: 39px;
+}
+
+.advantage-page__container-text_services-right-rd {
+  top: 19px;
+}
+.services-rd-background-image {
+  background-size: 108%;
+    background-position-y: 32px;
+}
 }

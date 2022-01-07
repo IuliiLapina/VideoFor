@@ -11,7 +11,7 @@ function AdvantageSmartSpace({ onContactForm }) {
           src={house}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text advantage-page__container-text_big-heaght">
+        <div className="advantage-page__container-text advantage-page__container-text_big-heaght ">
           <h2 className="advantage-page__title">УМНОЕ ПРОСТРАНСТВО</h2>
           <p className="advantage-page__text advantage-page__text">
             Безопасность в общественных местах — это приоритет для любого
@@ -76,7 +76,7 @@ function AdvantageSmartSpace({ onContactForm }) {
       </h2>
       <div className="advantage-page__container advantage-page__container_center smart-space-background-image">
         <div className="advantage-page__container-products">
-          {window.innerWidth <= 320 ? (
+          {window.innerWidth <= 660 ? (
             <p className="advantage-page__text advantage-page__text_product">
               Минимизирует риск <br /> возникновения опасных <br /> ситуаций
             </p>
@@ -99,7 +99,7 @@ function AdvantageSmartSpace({ onContactForm }) {
             Возможность встраивания модулей
             <br />в уже установленные системы
           </p>
-          {window.innerWidth <= 320 ? (
+          {window.innerWidth <= 660 ? (
             <p className="advantage-page__text advantage-page__text_product">
               Полный комплекс технологий,
               <br />

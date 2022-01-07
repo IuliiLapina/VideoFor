@@ -11,7 +11,7 @@ function AdvantageSmartCity({ onContactForm }) {
           src={city_traffic_jam}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text">
+        <div className="advantage-page__container-text advantage-page__container-text_litle">
           <h2 className="advantage-page__title">УМНЫЙ ГОРОД</h2>
           <p className="advantage-page__text">
             ДТП и пробки наносят огромный ущерб как городскому пространству, так
@@ -73,14 +73,19 @@ function AdvantageSmartCity({ onContactForm }) {
       </h2>
       <div className="advantage-page__container advantage-page__container_center smart-sity-background-image">
         <div className="advantage-page__container-products">
-        {window.innerWidth <= 320 ? (<p className="advantage-page__text advantage-page__text_product">
-            Полный комплекс технологий, способный 
-            обеспечить максимальную безопасность
-          </p>) : (<p className="advantage-page__text advantage-page__text_product">
-            Полный комплекс технологий, способный 
-            <br/>обеспечить максимальную безопасность
-          </p>)}
-          
+          {window.innerWidth <= 620 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+              Полный комплекс технологий, способный обеспечить максимальную
+              безопасность
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              Полный комплекс технологий, способный
+              <br />
+              обеспечить максимальную безопасность
+            </p>
+          )}
+
           <p className="advantage-page__text advantage-page__text_product">
             Система разработана с учётом
             <br />
@@ -89,13 +94,14 @@ function AdvantageSmartCity({ onContactForm }) {
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right">
           <p className="advantage-page__text advantage-page__text_product">
-            Возможность встраивания модулей 
-            <br/>в уже установленные системы
+            Возможность встраивания модулей
+            <br />в уже установленные системы
           </p>
 
           <p className="advantage-page__text advantage-page__text_product advantage-page__text_product-top">
-            Использование собственных ноу-хау 
-            <br/>для определения инцидентов
+            Использование собственных ноу-хау
+            <br />
+            для определения инцидентов
           </p>
         </div>
       </div>

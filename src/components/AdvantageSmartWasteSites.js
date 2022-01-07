@@ -82,7 +82,7 @@ function AdvantageSmartSites({ onContactForm }) {
       </h2>
       <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center smart-waste-sites-background-image">
         <div className="advantage-page__container-products">
-          {window.innerWidth <= 320 ? (
+          {window.innerWidth <= 475 ? (
             <p className="advantage-page__text advantage-page__text_product">
               Экономия ресурсов и средств <br />
               за счет логистических
@@ -101,7 +101,7 @@ function AdvantageSmartSites({ onContactForm }) {
           </p>
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right">
-          {window.innerWidth <= 320 ? (
+          {window.innerWidth <= 475 ? (
             <p className="advantage-page__text advantage-page__text_product ">
               Возможность встраивания <br />
               модулей в уже установленные <br />
@@ -113,16 +113,16 @@ function AdvantageSmartSites({ onContactForm }) {
               <br />в уже установленные системы
             </p>
           )}
-          {window.innerWidth <= 320 ? (
+          {window.innerWidth <= 475 ? (
             <p className="advantage-page__text advantage-page__text_product">
-            Полностью российская <br/>разработка
-          </p>
+              Полностью российская <br />
+              разработка
+            </p>
           ) : (
-<p className="advantage-page__text advantage-page__text_product">
-            Полностью российская разработка
-          </p>
+            <p className="advantage-page__text advantage-page__text_product">
+              Полностью российская разработка
+            </p>
           )}
-          
         </div>
       </div>
     </section>

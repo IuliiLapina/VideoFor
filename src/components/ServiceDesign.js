@@ -25,17 +25,20 @@ function ServiceDesign({ onContactForm }) {
         </div>
       </div>
       <div className="advantage-page__conteiner-button">
-        <button className="advantage-page__button" onClick={onContactForm}>
+        <button
+          className="advantage-page__button advantage-page__button_services"
+          onClick={onContactForm}
+        >
           Связаться с нами
         </button>
       </div>
       <div className="advantage-page__container advantage-page__container_right">
         <img
-          className="advantage-page__image advantage-page__image_right"
+          className="advantage-page__image advantage-page__image_right advantage-page__image_services"
           src={drawings}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text advantage-page__container-text_right">
+        <div className="advantage-page__container-text advantage-page__container-text_right advantage-page__container-text_services-right">
           <h2 className="advantage-page__title advantage-page__title_right">
             ЧТО МЫ ПРЕДЛАГАЕМ
           </h2>
@@ -75,7 +78,7 @@ function ServiceDesign({ onContactForm }) {
           </ul>
         </div>
       </div>
-      <div className="advantage-page__conteiner-button">
+      <div className="advantage-page__conteiner-button advantage-page__conteiner-button_left">
         <button
           className="advantage-page__button advantage-page__button_right"
           onClick={onContactForm}
@@ -88,17 +91,43 @@ function ServiceDesign({ onContactForm }) {
       </h2>
       <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center services-design-background-image">
         <div className="advantage-page__container-products">
-          <p className="advantage-page__text advantage-page__text_product">
-            Минимизация стоимости проекта с учётом целей построения системы
-          </p>
-          <p className="advantage-page__text advantage-page__text_product">
-            Анализ обширного комплекса факторов риска для людей и объектов
-          </p>
+          {window.innerWidth <= 475 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+              Минимизация стоимости проекта <br />с учётом целей построения{" "}
+              <br />
+              системы
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              Минимизация стоимости проекта с учётом целей построения системы
+            </p>
+          )}
+
+          {window.innerWidth <= 475 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+              Анализ обширного комплекса
+              <br />
+              факторов риска для людей и
+              <br />
+              объектов
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              Анализ обширного комплекса факторов риска для людей и объектов
+            </p>
+          )}
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design">
-          <p className="advantage-page__text advantage-page__text_product">
-            Проект, эффективный по тем параметрам, которые важны именно вам
-          </p>
+          {window.innerWidth <= 475 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+              Проект, эффективный по тем параметрам, которые важны <br />
+              именно вам
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              Проект, эффективный по тем параметрам, которые важны именно вам
+            </p>
+          )}
           <p className="advantage-page__text advantage-page__text_product">
             Индивидуальный подход к каждому объекту
           </p>

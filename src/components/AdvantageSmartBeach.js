@@ -11,7 +11,7 @@ function AdvantageSmartBeach({ onContactForm }) {
           src={women}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text">
+        <div className="advantage-page__container-text advantage-page__container-text_litle">
           <h2 className="advantage-page__title">УМНЫЙ ПЛЯЖ</h2>
           <p className="advantage-page__text">
             Ежегодно в России в водоемах гибнет более четырех тысяч человек.
@@ -76,7 +76,7 @@ function AdvantageSmartBeach({ onContactForm }) {
       </h2>
       <div className="advantage-page__container advantage-page__container_center smart-beach-background-image">
         <div className="advantage-page__container-products">
-          {window.innerWidth <= 320 ? (
+          {window.innerWidth <= 620 ? (
             <p className="advantage-page__text advantage-page__text_product">
               Полный комплекс технологий,
               <br />
@@ -101,7 +101,7 @@ function AdvantageSmartBeach({ onContactForm }) {
             Возможность встраивания модулей
             <br />в уже установленные системы
           </p>
-          {window.innerWidth <= 320 ? (
+          {window.innerWidth <= 620 ? (
             <p className="advantage-page__text advantage-page__text_product ">
               Система анализирует комплекс <br /> факторов риска для людей на
               <br /> водных объектах

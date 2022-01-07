@@ -11,8 +11,8 @@ function ServiceRD({ onContactForm }) {
           src={desktop}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text advantage-page__container-text_services">
-          <h2 className="advantage-page__title advantage-page__title_big advantage-page__title_services">
+        <div className="advantage-page__container-text advantage-page__container-text_services-rd">
+          <h2 className="advantage-page__title advantage-page__title_big advantage-page__title_services advantage-page__title_services-rd">
             ВЫПОЛНЕНИЕ НИОКР ПО ИНДИВИДУАЛЬНОМУ ЗАКАЗУ
           </h2>
           <p className="advantage-page__text advantage-page__text_services ">
@@ -32,11 +32,11 @@ function ServiceRD({ onContactForm }) {
 
       <div className="advantage-page__container advantage-page__container_right">
         <img
-          className="advantage-page__image advantage-page__image_right"
+          className="advantage-page__image advantage-page__image_right advantage-page__image_services"
           src={code}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text advantage-page__container-text_right">
+        <div className="advantage-page__container-text advantage-page__container-text_right advantage-page__container-text_services-right-rd">
           <h2 className="advantage-page__title advantage-page__title_right advantage-page__title_right-rd">
             ЧТО МЫ ПРЕДЛАГАЕМ
           </h2>
@@ -64,7 +64,7 @@ function ServiceRD({ onContactForm }) {
           </ul>
         </div>
       </div>
-      <div className="advantage-page__conteiner-button">
+      <div className="advantage-page__conteiner-button advantage-page__conteiner-button_left">
         <button
           className="advantage-page__button advantage-page__button_right"
           onClick={onContactForm}
@@ -77,18 +77,33 @@ function ServiceRD({ onContactForm }) {
       </h2>
       <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center services-rd-background-image">
         <div className="advantage-page__container-products">
+        {window.innerWidth <= 475 ? (
           <p className="advantage-page__text advantage-page__text_product">
+          Анализ обширного комплекса <br/>факторов риска для людей и <br/>объектов
+        </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
             Анализ обширного комплекса факторов риска <br/>для людей и объектов
           </p>
+          )}
+
           <p className="advantage-page__text advantage-page__text_product">
             Возможность реализации самых<br/> амбициозных проектов
           </p>
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design">
+        {window.innerWidth <= 475 ? (
           <p className="advantage-page__text advantage-page__text_product">
+          Проект, эффективный по тем <br/>параметрам, 
+          которые важны <br/>именно вам
+        </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
             Проект, эффективный по тем параметрам, 
             <br/>которые важны именно вам
           </p>
+          )}
+
           <p className="advantage-page__text advantage-page__text_product">
             Индивидуальный подход к каждой задаче
           </p>
