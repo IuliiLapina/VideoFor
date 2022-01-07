@@ -1,8 +1,10 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import logo from "../../images/logo/logo.svg";
+import { useLocation } from "react-router-dom";
 
 function Header() {
+  const location = useLocation();
   return (
     <header className="header">
       <Link className="header__link" to="/">
@@ -39,7 +41,7 @@ function Header() {
       </nav>
       <ul className="header__language">
         <li className="header__language-item">
-          <Link to="#" className="header__language-link">
+          <Link to={`${location.pathname === "/" ? 'eng' : '/eng'}`} className="header__language-link">
             ENG
           </Link>
         </li>

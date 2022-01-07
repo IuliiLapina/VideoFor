@@ -16,6 +16,11 @@
   text-align: center;
 }
 
+.advantage__list_eng {
+  grid-template-columns: repeat(3, 21%);
+  grid-column-gap: 121px;
+}
+
 .advantage__list-iteam {
   list-style: none;
 }

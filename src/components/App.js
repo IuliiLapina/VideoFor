@@ -22,6 +22,14 @@ import AdvantageSmartWasteSites from "./AdvantageSmartWasteSites";
 import ServiceDesign from "./ServiceDesign";
 import ServiceRD from "./ServiceRD";
 
+import PromoEng from "./promo/PromoEng";
+import ProductsEng from "./products/ProductsEng";
+import AdvantageEng from "./advantage/AdvantageEng";
+import ServicesEng from "./services/ServicesEng";
+import InfoEng from "./info/InfoEng";
+import BlogEng from "./blog/BlogEng";
+import PartnersEng from "./partners/PartnersEng";
+
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
     React.useState(false);
@@ -116,6 +124,17 @@ function App() {
           </main>
         </Route>
 
+        <Route exact path="/eng">
+          <main className="content">
+            <PromoEng onContactForm={handleInfoTooltipPopupOpen} />
+            <ProductsEng />
+            <AdvantageEng onContactForm={handleInfoTooltipPopupOpen} />
+            <ServicesEng />
+            <InfoEng title={"Request detailed information"}/>
+            <BlogEng />
+            <PartnersEng />
+          </main>
+        </Route>
       </Switch>
       <Footer onContactForm={handleInfoTooltipPopupOpen} />
 

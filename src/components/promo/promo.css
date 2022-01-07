@@ -8,6 +8,10 @@
   padding: 18px 74px;
 }
 
+.button_eng {
+  padding:18px 92px;
+}
+
 .button:hover {
   cursor: pointer;
   box-shadow: inset 0px 0px 20px rgba(255, 255, 255, 0.25);
