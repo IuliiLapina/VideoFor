@@ -1,6 +1,6 @@
 import React from "react";
-import city_traffic_jam from "../images/advantage-pages/city_traffic_jam.png";
-import city_road from "../images/advantage-pages/city_road.png";
+import city_traffic_jam from "../../images/advantage-pages/city_traffic_jam.png";
+import city_road from "../../images/advantage-pages/city_road.png";
 
 function AdvantageSmartCity({ onContactForm }) {
   return (

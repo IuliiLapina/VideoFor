@@ -1,6 +1,6 @@
 import React from "react";
-import full_tank from "../images/advantage-pages/full_tank.png";
-import iron_tank from "../images/advantage-pages/iron_tank.png";
+import full_tank from "../../images/advantage-pages/full_tank.png";
+import iron_tank from "../../images/advantage-pages/iron_tank.png";
 
 function AdvantageSmartSites({ onContactForm }) {
   return (

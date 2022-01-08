@@ -1,6 +1,6 @@
 import React from "react";
-import house from "../images/advantage-pages/house.png";
-import place from "../images/advantage-pages/place.png";
+import house from "../../images/advantage-pages/house.png";
+import place from "../../images/advantage-pages/place.png";
 
 function AdvantageSmartSpace({ onContactForm }) {
   return (

@@ -4,7 +4,7 @@ import blog_image1 from "../../images/blog/blog-image1.png";
 import blog_image2 from "../../images/blog/blog-image2.png";
 import blog_image3 from "../../images/blog/blog-image3.png";
 
-function Blog() {
+function BlogEng() {
   const location = useLocation();
   return (
     <section className="blog" id="blog">
@@ -57,4 +57,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default BlogEng;

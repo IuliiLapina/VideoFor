@@ -3,7 +3,7 @@ import megafon from "../../images/partners/megafon.png";
 import protey from "../../images/partners/protey.png";
 import rostelecom from "../../images/partners/rostelecom.png";
 
-function Promo() {
+function PartnersEng() {
   return (
     <section className="partners">
       <h2 className="chapter">PARTNERS AND CLIENTS</h2>
@@ -40,4 +40,4 @@ function Promo() {
   );
 }
 
-export default Promo;
+export default PartnersEng;

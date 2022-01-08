@@ -1,6 +1,6 @@
 import React from "react";
-import women from "../images/advantage-pages/women.png";
-import beach from "../images/advantage-pages/beach.png";
+import women from "../../images/advantage-pages/women.png";
+import beach from "../../images/advantage-pages/beach.png";
 
 function AdvantageSmartBeach({ onContactForm }) {
   return (

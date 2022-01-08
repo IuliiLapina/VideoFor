@@ -15,6 +15,14 @@
   list-style: none;
 }
 
+.footer__column-links_eng {
+  padding: 17px 42px 0 0;
+}
+.footer__column-links-info_eng {
+  padding: 23px 0 0px 50px;
+  width: 38%;
+}
+
 .footer__link {
   font-size: 20px;
   line-height: 27px;
@@ -55,6 +63,10 @@
   line-height: 24px;
   text-align: center;
   min-width: fit-content;
+}
+
+.button_footer-eng {
+  padding: 13px 77px 11px 77px;
 }
 
 .footer__resident {

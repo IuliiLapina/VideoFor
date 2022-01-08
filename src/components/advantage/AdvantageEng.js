@@ -6,7 +6,7 @@ import like_1440px from "../../images/advantage-icon/like-1440px.png";
 import module_1440px from "../../images/advantage-icon/module-1440px.png";
 import support_1440px from "../../images/advantage-icon/support-1440px.png";
 
-function Advantage({ onContactForm }) {
+function AdvantageEng({ onContactForm }) {
   const windowWidtn = window.innerWidth;
 
   return (
@@ -79,4 +79,4 @@ function Advantage({ onContactForm }) {
   );
 }
 
-export default Advantage;
+export default AdvantageEng;

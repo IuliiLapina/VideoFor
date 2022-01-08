@@ -4,7 +4,7 @@ import research from "../../images/services/research.png";
 import logo from "../../images/logo/logo.svg";
 import { HashLink as Link } from "react-router-hash-link";
 
-function Services() {
+function ServicesEng() {
   return (
     <section className="services" id="services">
       <h2 className="chapter">OUR SERVICES</h2>
@@ -53,4 +53,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default ServicesEng;

@@ -6,7 +6,7 @@ import security from "../../images/products/security.png";
 import monitoring from "../../images/products/monitoring.png";
 import { HashLink as Link } from "react-router-hash-link";
 
-function Products() {
+function ProductsEng() {
   const windowWidtn = window.innerWidth;
 
   return (
@@ -93,4 +93,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default ProductsEng;

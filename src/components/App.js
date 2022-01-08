@@ -15,10 +15,11 @@ import InfoTooltip from "./infoTooltip/InfoTooltip";
 import BlogBeach from "./BlogArticle/BlogBeach.js";
 import BlogRecycle from "./BlogArticle/BlogRecycle";
 import BlogTraffic from "./BlogArticle/BlogTraffic";
-import AdvantageSmartCity from "./AdvantageSmartCity";
-import AdvantageSmartBeach from "./AdvantageSmartBeach";
-import AdvantageSmartSpace from "./AdvantageSmartSpace";
-import AdvantageSmartWasteSites from "./AdvantageSmartWasteSites";
+
+import AdvantageSmartCity from "./advantege-page/AdvantageSmartCity";
+import AdvantageSmartBeach from "./advantege-page/AdvantageSmartBeach";
+import AdvantageSmartSpace from "./advantege-page/AdvantageSmartSpace";
+import AdvantageSmartWasteSites from "./advantege-page/AdvantageSmartWasteSites";
 import ServiceDesign from "./ServiceDesign";
 import ServiceRD from "./ServiceRD";
 
@@ -29,6 +30,13 @@ import ServicesEng from "./services/ServicesEng";
 import InfoEng from "./info/InfoEng";
 import BlogEng from "./blog/BlogEng";
 import PartnersEng from "./partners/PartnersEng";
+
+import AdvantageSmartCityEng from "./advantege-page/AdvantageSmartCityEng";
+import AdvantageSmartBeachEng from "./advantege-page/AdvantageSmartBeachEng";
+import AdvantageSmartSpaceEng from "./advantege-page/AdvantageSmartSpaceEng";
+import AdvantageSmartWasteSitesEng from "./advantege-page/AdvantageSmartWasteSitesEng";
+import ServiceDesignEng from "./ServiceDesignEng";
+import ServiceRDEng from "./ServiceRDEng";
 
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
@@ -61,6 +69,18 @@ function App() {
           </main>
         </Route>
 
+        <Route path="/eng">
+          <main className="content">
+            <PromoEng onContactForm={handleInfoTooltipPopupOpen} />
+            <ProductsEng />
+            <AdvantageEng onContactForm={handleInfoTooltipPopupOpen} />
+            <ServicesEng />
+            <InfoEng title={"Request detailed information"}/>
+            <BlogEng />
+            <PartnersEng />
+          </main>
+        </Route>
+
         <Route path="/blog-beach">
           <main className="content">
             <BlogBeach />
@@ -82,59 +102,90 @@ function App() {
           </main>
         </Route>
 
-        <Route path="/smart-city">
+        <Route exact path="/smart-city">
           <main className="content">
             <AdvantageSmartCity onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
         </Route>
 
-        <Route path="/smart-beach">
+        <Route path="/smart-city/eng">
+          <main className="content">
+            <AdvantageSmartCityEng onContactForm={handleInfoTooltipPopupOpen}/>
+            <InfoEng title={"Request detailed information"}/>
+          </main>
+        </Route>
+
+        <Route exact path="/smart-beach">
           <main className="content">
             <AdvantageSmartBeach onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
         </Route>
 
-        <Route path="/smart-space">
+        <Route path="/smart-beach/eng">
+          <main className="content">
+            <AdvantageSmartBeachEng onContactForm={handleInfoTooltipPopupOpen}/>
+            <InfoEng title={"Request detailed information"}/>
+          </main>
+        </Route>
+
+        <Route exact path="/smart-space">
           <main className="content">
             <AdvantageSmartSpace onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
         </Route>
 
-        <Route path="/smart-waste-sites">
+        <Route path="/smart-space/eng">
+          <main className="content">
+            <AdvantageSmartSpaceEng onContactForm={handleInfoTooltipPopupOpen}/>
+            <InfoEng title={"Request detailed information"}/>
+          </main>
+        </Route>
+
+        <Route exact path="/smart-waste-sites">
           <main className="content">
             <AdvantageSmartWasteSites onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
         </Route>
 
-        <Route path="/design-service">
+        <Route path="/smart-waste-sites/eng">
+          <main className="content">
+            <AdvantageSmartWasteSitesEng onContactForm={handleInfoTooltipPopupOpen}/>
+            <InfoEng title={"Request detailed information"}/>
+          </main>
+        </Route>
+
+        <Route exact path="/design-service">
           <main className="content">
             <ServiceDesign onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
         </Route>
+        
+        <Route path="/design-service/eng">
+          <main className="content">
+            <ServiceDesignEng onContactForm={handleInfoTooltipPopupOpen}/>
+            <InfoEng title={"Request detailed information"}/>
+          </main>
+        </Route>
 
-        <Route path="/r-d-service">
+        <Route exact path="/r-d-service">
           <main className="content">
             <ServiceRD onContactForm={handleInfoTooltipPopupOpen}/>
             <Info title={"Запросить подробную информацию"}/>
           </main>
         </Route>
 
-        <Route exact path="/eng">
+        <Route path="/r-d-service/eng">
           <main className="content">
-            <PromoEng onContactForm={handleInfoTooltipPopupOpen} />
-            <ProductsEng />
-            <AdvantageEng onContactForm={handleInfoTooltipPopupOpen} />
-            <ServicesEng />
+            <ServiceRDEng onContactForm={handleInfoTooltipPopupOpen}/>
             <InfoEng title={"Request detailed information"}/>
-            <BlogEng />
-            <PartnersEng />
           </main>
         </Route>
+        
       </Switch>
       <Footer onContactForm={handleInfoTooltipPopupOpen} />
 

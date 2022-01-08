@@ -41,7 +41,7 @@ function Header() {
       </nav>
       <ul className="header__language">
         <li className="header__language-item">
-          <Link to={`${location.pathname === "/" ? 'eng' : '/eng'}`} className="header__language-link">
+          <Link to={`${location.pathname === "/" ? `eng` : `${location.pathname}/eng`}`} className="header__language-link">
             ENG
           </Link>
         </li>
