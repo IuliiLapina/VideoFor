@@ -12,8 +12,8 @@ function ServiceRDEng({ onContactForm }) {
           alt="Логотип 'VideoFor'"
         />
         <div className="advantage-page__container-text advantage-page__container-text_services-rd">
-          <h2 className="advantage-page__title advantage-page__title_big advantage-page__title_services advantage-page__title_services-rd">
-            R&amp;D  PERFORMANCE <br/>BY INDIVIDUAL ORDER
+          <h2 className="advantage-page__title advantage-page__title_big advantage-page__title_services advantage-page__title_services-rd advantage-page__title_services-rd-eng">
+            R&amp;D  PERFORMANCE BY INDIVIDUAL ORDER
           </h2>
           <p className="advantage-page__text advantage-page__text_services ">
             We solve fundamentally new problems of computer vision for life and
@@ -23,7 +23,7 @@ function ServiceRDEng({ onContactForm }) {
         </div>
       </div>
       <div className="advantage-page__conteiner-button">
-        <button className="advantage-page__button" onClick={onContactForm}>
+        <button className="advantage-page__button advantage-page__button_eng advantage-page__button_under-big-text-eng" onClick={onContactForm}>
           To contact us
         </button>
       </div>
@@ -61,7 +61,7 @@ function ServiceRDEng({ onContactForm }) {
       </div>
       <div className="advantage-page__conteiner-button advantage-page__conteiner-button_left">
         <button
-          className="advantage-page__button advantage-page__button_right"
+          className="advantage-page__button advantage-page__button_right advantage-page__button_eng"
           onClick={onContactForm}
         >
           To contact us
@@ -79,7 +79,7 @@ function ServiceRDEng({ onContactForm }) {
             Analysis of a wide range of risk factors for people and objects
           </p>
         </div>
-        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design">
+        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design advantage-page__container-products_eng">
           <p className="advantage-page__text advantage-page__text_product">
             A project that is effective in those parameters that are important
             to you

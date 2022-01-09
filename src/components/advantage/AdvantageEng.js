@@ -70,7 +70,7 @@ function AdvantageEng({ onContactForm }) {
       </ul>
 
       <button
-        className="button button_eng button_advantage"
+        className="button button_eng button_advantage button_advantage_eng "
         onClick={onContactForm}
       >
         To contact us

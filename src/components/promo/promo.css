@@ -26,6 +26,9 @@
     left: 50%;
     transform: translate(-50%, 0);
   }
+  .button_eng {
+    padding: 13px 63px;
+  }
 }
 
 @media screen and (max-width: 620px) {

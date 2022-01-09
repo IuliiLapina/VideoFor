@@ -10,43 +10,43 @@ function BlogEng() {
     <section className="blog" id="blog">
       <h2 className="chapter">VIDEOFOR BLOG</h2>
       <ul className="blog__card-list">
-        <li className="blog__card">
+        <li className="blog__card blog__card_eng">
           <Link className="blog__card-link" to="/blog-beach">
             <img
-              className="blog__image"
+              className="blog__image blog__image_eng"
               src={blog_image1}
               alt="Логотип 'VideoFor'"
             />
-            <p className="blog__data">8 December 2021</p>
-            <p className="blog__subtitle">
+            <p className="blog__data blog__data_eng">8 December 2021</p>
+            <p className="blog__subtitle blog__subtitle_eng">
               "Smart beach" or how to ensure the comprehensive safety of people
               on the pond (RU)
             </p>
           </Link>
         </li>
-        <li className="blog__card" id="1">
+        <li className="blog__card blog__card_eng" id="1">
           <Link className="blog__card-link" to="/blog-recycle">
             <img
-              className="blog__image"
+              className="blog__image blog__image_eng"
               src={blog_image3}
               alt="Логотип 'VideoFor'"
             />
-            <p className="blog__data">18 December 2021</p>
-            <p className="blog__subtitle">
+            <p className="blog__data blog__data_eng">18 December 2021</p>
+            <p className="blog__subtitle blog__subtitle_eng">
               When will separate waste collection become the responsibility, and
               why is video monitoring of sites for waste containers needed? (RU)
             </p>
           </Link>
         </li>
-        <li className="blog__card" id="2">
+        <li className="blog__card blog__card_eng" id="2">
           <Link className="blog__card-link" to="/blog-traffic">
             <img
-              className="blog__image"
+              className="blog__image blog__image_eng"
               src={blog_image2}
               alt="Логотип 'VideoFor'"
             />
-            <p className="blog__data">20 December 2021</p>
-            <p className="blog__subtitle">
+            <p className="blog__data blog__data_eng">20 December 2021</p>
+            <p className="blog__subtitle blog__subtitle_eng">
               How are the latest technologies helping Moscow to solve the
               problem of traffic jams? (RU)
             </p>

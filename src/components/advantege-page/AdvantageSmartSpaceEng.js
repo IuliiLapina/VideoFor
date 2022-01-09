@@ -24,13 +24,13 @@ function AdvantageSmartSpaceEng({ onContactForm }) {
       </div>
       <div className="advantage-page__conteiner-button">
         <button
-          className="advantage-page__button advantage-page__button_under-big-text"
+          className="advantage-page__button advantage-page__button_under-big-text advantage-page__button_eng"
           onClick={onContactForm}
         >
           To contact us
         </button>
       </div>
-      <div className="advantage-page__container advantage-page__container_right">
+      <div className="advantage-page__container advantage-page__container_right advantage-page__container_right-eng">
         <img
           className="advantage-page__image advantage-page__image_right advantage-page__image_smart-space"
           src={place}
@@ -40,7 +40,7 @@ function AdvantageSmartSpaceEng({ onContactForm }) {
           <h2 className="advantage-page__title advantage-page__title_right">
             WHAT DOES OUR SYSTEM DO
           </h2>
-          <ul className="advantage-page__list">
+          <ul className="advantage-page__list advantage-page__list_eng">
             <li className="advantage-page__list-item advantage-page__list-item_beach">
               Monitor the children and report if someone is left unattended
             </li>
@@ -65,7 +65,7 @@ function AdvantageSmartSpaceEng({ onContactForm }) {
       </div>
       <div className="advantage-page__conteiner-button advantage-page__conteiner-button_left">
         <button
-          className="advantage-page__button advantage-page__button_right"
+          className="advantage-page__button advantage-page__button_right advantage-page__button_eng"
           onClick={onContactForm}
         >
           To contact us
@@ -74,16 +74,31 @@ function AdvantageSmartSpaceEng({ onContactForm }) {
       <h2 className="advantage-page__title advantage-page__title_center">
         Product benefits
       </h2>
-      <div className="advantage-page__container advantage-page__container_center smart-space-background-image advantage-page__container_eng">
+      <div className="advantage-page__container advantage-page__container_center smart-space-background-image ">
         <div className="advantage-page__container-products advantage-page__container-products_eng">
-          <p className="advantage-page__text advantage-page__text_product">
-            Minimize the risk of dangerous situations
-          </p>
-
-          <p className="advantage-page__text advantage-page__text_product">
-            The system is developed taking into account
-            UI / UX technologies
-          </p>
+          {window.innerWidth <= 970 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+              Minimize the risk
+              <br />
+              of dangerous situations
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              Minimize the risk of dangerous situations
+            </p>
+          )}
+          {window.innerWidth <= 970 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+              The system is developed taking <br />
+              into account UI / UX technologies
+            </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
+              The system is developed taking into account
+              <br />
+              UI / UX technologies
+            </p>
+          )}
         </div>
         <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_eng">
           <p className="advantage-page__text advantage-page__text_product">

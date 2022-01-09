@@ -9,8 +9,7 @@ import { useLocation } from "react-router-dom";
 
 function Footer({ onContactForm }) {
   const location = useLocation();
-  const strUrl = location.pathname;
-  let isEngPage = strUrl.search(/eng/g);
+  let isEngPage = location.pathname.search(/eng/g);
   return (
     <>
       { isEngPage !== -1 ? (
@@ -92,7 +91,7 @@ function Footer({ onContactForm }) {
           </div>
           <button
             className={`button  button_footer button_footer-eng ${
-              location !== "/" ? "button_disabled" : ""
+              location.pathname !== "/eng" ? "button_disabled" : ""
             }`}
             onClick={onContactForm}
           >

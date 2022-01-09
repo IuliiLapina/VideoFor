@@ -21,7 +21,7 @@ function AdvantageSmartBeachEng({ onContactForm }) {
         </div>
       </div>
       <div className="advantage-page__conteiner-button">
-        <button className="advantage-page__button" onClick={onContactForm}>
+        <button className="advantage-page__button advantage-page__button_eng" onClick={onContactForm}>
           To contact us
         </button>
       </div>
@@ -32,10 +32,10 @@ function AdvantageSmartBeachEng({ onContactForm }) {
           alt="Логотип 'VideoFor'"
         />
         <div className="advantage-page__container-text advantage-page__container-text_right">
-          <h2 className="advantage-page__title advantage-page__title_right">
+          <h2 className="advantage-page__title advantage-page__title_right advantage-page__title_right-eng">
             WHAT DOES OUR SYSTEM DO
           </h2>
-          <ul className="advantage-page__list">
+          <ul className="advantage-page__list advantage-page__list_eng">
             <li className="advantage-page__list-item advantage-page__list-item_beach">
               Detect drowning people
             </li>
@@ -63,7 +63,7 @@ function AdvantageSmartBeachEng({ onContactForm }) {
       </div>
       <div className="advantage-page__conteiner-button advantage-page__conteiner-button_left">
         <button
-          className="advantage-page__button advantage-page__button_right"
+          className="advantage-page__button advantage-page__button_right advantage-page__button_right-eng advantage-page__button_eng"
           onClick={onContactForm}
         >
           To contact us
@@ -74,17 +74,21 @@ function AdvantageSmartBeachEng({ onContactForm }) {
         Product benefits
       </h2>
       <div className="advantage-page__container advantage-page__container_center smart-beach-background-image">
-        <div className="advantage-page__container-products">
+        <div className="advantage-page__container-products advantage-page__container-products_eng">
           <p className="advantage-page__text advantage-page__text_product">
             A full range of technologies capable of providing maximum safety
           </p>
+          {window.innerWidth <= 970 ? (
           <p className="advantage-page__text advantage-page__text_product">
-            The system is developed taking into account
-            <br />
+            The system is developed taking <br/>into account 
             UI / UX technologies
-          </p>
+          </p>) : (
+          <p className="advantage-page__text advantage-page__text_product">
+            The system is developed taking into account 
+            <br/>UI / UX technologies
+          </p>)}
         </div>
-        <div className="advantage-page__container-products advantage-page__container-products_right">
+        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_eng">
           <p className="advantage-page__text advantage-page__text_product">
             The system analyzes a complex of risk factors for people on water
             bodies

@@ -20,7 +20,9 @@
   cursor: pointer;
   padding-bottom: 10px;
 }
-
+.blog__card_eng {
+  padding-bottom: 15px;
+}
 .blog__card:hover {
   background: rgba(234, 234, 234, 0.15);
 }
@@ -65,14 +67,23 @@
     height: 94px;
   }
 
+  .blog__image_eng {
+    height: 100px;
+  }
   .blog__data {
     padding: 12px 0 0 10px;
+  }
+  .blog__data_eng {
+    padding: 8px 0 0 11px;
   }
 
   .blog__subtitle {
     font-size: 16px;
     line-height: 22px;
     padding: 9px 0 0 13px;
+  }
+  .blog__subtitle_eng {
+    padding: 4px 0 0 11px;
   }
 }
 

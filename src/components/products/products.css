@@ -106,6 +106,9 @@
   .card__subtitle {
     width: 95%;
   }
+  .card__subtitle_eng {
+    width: 98%;
+  }
 }
 
 @media screen and (max-width: 1160px) {
@@ -163,6 +166,10 @@
     line-height: 22px;
     margin: 20px 171px 0 0;
     padding: 7px 30px 7px;
+  }
+  .button_card-eng {
+    margin: 14px 171px 0 0;
+    padding: 13px 71px 13px;
   }
 }
 

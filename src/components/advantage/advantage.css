@@ -56,6 +56,11 @@
     line-height: 22px;
   }
 
+  .advantage__list_eng {
+    grid-template-columns: repeat(3, 124px);
+    grid-column-gap: 74px;
+  }
+
   .advantage__icon {
     width: 81px;
     height: 50px;
@@ -68,6 +73,10 @@
   .button_advantage {
     margin-top: 21px;
   }
+  .button_advantage_eng {
+    margin-top: 43px;
+}
+
 }
 
 @media screen and (max-width: 580px) {

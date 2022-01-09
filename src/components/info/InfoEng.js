@@ -5,7 +5,7 @@ function InfoEng ({ title }) {
   const location = useLocation();
 
   return (
-    <section className="info">
+    <section className={`info ${location.pathname !== "/eng" ? 'info_eng' : ''}`}>
       <h2 className="chapter">{title}</h2>
       <form className="form">
         <div className="form__container form__container_eng">

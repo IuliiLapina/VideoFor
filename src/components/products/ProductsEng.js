@@ -37,7 +37,7 @@ function ProductsEng() {
             src={logo_sova}
             alt="Логотип 'VideoFor'"
           />
-          <p className="card__subtitle">
+          <p className="card__subtitle card__subtitle_eng">
             Tracking of drowning people, notification of swimmers in restricted
             areas, automated announcement system, instant rescue call
           </p>
@@ -54,7 +54,7 @@ function ProductsEng() {
             src={logo_sova}
             alt="Логотип 'VideoFor'"
           />
-          <p className="card__subtitle">
+          <p className="card__subtitle card__subtitle_eng">
             Preservation of monuments, public spaces, playgrounds. Protection
             against vandalism and prevention of dangerous situations
           </p>
@@ -75,7 +75,7 @@ function ProductsEng() {
             src={logo_sova}
             alt="Логотип 'VideoFor'"
           />
-          <p className="card__subtitle">
+          <p className="card__subtitle card__subtitle_eng">
             Monitoring the operation of stations for garbage and waste sorting,
             recording violations, assessing the fullness, vandalism defence
           </p>

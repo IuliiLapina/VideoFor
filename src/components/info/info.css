@@ -2,6 +2,10 @@
   padding: 91px 0 0 0;
 }
 
+.info_eng {
+  padding: 91px 0 65px 0;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -75,6 +79,9 @@
 @media screen and (max-width: 1160px) {
   .info {
     padding: 70px 0 0 0;
+  }
+  .info_eng {
+    padding: 70px 0 58px 0;
   }
 
   .form {

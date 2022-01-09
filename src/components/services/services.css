@@ -32,6 +32,10 @@
     padding: 10px 0px 18px 0;
   }
 
+  .card__subtitle_services-eng {
+    width: 56%;
+  }
+
   .button_card-services {
     padding: 0 59px;
   }

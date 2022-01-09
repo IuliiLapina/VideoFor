@@ -27,13 +27,13 @@ function ServiceDesignEng({ onContactForm }) {
       </div>
       <div className="advantage-page__conteiner-button">
         <button
-          className="advantage-page__button advantage-page__button_services"
+          className="advantage-page__button advantage-page__button_services advantage-page__button_eng"
           onClick={onContactForm}
         >
           To contact us
         </button>
       </div>
-      <div className="advantage-page__container advantage-page__container_right">
+      <div className="advantage-page__container advantage-page__container_right advantage-page__container_right-eng">
         <img
           className="advantage-page__image advantage-page__image_right advantage-page__image_services"
           src={drawings}
@@ -43,7 +43,7 @@ function ServiceDesignEng({ onContactForm }) {
           <h2 className="advantage-page__title advantage-page__title_right">
             WHAT DO WE OFFER
           </h2>
-          <ul className="advantage-page__list">
+          <ul className="advantage-page__list advantage-page__list_eng">
             <li className="advantage-page__list-item advantage-page__list-item_beach">
               Comprehensive development of a video analytics system project
             </li>
@@ -83,7 +83,7 @@ function ServiceDesignEng({ onContactForm }) {
       <h2 className="advantage-page__title advantage-page__title_center">
         We guarantee
       </h2>
-      <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center services-design-background-image">
+      <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center services-design-background-image advantage-page__container_eng">
         <div className="advantage-page__container-products">
           <p className="advantage-page__text advantage-page__text_product">
             Minimizing the cost of the project, taking into account the goals of
@@ -94,7 +94,7 @@ function ServiceDesignEng({ onContactForm }) {
             Analysis of a wide range of risk factors for people and objects
           </p>
         </div>
-        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design">
+        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design advantage-page__container-products_eng">
           <p className="advantage-page__text advantage-page__text_product">
             A project that is effective in those parameters that are important
             to you

@@ -16,7 +16,7 @@ function ServicesEng() {
             src={logo}
             alt="Логотип 'VideoFor'"
           />
-          <p className="card__subtitle card__subtitle_services">
+          <p className="card__subtitle card__subtitle_services card__subtitle_services-eng">
             Design of video analytics systems for an individual order
           </p>
           <img className="card__image" src={design} alt="Логотип 'VideoFor'" />
@@ -34,7 +34,7 @@ function ServicesEng() {
             src={logo}
             alt="Логотип 'VideoFor'"
           />
-          <p className="card__subtitle card__subtitle_services">
+          <p className="card__subtitle card__subtitle_services card__subtitle_services-eng">
             Research and development work for an individual order
           </p>
           <img

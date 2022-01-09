@@ -5,6 +5,8 @@ import { useLocation } from "react-router-dom";
 
 function Header() {
   const location = useLocation();
+  let isEngPage = location.pathname.search(/eng/g);
+
   return (
     <header className="header">
       <Link className="header__link" to="/">
