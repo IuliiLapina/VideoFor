@@ -10,7 +10,7 @@ function InfoEng ({ title }) {
       <form className="form">
         <div className="form__container form__container_eng">
           <input
-            className="form__input"
+            className="form__input form__input_eng"
             id="info__checkbox"
             type="email"
             placeholder="E-mail"
@@ -30,7 +30,7 @@ function InfoEng ({ title }) {
             id="checkbox"
             checked="checked"
           />
-          <label className="form__checbox-text" for="checkbox">
+          <label className="form__checbox-text form__checbox-text_eng" for="checkbox">
             <span></span>Consent to the processing of personal data
           </label>
         </div>
