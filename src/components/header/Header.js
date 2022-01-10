@@ -6,9 +6,14 @@ import { useLocation } from "react-router-dom";
 function Header() {
   const location = useLocation();
   let isEngPage = location.pathname.search(/eng/g);
-  const isRuPage = location.pathname.split('/');
-  
-  console.log(isRuPage)
+  let isRuPage = location.pathname.split('/');
+  let popped = isRuPage.pop();
+  let isRuPagePathname = isRuPage.join('/');
+  console.log(isRuPage);
+  console.log(popped);
+  console.log(isRuPagePathname);
+
+
   return (
     <>
       {isEngPage !== -1 ? (
@@ -56,9 +61,7 @@ function Header() {
             </li>
             <li className="header__language-item">
               <Link
-                to={`${
-                  location.pathname === "/" ? `eng` : `${location.pathname}/eng`
-                }`}
+                to={isRuPagePathname}
                 className="header__language-link "
               >
                 RUS
@@ -103,9 +106,9 @@ function Header() {
           <ul className="header__language">
             <li className="header__language-item">
               <Link
-                to={`${
-                  location.pathname === "/" ? `eng` : `${location.pathname}/eng`
-                }`}
+               to={`${
+                location.pathname === "/" ? `eng` : `${location.pathname}/eng`
+              }`}
                 className="header__language-link"
               >
                 ENG
