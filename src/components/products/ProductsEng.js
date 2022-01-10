@@ -10,7 +10,7 @@ function ProductsEng() {
   const windowWidtn = window.innerWidth;
 
   return (
-    <section className="products" id="products">
+    <section className="products" id="products_eng">
       <h2 className="chapter">OUR PRODUCTION</h2>
       <ul className="cards">
         <li className="card">

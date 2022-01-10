@@ -6,7 +6,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 function ServicesEng() {
   return (
-    <section className="services" id="services">
+    <section className="services" id="services_eng">
       <h2 className="chapter">OUR SERVICES</h2>
       <ul className="cards">
         <li className="card card_eng">
@@ -20,7 +20,7 @@ function ServicesEng() {
             Design of video analytics systems for an individual order
           </p>
           <img className="card__image" src={design} alt="Логотип 'VideoFor'" />
-          <Link className="card__link" to="/design-service">
+          <Link className="card__link" to="/design-service/eng">
             <button className="button button_card button_card-eng">
               DETAILS
             </button>
@@ -42,7 +42,7 @@ function ServicesEng() {
             src={research}
             alt="Логотип 'VideoFor'"
           />
-          <Link className="card__link" to="/r-d-service">
+          <Link className="card__link" to="/r-d-service/eng">
             <button className="button button_card button_card-eng">
               DETAILS
             </button>

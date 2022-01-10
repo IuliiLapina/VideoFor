@@ -12,8 +12,7 @@ function Header() {
   console.log(isRuPage);
   console.log(popped);
   console.log(isRuPagePathname);
-
-
+  
   return (
     <>
       {isEngPage !== -1 ? (
@@ -29,22 +28,22 @@ function Header() {
 
             <ul className="header__column-links">
               <li className="header__list-item">
-                <Link to="#products" className="header__link">
+                <Link to="/eng#products_eng" className="header__link">
                 Products
                 </Link>
               </li>
               <li className="header__list-item">
-                <Link to="#advantage" className="header__link">
+                <Link to="/eng#advantage_eng" className="header__link">
                 Advantages
                 </Link>
               </li>
               <li className="header__list-item">
-                <Link to="#services" className="header__link">
+                <Link to="/eng#services_eng" className="header__link">
                 Services
                 </Link>
               </li>
               <li className="header__list-item">
-                <Link to="#blog" className="header__link">
+                <Link to="/eng#blog_eng" className="header__link">
                 Blog
                 </Link>
               </li>
@@ -82,22 +81,22 @@ function Header() {
 
             <ul className="header__column-links">
               <li className="header__list-item">
-                <Link to="#products" className="header__link">
+                <Link to="/#products" className="header__link">
                   Продукты
                 </Link>
               </li>
               <li className="header__list-item">
-                <Link to="#advantage" className="header__link">
+                <Link to="/#advantage" className="header__link">
                   Преимущества
                 </Link>
               </li>
               <li className="header__list-item">
-                <Link to="#services" className="header__link">
+                <Link to="/#services" className="header__link">
                   Услуги
                 </Link>
               </li>
               <li className="header__list-item">
-                <Link to="#blog" className="header__link">
+                <Link to="/#blog" className="header__link">
                   Блог
                 </Link>
               </li>

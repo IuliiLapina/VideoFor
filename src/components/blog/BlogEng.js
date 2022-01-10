@@ -7,7 +7,7 @@ import blog_image3 from "../../images/blog/blog-image3.png";
 function BlogEng() {
   const location = useLocation();
   return (
-    <section className="blog" id="blog">
+    <section className="blog" id="blog_eng">
       <h2 className="chapter">VIDEOFOR BLOG</h2>
       <ul className="blog__card-list">
         <li className="blog__card blog__card_eng">
