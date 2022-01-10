@@ -11,7 +11,7 @@ function AdvantageSmartBeachEng({ onContactForm }) {
           src={women}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text advantage-page__container-text_litle">
+        <div className="advantage-page__container-text advantage-page__container-text_litle advantage-page__container-text_litle-eng">
           <h2 className="advantage-page__title">SMART BEACH</h2>
           <p className="advantage-page__text">
             More than four thousand people die in water in Russia every year.
@@ -27,7 +27,7 @@ function AdvantageSmartBeachEng({ onContactForm }) {
       </div>
       <div className="advantage-page__container advantage-page__container_right">
         <img
-          className="advantage-page__image advantage-page__image_right"
+          className="advantage-page__image advantage-page__image_right advantage-page__image_right-eng"
           src={beach}
           alt="Логотип 'VideoFor'"
         />
@@ -73,8 +73,8 @@ function AdvantageSmartBeachEng({ onContactForm }) {
       <h2 className="advantage-page__title advantage-page__title_center">
         Product benefits
       </h2>
-      <div className="advantage-page__container advantage-page__container_center smart-beach-background-image">
-        <div className="advantage-page__container-products advantage-page__container-products_eng">
+      <div className="advantage-page__container advantage-page__container_center smart-beach-background-image smart-beach-background-image_eng">
+        <div className="advantage-page__container-products advantage-page__container-products_eng advantage-page__container-products_beach-eng">
           <p className="advantage-page__text advantage-page__text_product">
             A full range of technologies capable of providing maximum safety
           </p>
@@ -88,7 +88,7 @@ function AdvantageSmartBeachEng({ onContactForm }) {
             <br/>UI / UX technologies
           </p>)}
         </div>
-        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_eng">
+        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_eng advantage-page__container-products_beach-eng">
           <p className="advantage-page__text advantage-page__text_product">
             The system analyzes a complex of risk factors for people on water
             bodies

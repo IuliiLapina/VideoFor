@@ -252,6 +252,9 @@
     font-size: 14px;
     line-height: 20px;
   }
+  .button_footer-eng {
+    padding: 9px 57px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -283,6 +286,10 @@
     margin: 0;
     padding: 6px 0 0;
     width: 75%;
+  }
+
+  .footer__column-links-info_eng {
+    width: 100%;
   }
 
   .footer__info-icon {

@@ -75,4 +75,11 @@
     padding: 6px 0px 9px 0;
     width: 85%;
   }
+  .card__subtitle_services-eng {
+    padding: 6px 0px 19px 0;
+    width: 54%;
+  }
+  .card_eng {
+    min-height: 305px;
+  }
 }

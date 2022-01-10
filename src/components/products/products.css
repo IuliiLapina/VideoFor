@@ -209,6 +209,11 @@
     min-height: 28px;
     padding: 6px 1px 23px 0;
   }
+
+  .card__subtitle_eng {
+    width: 92%;
+    padding: 6px 1px 20px 0;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -262,5 +267,8 @@
     line-height: 16px;
     margin: 7px 127px 0 0;
     padding: 6px 41px 6px;
+  }
+  .button_card-eng {
+    padding: 6px 71px 6px;
   }
 }

@@ -35,7 +35,7 @@ function AdvantageSmartSitesEng({ onContactForm }) {
       </div>
       <div className="advantage-page__container advantage-page__container_right advantage-page__container_right-eng">
         <img
-          className="advantage-page__image advantage-page__image_right"
+          className="advantage-page__image advantage-page__image_right advantage-page__image_right-eng"
           src={iron_tank}
           alt="Логотип 'VideoFor'"
         />
@@ -79,8 +79,8 @@ function AdvantageSmartSitesEng({ onContactForm }) {
       <h2 className="advantage-page__title advantage-page__title_center">
         Product benefits
       </h2>
-      <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center smart-waste-sites-background-image advantage-page__container_eng">
-        <div className="advantage-page__container-products advantage-page__container-products_eng">
+      <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center smart-waste-sites-background-image smart-waste-sites-background-image_eng advantage-page__container_eng">
+        <div className="advantage-page__container-products advantage-page__container-products_eng advantage-page__container-products_beach-eng">
           <p className="advantage-page__text advantage-page__text_product">
             Saving resources and costs due to logistics recommendations
           </p>
@@ -97,7 +97,7 @@ function AdvantageSmartSitesEng({ onContactForm }) {
             </p>
           )}
         </div>
-        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_eng">
+        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_eng advantage-page__container-products_beach-eng">
           <p className="advantage-page__text advantage-page__text_product ">
             The ability to integrate modules into already installed systems
           </p>

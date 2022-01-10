@@ -74,8 +74,8 @@ function AdvantageSmartSpaceEng({ onContactForm }) {
       <h2 className="advantage-page__title advantage-page__title_center">
         Product benefits
       </h2>
-      <div className="advantage-page__container advantage-page__container_center smart-space-background-image ">
-        <div className="advantage-page__container-products advantage-page__container-products_eng">
+      <div className="advantage-page__container advantage-page__container_center smart-space-background-image smart-space-background-image_eng">
+        <div className="advantage-page__container-products advantage-page__container-products_eng advantage-page__container-products_beach-eng">
           {window.innerWidth <= 970 ? (
             <p className="advantage-page__text advantage-page__text_product">
               Minimize the risk
@@ -100,13 +100,20 @@ function AdvantageSmartSpaceEng({ onContactForm }) {
             </p>
           )}
         </div>
-        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_eng">
+        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_eng advantage-page__container-products_beach-eng">
           <p className="advantage-page__text advantage-page__text_product">
             The ability to integrate modules into already installed systems
           </p>
-          <p className="advantage-page__text advantage-page__text_product">
+          
+          {window.innerWidth <= 760 ? (
+            <p className="advantage-page__text advantage-page__text_product">
+            A full range of technologies capable of providing max safety
+          </p>
+          ) : (
+            <p className="advantage-page__text advantage-page__text_product">
             A full range of technologies capable of providing maximum safety
           </p>
+          )}
         </div>
       </div>
       <p className="advantage-page__text advantage-page__text_center">

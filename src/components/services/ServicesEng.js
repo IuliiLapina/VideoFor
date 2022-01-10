@@ -9,7 +9,7 @@ function ServicesEng() {
     <section className="services" id="services">
       <h2 className="chapter">OUR SERVICES</h2>
       <ul className="cards">
-        <li className="card">
+        <li className="card card_eng">
           <p className="card__status card__status_services">Offer</p>
           <img
             className="card__logo card__logo_services"
@@ -27,7 +27,7 @@ function ServicesEng() {
           </Link>
         </li>
 
-        <li className="card">
+        <li className="card card_eng">
           <p className="card__status card__status_services">Offer</p>
           <img
             className="card__logo card__logo_services"

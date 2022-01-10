@@ -37,6 +37,9 @@
     line-height: 19px;
     padding: 7px 58px;
   }
+  .button_eng {
+    padding: 7px 68px;
+  }
 }
 .promo {
   position: relative;

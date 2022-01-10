@@ -65,7 +65,14 @@ function AdvantageEng({ onContactForm }) {
             src={support_1440px}
             alt="Логотип 'VideoFor'"
           />
-          <p className="advantage__subtitle">Use of our own know how</p>
+          {windowWidtn <= 560 ? (
+            <p className="advantage__subtitle">
+              Use of our own <br />
+              know how
+            </p>
+          ) : (
+            <p className="advantage__subtitle">Use of our own know how</p>
+          )}
         </li>
       </ul>
 

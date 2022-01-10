@@ -30,7 +30,7 @@ function ServiceRDEng({ onContactForm }) {
 
       <div className="advantage-page__container advantage-page__container_right">
         <img
-          className="advantage-page__image advantage-page__image_right advantage-page__image_services"
+          className="advantage-page__image advantage-page__image_right advantage-page__image_services advantage-page__image_rd-eng"
           src={code}
           alt="Логотип 'VideoFor'"
         />
@@ -70,8 +70,8 @@ function ServiceRDEng({ onContactForm }) {
       <h2 className="advantage-page__title advantage-page__title_center">
         We guarantee
       </h2>
-      <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center services-rd-background-image ">
-        <div className="advantage-page__container-products advantage-page__container-products_eng">
+      <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center services-rd-background-image services-rd-background-image_eng">
+        <div className="advantage-page__container-products advantage-page__container-products_eng advantage-page__container-products_beach-eng">
           <p className="advantage-page__text advantage-page__text_product">
             The ability to implement the most ambitious projects
           </p>
@@ -79,7 +79,7 @@ function ServiceRDEng({ onContactForm }) {
             Analysis of a wide range of risk factors for people and objects
           </p>
         </div>
-        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design advantage-page__container-products_eng">
+        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design advantage-page__container-products_engadvantage-page__container-products_beach-eng">
           <p className="advantage-page__text advantage-page__text_product">
             A project that is effective in those parameters that are important
             to you

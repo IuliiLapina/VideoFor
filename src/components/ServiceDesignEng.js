@@ -11,7 +11,7 @@ function ServiceDesignEng({ onContactForm }) {
           src={camcorders}
           alt="Логотип 'VideoFor'"
         />
-        <div className="advantage-page__container-text advantage-page__container-text_services">
+        <div className="advantage-page__container-text advantage-page__container-text_services advantage-page__container-text_services-eng">
           <h2 className="advantage-page__title advantage-page__title_big advantage-page__title_services">
             CUSTOMIZED VIDEO ANALYTICS 
             <br/>SYSTEMS DESIGN
@@ -43,7 +43,7 @@ function ServiceDesignEng({ onContactForm }) {
           <h2 className="advantage-page__title advantage-page__title_right">
             WHAT DO WE OFFER
           </h2>
-          <ul className="advantage-page__list advantage-page__list_eng">
+          <ul className="advantage-page__list advantage-page__list_eng advantage-page__list_services-eng">
             <li className="advantage-page__list-item advantage-page__list-item_beach">
               Comprehensive development of a video analytics system project
             </li>
@@ -74,7 +74,7 @@ function ServiceDesignEng({ onContactForm }) {
       </div>
       <div className="advantage-page__conteiner-button advantage-page__conteiner-button_left">
         <button
-          className="advantage-page__button advantage-page__button_right"
+          className="advantage-page__button advantage-page__button_right advantage-page__button_eng"
           onClick={onContactForm}
         >
           To contact us
@@ -83,8 +83,8 @@ function ServiceDesignEng({ onContactForm }) {
       <h2 className="advantage-page__title advantage-page__title_center">
         We guarantee
       </h2>
-      <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center services-design-background-image advantage-page__container_eng">
-        <div className="advantage-page__container-products">
+      <div className="advantage-page__container advantage-page__container_waste advantage-page__container_center services-design-background-image services-design-background-image_eng advantage-page__container_eng">
+        <div className="advantage-page__container-products advantage-page__container-products_beach-eng">
           <p className="advantage-page__text advantage-page__text_product">
             Minimizing the cost of the project, taking into account the goals of
             building the system
@@ -94,7 +94,7 @@ function ServiceDesignEng({ onContactForm }) {
             Analysis of a wide range of risk factors for people and objects
           </p>
         </div>
-        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design advantage-page__container-products_eng">
+        <div className="advantage-page__container-products advantage-page__container-products_right advantage-page__container-products_design advantage-page__container-products_eng advantage-page__container-products_beach-eng">
           <p className="advantage-page__text advantage-page__text_product">
             A project that is effective in those parameters that are important
             to you
