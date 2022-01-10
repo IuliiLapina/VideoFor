@@ -4,7 +4,7 @@ import place from "../../images/advantage-pages/place.png";
 
 function AdvantageSmartSpace({ onContactForm }) {
   return (
-    <section className="advantage-page">
+    <section className="advantage-page" id="space">
       <div className="advantage-page__container">
         <img
           className="advantage-page__image"

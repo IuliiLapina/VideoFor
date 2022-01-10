@@ -4,7 +4,7 @@ import iron_tank from "../../images/advantage-pages/iron_tank.png";
 
 function AdvantageSmartSites({ onContactForm }) {
   return (
-    <section className="advantage-page">
+    <section className="advantage-page" id="waste-sites">
       <div className="advantage-page__container">
         <img
           className="advantage-page__image"

@@ -4,7 +4,7 @@ import city_road from "../../images/advantage-pages/city_road.png";
 
 function AdvantageSmartCityEng({ onContactForm }) {
   return (
-    <section className="advantage-page">
+    <section className="advantage-page" id="city-eng">
       <div className="advantage-page__container">
         <img
           className="advantage-page__image"

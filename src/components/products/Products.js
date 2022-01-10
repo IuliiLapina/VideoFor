@@ -32,7 +32,7 @@ function Products() {
             </p>
           )}
           <img className="card__image" src={trafic} alt="Логотип 'VideoFor'" />
-          <Link className="card__link" to="/smart-city">
+          <Link className="card__link" to="/smart-city#city">
             <button className="button button_card">Подробнее о продукте</button>
           </Link>
         </li>
@@ -57,7 +57,7 @@ function Products() {
             </p>
           )}
           <img className="card__image" src={beach} alt="Логотип 'VideoFor'" />
-          <Link className="card__link" to="/smart-beach">
+          <Link className="card__link" to="/smart-beach#beach">
             <button className="button button_card">Подробнее о продукте</button>
           </Link>
         </li>
@@ -85,7 +85,7 @@ function Products() {
             src={security}
             alt="Логотип 'VideoFor'"
           />
-          <Link className="card__link" to="/smart-space">
+          <Link className="card__link" to="/smart-space#space">
             <button className="button button_card">Подробнее о продукте</button>
           </Link>
         </li>
@@ -114,7 +114,7 @@ function Products() {
             src={monitoring}
             alt="Логотип 'VideoFor'"
           />
-          <Link className="card__link" to="/smart-waste-sites">
+          <Link className="card__link" to="/smart-waste-sites#waste-sites">
             <button className="button button_card">Подробнее о продукте</button>
           </Link>
         </li>

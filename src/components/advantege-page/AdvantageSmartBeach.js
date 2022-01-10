@@ -4,10 +4,11 @@ import beach from "../../images/advantage-pages/beach.png";
 
 function AdvantageSmartBeach({ onContactForm }) {
   return (
-    <section className="advantage-page">
-      <div className="advantage-page__container">
+    <section className="advantage-page" id="beach">
+      <div className="advantage-page__container" >
         <img
           className="advantage-page__image"
+          
           src={women}
           alt="Логотип 'VideoFor'"
         />

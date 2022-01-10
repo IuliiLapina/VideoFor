@@ -13,7 +13,7 @@ function BlogRecycle() {
   }
   return (
     <>
-      <section className="article">
+      <section className="article" id="blog-traffic">
         <div className="article__container">
           <img className="article__image" src={road} alt="Логотип 'VideoFor'" />
           <div className="article__container-text">

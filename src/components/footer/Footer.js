@@ -25,22 +25,22 @@ function Footer({ onContactForm }) {
           <div className="footer__column">
             <ul className="footer__column-links footer__column-links_eng">
               <li className="footer__link">
-                <Link className="footer__link-item" to="/smart-city/eng">
+                <Link className="footer__link-item" to="/smart-city/eng#city-eng">
                   Smart city
                 </Link>
               </li>
               <li className="footer__link">
-                <Link className="footer__link-item" to="/smart-beach/eng">
+                <Link className="footer__link-item" to="/smart-beach/eng#beach-eng">
                   Smart beach
                 </Link>
               </li>
               <li className="footer__link">
-                <Link className="footer__link-item" to="/smart-space/eng">
+                <Link className="footer__link-item" to="/smart-space/eng#space-eng">
                   Smart space
                 </Link>
               </li>
               <li className="footer__link">
-                <Link className="footer__link-item" to="/smart-waste-sites/eng">
+                <Link className="footer__link-item" to="/smart-waste-sites/eng#waste-sites-eng">
                   Smart stations for garbage
                 </Link>
               </li>
@@ -48,12 +48,12 @@ function Footer({ onContactForm }) {
 
             <ul className="footer__column-links footer__column-links_eng">
               <li className="footer__link">
-                <Link className="footer__link-item" to="/design-service/eng">
+                <Link className="footer__link-item" to="/design-service/eng#design-eng">
                   System Design
                 </Link>
               </li>
               <li className="footer__link">
-                <Link className="footer__link-item" to="/r-d-service/eng">
+                <Link className="footer__link-item" to="/r-d-service/eng#r-d-eng">
                   Performing R&amp;D
                 </Link>
               </li>
@@ -113,22 +113,22 @@ function Footer({ onContactForm }) {
           <div className="footer__column">
             <ul className="footer__column-links">
               <li className="footer__link">
-                <Link className="footer__link-item" to="/smart-city">
+                <Link className="footer__link-item" to="/smart-city#city">
                   Умный город
                 </Link>
               </li>
               <li className="footer__link">
-                <Link className="footer__link-item" to="/smart-beach">
+                <Link className="footer__link-item" to="/smart-beach#beach">
                   Умный пляж
                 </Link>
               </li>
               <li className="footer__link">
-                <Link className="footer__link-item" to="/smart-space">
+                <Link className="footer__link-item" to="/smart-space#space">
                   Умная территория
                 </Link>
               </li>
               <li className="footer__link">
-                <Link className="footer__link-item" to="/smart-waste-sites">
+                <Link className="footer__link-item" to="/smart-waste-sites#waste-sites">
                   Умные станции сбора мусора
                 </Link>
               </li>
@@ -136,12 +136,12 @@ function Footer({ onContactForm }) {
 
             <ul className="footer__column-links">
               <li className="footer__link">
-                <Link className="footer__link-item" to="/design-service">
+                <Link className="footer__link-item" to="/design-service#design">
                   Проектирование систем
                 </Link>
               </li>
               <li className="footer__link">
-                <Link className="footer__link-item" to="/r-d-service">
+                <Link className="footer__link-item" to="/r-d-service#r-d">
                   Выполнение НИОКР
                 </Link>
               </li>

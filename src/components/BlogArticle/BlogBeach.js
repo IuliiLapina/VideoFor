@@ -18,8 +18,8 @@ function BlogBeach() {
 
   return (
     <>
-      <section className="article">
-        <div className="article__container">
+      <section className="article" id="blog-beach-article">
+        <div className="article__container" id="blog-beach">
           <div className="article__image-container">
             <img
               className="article__image"

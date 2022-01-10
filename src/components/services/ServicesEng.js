@@ -20,7 +20,7 @@ function ServicesEng() {
             Design of video analytics systems for an individual order
           </p>
           <img className="card__image" src={design} alt="Логотип 'VideoFor'" />
-          <Link className="card__link" to="/design-service/eng">
+          <Link className="card__link" to="/design-service/eng#design-eng">
             <button className="button button_card button_card-eng">
               DETAILS
             </button>
@@ -42,7 +42,7 @@ function ServicesEng() {
             src={research}
             alt="Логотип 'VideoFor'"
           />
-          <Link className="card__link" to="/r-d-service/eng">
+          <Link className="card__link" to="/r-d-service/eng#r-d-eng">
             <button className="button button_card button_card-eng">
               DETAILS
             </button>

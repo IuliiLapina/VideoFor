@@ -4,7 +4,7 @@ import code from "../images/services-pages/code.png";
 
 function ServiceRDEng({ onContactForm }) {
   return (
-    <section className="advantage-page">
+    <section className="advantage-page" id="r-d-eng">
       <div className="advantage-page__container">
         <img
           className="advantage-page__image"

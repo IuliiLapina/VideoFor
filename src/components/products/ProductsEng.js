@@ -25,7 +25,7 @@ function ProductsEng() {
             violations and road accidents
           </p>
           <img className="card__image" src={trafic} alt="Логотип 'VideoFor'" />
-          <Link className="card__link" to="/smart-city/eng">
+          <Link className="card__link" to="/smart-city/eng#city-eng">
             <button className="button button_card button_card-eng">DETAILS</button>
           </Link>
         </li>
@@ -42,7 +42,7 @@ function ProductsEng() {
             areas, automated announcement system, instant rescue call
           </p>
           <img className="card__image" src={beach} alt="Логотип 'VideoFor'" />
-          <Link className="card__link" to="/smart-beach/eng">
+          <Link className="card__link" to="/smart-beach/eng#beach-eng">
             <button className="button button_card button_card-eng">DETAILS</button>
           </Link>
         </li>
@@ -63,7 +63,7 @@ function ProductsEng() {
             src={security}
             alt="Логотип 'VideoFor'"
           />
-          <Link className="card__link" to="/smart-space/eng">
+          <Link className="card__link" to="/smart-space/eng#space-eng">
             <button className="button button_card button_card-eng">DETAILS</button>
           </Link>
         </li>
@@ -84,7 +84,7 @@ function ProductsEng() {
             src={monitoring}
             alt="Логотип 'VideoFor'"
           />
-          <Link className="card__link" to="/smart-waste-sites/eng">
+          <Link className="card__link" to="/smart-waste-sites/eng#waste-sites-eng">
             <button className="button button_card button_card-eng">DETAILS</button>
           </Link>
         </li>

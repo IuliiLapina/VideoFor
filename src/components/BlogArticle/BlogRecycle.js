@@ -13,7 +13,7 @@ function BlogRecycle() {
   }
   return (
     <>
-      <section className="article">
+      <section className="article" id="blog-recycle">
         <div className="article__container">
           <img
             className="article__image"

@@ -16,7 +16,7 @@ function Blog() {
 
       <ul className="blog__card-list">
         <li className="blog__card">
-          <Link className="blog__card-link" to="/blog-beach">
+          <Link className="blog__card-link" to="/blog-beach#blog-beach-article">
             <img
               className="blog__image"
               src={blog_image1}
@@ -30,7 +30,7 @@ function Blog() {
           </Link>
         </li>
         <li className="blog__card" id="1">
-          <Link className="blog__card-link" to="/blog-recycle">
+          <Link className="blog__card-link" to="/blog-recycle#blog-recycle">
             <img
               className="blog__image"
               src={blog_image3}
@@ -44,7 +44,7 @@ function Blog() {
           </Link>
         </li>
         <li className="blog__card" id="2">
-          <Link className="blog__card-link" to="/blog-traffic">
+          <Link className="blog__card-link" to="/blog-traffic#blog-traffic">
             <img
               className="blog__image"
               src={blog_image2}
