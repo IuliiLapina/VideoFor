@@ -538,24 +538,22 @@ function BlogBeach() {
                   «Умный пляж» или как обеспечить комплексную безопасность людей
                   на водоеме
                 </h1>
-                  <p className="article__text">
-                    Ежегодно в мире от утопления погибает около 320 тысяч
-                    человек. Это третья по значимости причина смерти, на долю
-                    которой приходится около 7% всех смертей связанных с
-                    травмами. В прибрежных городах по всему миру проживает около
-                    60% населения Земли. Мужчины и дети этой части населения
-                    подвергаются наибольшему риску утопления из-за упрощенного
-                    доступа к воде. Например, в Китае и США утопление является
-                    первой и, соответственно, второй по значимости причиной
-                    смерти от травм среди детей в возрасте 1-14 лет.
-                  </p>
+                <p className="article__text">
+                  Ежегодно в мире от утопления погибает около 320 тысяч человек.
+                  Это третья по значимости причина смерти, на долю которой
+                  приходится около 7% всех смертей связанных с травмами. В
+                  прибрежных городах по всему миру проживает около 60% населения
+                  Земли. Мужчины и дети этой части населения подвергаются
+                  наибольшему риску утопления из-за упрощенного доступа к воде.
+                  Например, в Китае и США утопление является первой и,
+                  соответственно, второй по значимости причиной смерти от травм
+                  среди детей в возрасте 1-14 лет.
+                </p>
               </div>
             </div>
 
             <div className="article__under-text-container article__under-text-container_mini-bottom">
-              <p
-                className="article__text"
-              >
+              <p className="article__text">
                 Россия входит в число мировых лидеров по объему водных ресурсов:
                 2,7 млн. озер, 2,8 млн. рек общей длиной 12,4 млн. км и 30 тысяч
                 водохранилищ. Близость населенных пунктов к водоемам и
@@ -587,7 +585,7 @@ function BlogBeach() {
                 />
               </div>
               <div className="article__container-text">
-                {window.innerWidth > 768 ? (
+                {window.innerWidth > 1100 ? (
                   <p className="article__text">
                     Проведем оценку потенциала для улучшения уровня безопасности
                     на водных объектах путем сравнительного анализа
@@ -632,7 +630,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__under-text-container article__under-text-container_mini-bottom">
-              {window.innerWidth > 768 ? (
+              {window.innerWidth > 1100 ? (
                 ""
               ) : (
                 <p className="article__text">
@@ -647,7 +645,11 @@ function BlogBeach() {
                   на спасателей (это исключительно «человеческий фактор»).
                 </p>
               )}
-              <p className={`article__text ${window.innerWidth > 768 ? ('') : ('article__text-second')}`}>
+              <p
+                className={`article__text ${
+                  window.innerWidth > 1100 ? "" : "article__text-second"
+                }`}
+              >
                 Следует признать, что общая тенденция по оснащению территорий
                 общего пользования средствами мониторинга является оправданной.
                 Так, использование систем видеонаблюдения в парках и скверах
@@ -741,7 +743,7 @@ function BlogBeach() {
                   <br />
                   применимость общих алгоритмов остается под вопросом.
                 </p>
-                {window.innerWidth > 770 ? (
+                {window.innerWidth > 1100 ? (
                   <>
                     <p className="article__text-list">
                       1.2 Опасное приближение судна к зоне купания;
@@ -758,7 +760,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__under-text-container article__under-text-container_mini-bottom">
-              {window.innerWidth > 770 ? (
+              {window.innerWidth > 1100 ? (
                 ""
               ) : (
                 <p className="article__text">
@@ -768,7 +770,11 @@ function BlogBeach() {
                 </p>
               )}
 
-              <p className={`article__text ${window.innerWidth > 768 ? ('') : ('article__text-second')}`}>
+              <p
+                className={`article__text ${
+                  window.innerWidth > 1100 ? "" : "article__text-second"
+                }`}
+              >
                 Для разбора ограничений применимости возьмем наиболее
                 актуальные, на момент выхода статьи, интеллектуальные системы
                 видеонаблюдения. Например, Hikvision DeepinView. Для целей
@@ -838,7 +844,7 @@ function BlogBeach() {
                   2.4 Плавание на надувных и других не предназначенных для этих
                   целей средствах;
                 </p>
-                {window.innerWidth > 770 ? (
+                {window.innerWidth > 1100 ? (
                   <>
                     <h3 className="article__list-title article__list-title_last">
                       3. Задачи, требующие частного решения:
@@ -864,7 +870,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__under-text-container article__under-text-container_mini-top">
-              {window.innerWidth > 770 ? (
+              {window.innerWidth > 1100 ? (
                 ""
               ) : (
                 <div className="article__text">
@@ -889,7 +895,7 @@ function BlogBeach() {
 
               <p
                 className={`article__text ${
-                  window.innerWidth > 770 ? "" : "article__text-second"
+                  window.innerWidth > 1100 ? "" : "article__text-second"
                 }`}
               >
                 Решение задач третьего класса сложности базируется на
@@ -1002,7 +1008,7 @@ function BlogBeach() {
                   порядка более 50 пиксел/метр, что достаточно для трекинга
                   человека как на суше, так и в воде.
                 </p>
-                {window.innerWidth > 770 ? (
+                {window.innerWidth > 1100 ? (
                   <p className="article__text article__text-second">
                     Подобные камеры мультисенсорного типа предоставляют для
                     системы компьютерного зрения единое изображение с участка
@@ -1032,7 +1038,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__under-text-container">
-              {window.innerWidth > 770 ? (
+              {window.innerWidth > 1100 ? (
                 ""
               ) : (
                 <p className="article__text">
@@ -1048,7 +1054,7 @@ function BlogBeach() {
 
               <p
                 className={`article__text ${
-                  window.innerWidth > 770 ? "" : "article__text-second"
+                  window.innerWidth > 1100 ? "" : "article__text-second"
                 }`}
               >
                 Это позволяет с определенной долей вероятности прогнозировать
@@ -1071,7 +1077,7 @@ function BlogBeach() {
                 постоянно повышают требования к комфорту и безопасности
                 отдыхающих в России и в мире.
               </p>
-              {window.innerWidth > 770 ? (
+              {window.innerWidth > 1100 ? (
                 ""
               ) : (
                 <p className="article__text article__text-second">
@@ -1097,7 +1103,7 @@ function BlogBeach() {
                 />
               </div>
               <div className="article__container-text">
-                {window.innerWidth > 770 ? (
+                {window.innerWidth > 1100 ? (
                   <p className="article__text">
                     Все большую популярность обретает концепция «умный пляж»,
                     которая уже начала внедряться на Пхукете, в Дубае и Хайфе.
@@ -1115,7 +1121,7 @@ function BlogBeach() {
                 )}
                 <p
                   className={`article__text ${
-                    window.innerWidth > 770 ? "article__text-second" : ""
+                    window.innerWidth > 1100 ? "article__text-second" : ""
                   }`}
                 >
                   «Умный пляж» – это зона беспрецедентного комфорта и

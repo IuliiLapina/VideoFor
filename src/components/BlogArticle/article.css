@@ -470,5 +470,8 @@
   .article__list-item_point:first-child {
     padding-top: 0px;
   }
-  
+ .article__title_little {
+   font-size: 14px;
+   line-height: 19px;
+ } 
 }
