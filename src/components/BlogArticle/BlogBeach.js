@@ -21,7 +21,7 @@ function BlogBeach() {
         {window.innerWidth < 330 ? (
           <>
             <div className="article__container">
-              <div className="article__image-container">
+              <div className="article__image-container ">
                 <img
                   className="article__image"
                   src={beach}
