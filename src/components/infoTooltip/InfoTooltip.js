@@ -1,10 +1,35 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 
-function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
+function InfoTooltip({ isOpen, onClose, onSubmitContactForm }) {
   const [isChoicePhone, setIsChoicePhone] = React.useState(false);
   const [isChoiceEmail, setIsChoiceEmail] = React.useState(false);
   const [checked, setChecked] = React.useState(false);
+ 
+  const location = useLocation();
+  let isEngPage = location.pathname.search(/eng/g);
+ 
+  const emailRef = React.useRef("");
+  const phoneRef = React.useRef("");
+  const nameRef = React.useRef("");
+  const commentRef = React.useRef("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    onSubmitContactForm({
+      email: emailRef.current.value,
+      phone: phoneRef.current.value,
+      name: nameRef.current.value,
+      comment: commentRef.current.value,
+      topic: location.pathname
+    });
+/*
+    phoneRef.current.value = "";
+    nameRef.current.value = "";
+    commentRef.current.value = "";
+*/
+  }
 
   function handlePhone() {
     setIsChoicePhone(true);
@@ -15,8 +40,7 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
   function chengeCheckbox() {
     setChecked(!checked);
   }
-  const location = useLocation();
-  let isEngPage = location.pathname.search(/eng/g);
+
   return (
     <>
       {isEngPage !== -1 ? (
@@ -60,16 +84,19 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
             {isChoicePhone ? (
               <form
                 className="popup__form"
-                //noValidate
                 onSubmit={handleSubmit}
               >
                 <input
+                  ref={phoneRef}
+                  id="contact-phone"
                   className="form__input form__input_popup"
                   type="tel"
                   placeholder="Phone"
                   required
                 />
                 <input
+                  ref={nameRef}
+                  id="contact-name"
                   className="form__input form__input_popup"
                   type="text"
                   placeholder="Name"
@@ -85,13 +112,15 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                   />
                   <label
                     className="form__checbox-text form__checbox-text_radio"
-                    for="checkbox-area"
+                    htmlFor="checkbox-area"
                   >
                     <span className="checkbox_radio"></span>Leave a comment
                   </label>
                 </div>
                 {checked ? (
                   <textarea
+                    ref={commentRef}
+                    id="contact-comment"
                     className="form__textarea"
                     placeholder="Your comment..."
                     cols="40"
@@ -99,7 +128,6 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                 ) : (
                   ""
                 )}
-
                 <input
                   type="submit"
                   className="button_form button_form-submit"
@@ -110,12 +138,13 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                   <input
                     type="checkbox"
                     id="checkbox"
-                    checked="checked"
+                    defaultChecked="checked"
+                    required
                     className="form__checbox"
                   />
                   <label
                     className="form__checbox-text form__checbox-text_popup"
-                    for="checkbox"
+                    htmlFor="checkbox"
                   >
                     <span className="checkbox_form"></span>Consent to the
                     processing of personal data
@@ -133,12 +162,14 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                 onSubmit={handleSubmit}
               >
                 <input
+                  ref={emailRef}
                   className="form__input form__input_popup"
                   type="email"
                   placeholder="E-mail"
                   required
                 />
                 <input
+                  ref={nameRef}
                   className="form__input form__input_popup"
                   type="text"
                   placeholder="Name"
@@ -154,13 +185,14 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                   />
                   <label
                     className="form__checbox-text form__checbox-text_radio"
-                    for="checkbox-area"
+                    htmlFor="checkbox-area"
                   >
                     <span className="checkbox_radio"></span>Leave a comment
                   </label>
                 </div>
                 {checked ? (
                   <textarea
+                    ref={commentRef}
                     className="form__textarea"
                     placeholder="Your comment..."
                     cols="40"
@@ -179,12 +211,13 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                   <input
                     type="checkbox"
                     id="checkbox"
-                    checked="checked"
+                    defaultChecked="checked"
+                    required
                     className="form__checbox"
                   />
                   <label
                     className="form__checbox-text form__checbox-text_popup"
-                    for="checkbox"
+                    htmlFor="checkbox"
                   >
                     <span className="checkbox_form"></span>Consent to the
                     processing of personal data
@@ -194,6 +227,7 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
             ) : (
               ""
             )}
+
           </div>
         </div>
       ) : (
@@ -241,12 +275,14 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                 onSubmit={handleSubmit}
               >
                 <input
+                  ref={phoneRef}
                   className="form__input form__input_popup"
                   type="tel"
                   placeholder="Телефон"
                   required
                 />
                 <input
+                  ref={nameRef}
                   className="form__input form__input_popup"
                   type="text"
                   placeholder="Имя"
@@ -262,13 +298,14 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                   />
                   <label
                     className="form__checbox-text form__checbox-text_radio"
-                    for="checkbox-area"
+                    htmlFor="checkbox-area"
                   >
                     <span className="checkbox_radio"></span>Оставить комментарий
                   </label>
                 </div>
                 {checked ? (
                   <textarea
+                    ref={commentRef}
                     className="form__textarea"
                     placeholder="Ваш комментарий..."
                     cols="40"
@@ -287,12 +324,13 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                   <input
                     type="checkbox"
                     id="checkbox"
-                    checked="checked"
+                    defaultChecked="checked"
+                    required
                     className="form__checbox"
                   />
                   <label
                     className="form__checbox-text form__checbox-text_popup"
-                    for="checkbox"
+                    htmlFor="checkbox"
                   >
                     <span className="checkbox_form"></span>Согласие на обработку
                     персональных данных
@@ -310,12 +348,14 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                 onSubmit={handleSubmit}
               >
                 <input
+                  ref={emailRef}
                   className="form__input form__input_popup"
                   type="email"
                   placeholder="E-mail"
                   required
                 />
                 <input
+                  ref={nameRef}
                   className="form__input form__input_popup"
                   type="text"
                   placeholder="Имя"
@@ -331,13 +371,14 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                   />
                   <label
                     className="form__checbox-text form__checbox-text_radio"
-                    for="checkbox-area"
+                    htmlFor="checkbox-area"
                   >
                     <span className="checkbox_radio"></span>Оставить комментарий
                   </label>
                 </div>
                 {checked ? (
                   <textarea
+                    ref={commentRef}
                     className="form__textarea"
                     placeholder="Ваш комментарий..."
                     cols="40"
@@ -356,12 +397,13 @@ function InfoTooltip({ isOpen, onClose, isClear, handleSubmit }) {
                   <input
                     type="checkbox"
                     id="checkbox"
-                    checked="checked"
+                    defaultChecked="checked"
+                    required
                     className="form__checbox"
                   />
                   <label
                     className="form__checbox-text form__checbox-text_popup"
-                    for="checkbox"
+                    htmlFor="checkbox"
                   >
                     <span className="checkbox_form"></span>Согласие на обработку
                     персональных данных

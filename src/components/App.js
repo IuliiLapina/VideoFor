@@ -38,6 +38,8 @@ import AdvantageSmartWasteSitesEng from "./advantege-page/AdvantageSmartWasteSit
 import ServiceDesignEng from "./ServiceDesignEng";
 import ServiceRDEng from "./ServiceRDEng";
 
+import { TelegramApi } from "../utils/Api.js";
+
 function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
     React.useState(false);
@@ -52,6 +54,38 @@ function App() {
     setInfoTooltipPopupOpen(false);
   }
 
+  //запросить информацию по email - сообщение в телеграмм
+  function handleSubmitInfoForm(info) {
+    TelegramApi.sendMessageInfoEmail(info)
+      .then(closeAllPopups())
+      .then(console.log(info))
+      .catch((err) => console.log(err));
+  }
+
+  //форма "свяжитесь со мной"- сообщение в телеграмм
+
+  function handleSubmitContactForm(info) {
+    TelegramApi.sendMessageContactPhoneEng(info)
+      .then(closeAllPopups())
+      .catch((err) => console.log(err));
+  }
+  /*
+
+     //форма "свяжитесь со мной"- сообщение в телеграмм
+     function handleSubmitContactForm(info) {
+      const json = JSON.stringify({
+        name: info.name,
+        phone: info.phone,
+        email: info.email,
+        comment: info.comment,
+        topic: info.topic
+      });
+      TelegramApi.sendMessageContactPhoneEng(json)
+        .then(console.log(info))
+        .catch((err) => console.log(err));
+    }
+  */
+
   return (
     <div className="page">
       <Header />
@@ -63,7 +97,10 @@ function App() {
             <Products />
             <Advantage onContactForm={handleInfoTooltipPopupOpen} />
             <Services />
-            <Info title={"Запросить подробную информацию"}/>
+            <Info
+              title={"Запросить подробную информацию"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
             <Blog />
             <Partners />
           </main>
@@ -75,7 +112,10 @@ function App() {
             <ProductsEng />
             <AdvantageEng onContactForm={handleInfoTooltipPopupOpen} />
             <ServicesEng />
-            <InfoEng title={"Request detailed information"}/>
+            <InfoEng
+              title={"Request detailed information"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
             <BlogEng />
             <PartnersEng />
           </main>
@@ -84,108 +124,160 @@ function App() {
         <Route path="/blog-beach">
           <main className="content">
             <BlogBeach />
-            <Info title={"Получать новые публикации"}/>
+            <Info
+              title={"Получать новые публикации"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route path="/blog-recycle">
           <main className="content">
             <BlogRecycle />
-            <Info title={"Получать новые публикации"}/>
+            <Info
+              title={"Получать новые публикации"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route path="/blog-traffic">
           <main className="content">
             <BlogTraffic />
-            <Info title={"Получать новые публикации"}/>
+            <Info
+              title={"Получать новые публикации"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route exact path="/smart-city">
           <main className="content">
-            <AdvantageSmartCity onContactForm={handleInfoTooltipPopupOpen}/>
-            <Info title={"Запросить подробную информацию"}/>
+            <AdvantageSmartCity onContactForm={handleInfoTooltipPopupOpen} />
+            <Info
+              title={"Запросить подробную информацию"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route path="/smart-city/eng">
           <main className="content">
-            <AdvantageSmartCityEng onContactForm={handleInfoTooltipPopupOpen}/>
-            <InfoEng title={"Request detailed information"}/>
+            <AdvantageSmartCityEng onContactForm={handleInfoTooltipPopupOpen} />
+            <InfoEng
+              title={"Request detailed information"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route exact path="/smart-beach">
           <main className="content">
-            <AdvantageSmartBeach onContactForm={handleInfoTooltipPopupOpen}/>
-            <Info title={"Запросить подробную информацию"}/>
+            <AdvantageSmartBeach onContactForm={handleInfoTooltipPopupOpen} />
+            <Info
+              title={"Запросить подробную информацию"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route path="/smart-beach/eng">
           <main className="content">
-            <AdvantageSmartBeachEng onContactForm={handleInfoTooltipPopupOpen}/>
-            <InfoEng title={"Request detailed information"}/>
+            <AdvantageSmartBeachEng
+              onContactForm={handleInfoTooltipPopupOpen}
+            />
+            <InfoEng
+              title={"Request detailed information"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route exact path="/smart-space">
           <main className="content">
-            <AdvantageSmartSpace onContactForm={handleInfoTooltipPopupOpen}/>
-            <Info title={"Запросить подробную информацию"}/>
+            <AdvantageSmartSpace onContactForm={handleInfoTooltipPopupOpen} />
+            <Info
+              title={"Запросить подробную информацию"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route path="/smart-space/eng">
           <main className="content">
-            <AdvantageSmartSpaceEng onContactForm={handleInfoTooltipPopupOpen}/>
-            <InfoEng title={"Request detailed information"}/>
+            <AdvantageSmartSpaceEng
+              onContactForm={handleInfoTooltipPopupOpen}
+            />
+            <InfoEng
+              title={"Request detailed information"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route exact path="/smart-waste-sites">
           <main className="content">
-            <AdvantageSmartWasteSites onContactForm={handleInfoTooltipPopupOpen}/>
-            <Info title={"Запросить подробную информацию"}/>
+            <AdvantageSmartWasteSites
+              onContactForm={handleInfoTooltipPopupOpen}
+            />
+            <Info
+              title={"Запросить подробную информацию"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route path="/smart-waste-sites/eng">
           <main className="content">
-            <AdvantageSmartWasteSitesEng onContactForm={handleInfoTooltipPopupOpen}/>
-            <InfoEng title={"Request detailed information"}/>
+            <AdvantageSmartWasteSitesEng
+              onContactForm={handleInfoTooltipPopupOpen}
+            />
+            <InfoEng
+              title={"Request detailed information"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route exact path="/design-service">
           <main className="content">
-            <ServiceDesign onContactForm={handleInfoTooltipPopupOpen}/>
-            <Info title={"Запросить подробную информацию"}/>
+            <ServiceDesign onContactForm={handleInfoTooltipPopupOpen} />
+            <Info
+              title={"Запросить подробную информацию"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
-        
+
         <Route path="/design-service/eng">
           <main className="content">
-            <ServiceDesignEng onContactForm={handleInfoTooltipPopupOpen}/>
-            <InfoEng title={"Request detailed information"}/>
+            <ServiceDesignEng onContactForm={handleInfoTooltipPopupOpen} />
+            <InfoEng
+              title={"Request detailed information"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route exact path="/r-d-service">
           <main className="content">
-            <ServiceRD onContactForm={handleInfoTooltipPopupOpen}/>
-            <Info title={"Запросить подробную информацию"}/>
+            <ServiceRD onContactForm={handleInfoTooltipPopupOpen} />
+            <Info
+              title={"Запросить подробную информацию"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
 
         <Route path="/r-d-service/eng">
           <main className="content">
-            <ServiceRDEng onContactForm={handleInfoTooltipPopupOpen}/>
-            <InfoEng title={"Request detailed information"}/>
+            <ServiceRDEng onContactForm={handleInfoTooltipPopupOpen} />
+            <InfoEng
+              title={"Request detailed information"}
+              onSubmitInfoForm={handleSubmitInfoForm}
+            />
           </main>
         </Route>
-        
       </Switch>
       <Footer onContactForm={handleInfoTooltipPopupOpen} />
 
@@ -193,6 +285,7 @@ function App() {
         isOpen={isInfoTooltipPopupOpen}
         onClose={closeAllPopups}
         handleSubmit={closeAllPopups}
+        onSubmitContactForm={handleSubmitContactForm}
       />
     </div>
   );
