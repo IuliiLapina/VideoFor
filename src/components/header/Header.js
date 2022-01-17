@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import logo from "../../images/logo/logo.svg";
@@ -9,9 +10,6 @@ function Header() {
   let isRuPage = location.pathname.split('/');
   let popped = isRuPage.pop();
   let isRuPagePathname = isRuPage.join('/');
-  console.log(isRuPage);
-  console.log(popped);
-  console.log(isRuPagePathname);
   
   return (
     <>
