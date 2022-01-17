@@ -38,6 +38,7 @@ function ContactForm({ isOpen, onClose, onSubmitContactForm }) {
     setIsChoiceEmail(false);
   }
 */
+
 function handleSubmit(e) {
   e.preventDefault();
 
@@ -76,6 +77,12 @@ function handleSubmit(e) {
     setComment(e.target.value)
   }
 
+  function handleCloseBtnClick() {
+    onClose()
+    setIsChoicePhone(false);
+    setIsChoiceEmail(false);
+  }
+
   return (
     <>
       {isEngPage !== -1 ? (
@@ -84,7 +91,7 @@ function handleSubmit(e) {
             <button
               className="popup__close-btn"
               type="button"
-              onClick={onClose}
+              onClick={handleCloseBtnClick}
             ></button>
 
             <h3
@@ -273,7 +280,7 @@ function handleSubmit(e) {
             <button
               className="popup__close-btn"
               type="button"
-              onClick={onClose}
+              onClick={handleCloseBtnClick}
             ></button>
 
             <h3
