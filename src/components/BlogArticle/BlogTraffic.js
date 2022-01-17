@@ -493,32 +493,32 @@ function BlogRecycle() {
                   «Видеофор» попробовали изобразить карту боли дорожного
                   мониторинга Москвы, на которую выдвинули несколько положений:
                 </p>
-                <li className="article__list-item article__list-item_point">
+                <li className="article__list-item article__list-item_point article__list-item_point-traffic">
                   — Любые даже незначительные дорожные инциденты создают заторы
                   и вызывают эскалацию дорожных пробок;
                 </li>
-                <li className="article__list-item article__list-item_point">
+                <li className="article__list-item article__list-item_point article__list-item_point-traffic">
                   — Неправильно припаркованные автомобили снижают общую
                   пропускную способность дороги;
                 </li>
-                <li className="article__list-item article__list-item_point">
+                <li className="article__list-item article__list-item_point article__list-item_point-traffic">
                   — Время обнаружения дорожных инцидентов является случайной
                   величиной, в основном зависящей от сознательности сообщающих
                   об этом очевидцев, что не позволяет обеспечить системное
                   управление дорожной сетью;
                 </li>
-                <li className="article__list-item article__list-item_point">
+                <li className="article__list-item article__list-item_point article__list-item_point-traffic">
                   — Не информирование водителей электробусов о состоянии
                   дорожной сети на маршруте следования является риском сбоев в
                   работе электробусов.
                 </li>
               </ul>
-              <p className="article__text">
+              <p className="article__text article__text-last">
                 Показательно рассмотреть мировой опыт того, как собирают данные
                 и реагируют на дорожные инциденты в разных странах мира:
               </p>
               <ul className="article__list  article__list_container-disc">
-                <li className="article__list-item article__list-item_style-disc">
+                <li className="article__list-item article__list-item_style-disc article__list-item_point-traffic">
                   В Финляндии и США пробки определяется с помощью измерения
                   числа мобильных телефонов, которые находятся в автомобилях;
                 </li>
@@ -560,6 +560,7 @@ function BlogRecycle() {
                 Опираясь на лучший мировой опыт, «Видеофор» предложили
                 рассмотреть три варианта пилотных проектов:
               </p>
+              
               <ul className="article__list article__list_under-disc">
                 <li className="article__list-item article__list-item_style-disc">
                   интеграция с открытым API приложения «Яндекс-пробки», чтобы

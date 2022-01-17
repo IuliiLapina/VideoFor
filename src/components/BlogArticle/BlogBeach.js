@@ -9,7 +9,6 @@ import swimming from "../../images/article/swimming.png";
 import Blog from "../blog/Blog";
 
 function BlogBeach() {
-  console.log(window.innerWidth);
   const [isOpenBlog, setIsOpenBlog] = React.useState(false);
   function openBlog() {
     setIsOpenBlog(true);
@@ -577,7 +576,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini-plus">
+              <div className={`article__image-container ${window.innerWidth > 1100 ? "article__image-container_max" : "article__image-container_mini-plus"}`}>
                 <img
                   className="article__image"
                   src={hand}
