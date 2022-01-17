@@ -7,8 +7,6 @@ import monitoring from "../../images/products/monitoring.png";
 import { HashLink as Link } from "react-router-hash-link";
 
 function ProductsEng() {
-  const windowWidtn = window.innerWidth;
-
   return (
     <section className="products" id="products_eng">
       <h2 className="chapter">OUR PRODUCTION</h2>

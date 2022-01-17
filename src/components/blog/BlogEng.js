@@ -1,11 +1,10 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import blog_image1 from "../../images/blog/blog-image1.png";
 import blog_image2 from "../../images/blog/blog-image2.png";
 import blog_image3 from "../../images/blog/blog-image3.png";
 
 function BlogEng() {
-  const location = useLocation();
   return (
     <section className="blog" id="blog_eng">
       <h2 className="chapter">VIDEOFOR BLOG</h2>

@@ -6,6 +6,8 @@ import blog_image3 from "../../images/blog/blog-image3.png";
 
 function Blog() {
   const location = useLocation();
+  let isBlogPage = location.pathname.search(/blog/g);
+
   return (
     <section className="blog" id="blog">
       {location.pathname === "/" ? (
@@ -14,7 +16,7 @@ function Blog() {
         ""
       )}
 
-      <ul className="blog__card-list">
+      <ul className={`blog__card-list ${isBlogPage ? 'blog__card-list_column' : ''}`}>
         <li className="blog__card">
           <Link className="blog__card-link" to="/blog-beach#blog-beach-article">
             <img
@@ -29,7 +31,7 @@ function Blog() {
             </p>
           </Link>
         </li>
-        <li className="blog__card" id="1">
+        <li className={`blog__card ${isBlogPage ? 'blog__card_column' : ''}`} id="1">
           <Link className="blog__card-link" to="/blog-recycle#blog-recycle">
             <img
               className="blog__image"
@@ -43,7 +45,7 @@ function Blog() {
             </p>
           </Link>
         </li>
-        <li className="blog__card" id="2">
+        <li className={`blog__card ${isBlogPage ? 'blog__card_column' : ''}`} id="2">
           <Link className="blog__card-link" to="/blog-traffic#blog-traffic">
             <img
               className="blog__image"
