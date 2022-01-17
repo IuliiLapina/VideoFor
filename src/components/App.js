@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import Header from "./header/Header";
 import Promo from "./promo/Promo";
@@ -38,6 +39,7 @@ import AdvantageSmartWasteSitesEng from "./advantege-page/AdvantageSmartWasteSit
 import ServiceDesignEng from "./ServiceDesignEng";
 import ServiceRDEng from "./ServiceRDEng";
 
+import PageNotFound from "./page-not-found/PageNotFound";
 import { TelegramApi } from "../utils/Api.js";
 
 function App() {
@@ -279,6 +281,10 @@ function App() {
             />
           </main>
         </Route>
+
+        <Route path="*">
+            <PageNotFound />
+          </Route>
       </Switch>
       <Footer onContactForm={handleContactFormPopupOpen} />
 
