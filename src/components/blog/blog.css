@@ -88,12 +88,6 @@
 }
 
 @media screen and (max-width: 580px) {
-  .blog__card:nth-child(2) {
-    display: none;
-  }
-  .blog__card:nth-child(1) {
-    display: none;
-  }
   .blog {
     padding-top: 28px;
   }
@@ -148,6 +142,16 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .blog__card-list_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog__card_column {
+    margin-top: 20px;
+  }
+}
 @media screen and (max-width: 330px) {
   .blog__button {
     font-size: 20px;
