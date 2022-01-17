@@ -39,55 +39,101 @@ import AdvantageSmartWasteSitesEng from "./advantege-page/AdvantageSmartWasteSit
 import ServiceDesignEng from "./ServiceDesignEng";
 import ServiceRDEng from "./ServiceRDEng";
 
+import InfoTooltip from "./infoTooltip/InfoTooltip";
 import PageNotFound from "./page-not-found/PageNotFound";
 import { TelegramApi } from "../utils/Api.js";
 
 function App() {
+  const location = useLocation();
+  const isEngPage = location.pathname.search(/eng/g);
+
   const [isContactFormPopupOpen, setContactFormPopupOpen] =
     React.useState(false);
-
+  const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
+    React.useState(false);
+  const [titleInfoTooltipPopup, setTitleInfoTooltipPopup] = React.useState("");
   //Обработчики открытия попапов
   function handleContactFormPopupOpen() {
     setContactFormPopupOpen(true);
+  }
+  function handleInfoTooltipPopupOpen() {
+    setInfoTooltipPopupOpen(true);
   }
 
   //Обработчик закрытия попапов
   function closeAllPopups() {
     setContactFormPopupOpen(false);
+  }
+  function handleInfoTooltipPopupClose() {
+    setInfoTooltipPopupOpen(false);
+  }
 
+  function handleInfoTooltipContent(title) {
+    setTitleInfoTooltipPopup(title);
+  }
+
+  //подписаться на блог по email - сообщение в телеграмм
+  function handleSubmitInfoFormBlog(info) {
+    TelegramApi.sendMessageInfoEmail(info)
+      .then(() => {
+        handleInfoTooltipContent(
+          `${
+            isEngPage !== 1
+              ? "МЫ СООБЩИМ ВАМ О НОВЫХ СТАТЬЯХ"
+              : "WE WILL INFORM  YOU ABOUT NEW ARTICLES"
+          }`
+        );
+        handleInfoTooltipPopupOpen();
+        closeAllPopups();
+      })
+      .catch((err) => {
+        handleInfoTooltipContent("Ooops" + err);
+        handleInfoTooltipPopupOpen();
+        console.log(err);
+      });
   }
 
   //запросить информацию по email - сообщение в телеграмм
   function handleSubmitInfoForm(info) {
     TelegramApi.sendMessageInfoEmail(info)
-      .then(closeAllPopups())
-      .then(console.log(info))
-      .catch((err) => console.log(err));
+      .then(() => {
+        handleInfoTooltipContent(
+          `${
+            isEngPage !== 1
+              ? "СКОРО С ВАМИ СВЯЖЕМСЯ"
+              : "WE WILL CONTACT YOU SOON"
+          }`
+        );
+        handleInfoTooltipPopupOpen();
+        closeAllPopups();
+      })
+      .catch((err) => {
+        handleInfoTooltipContent("Ooops" + err);
+        handleInfoTooltipPopupOpen();
+        console.log(err);
+      });
   }
 
   //форма "свяжитесь со мной"- сообщение в телеграмм
-
   function handleSubmitContactForm(info) {
     TelegramApi.sendMessageContactPhoneEng(info)
-      .then(closeAllPopups())
-      .catch((err) => console.log(err));
-  }
-  /*
-
-     //форма "свяжитесь со мной"- сообщение в телеграмм
-     function handleSubmitContactForm(info) {
-      const json = JSON.stringify({
-        name: info.name,
-        phone: info.phone,
-        email: info.email,
-        comment: info.comment,
-        topic: info.topic
+      .then(() => {
+        handleInfoTooltipContent(
+          `${
+            isEngPage !== 1
+              ? "СКОРО С ВАМИ СВЯЖЕМСЯ"
+              : "WE WILL CONTACT YOU SOON"
+          }`
+        );
+        handleInfoTooltipPopupOpen();
+        closeAllPopups();
+      })
+      .catch((err) => {
+        handleInfoTooltipContent("Ooops" + err);
+        handleInfoTooltipPopupOpen();
+        console.log(err);
       });
-      TelegramApi.sendMessageContactPhoneEng(json)
-        .then(console.log(info))
-        .catch((err) => console.log(err));
-    }
-  */
+  }
 
   return (
     <div className="page">
@@ -129,7 +175,7 @@ function App() {
             <BlogBeach />
             <Info
               title={"Получать новые публикации"}
-              onSubmitInfoForm={handleSubmitInfoForm}
+              onSubmitInfoForm={handleSubmitInfoFormBlog}
             />
           </main>
         </Route>
@@ -139,7 +185,7 @@ function App() {
             <BlogRecycle />
             <Info
               title={"Получать новые публикации"}
-              onSubmitInfoForm={handleSubmitInfoForm}
+              onSubmitInfoForm={handleSubmitInfoFormBlog}
             />
           </main>
         </Route>
@@ -149,7 +195,7 @@ function App() {
             <BlogTraffic />
             <Info
               title={"Получать новые публикации"}
-              onSubmitInfoForm={handleSubmitInfoForm}
+              onSubmitInfoForm={handleSubmitInfoFormBlog}
             />
           </main>
         </Route>
@@ -293,6 +339,11 @@ function App() {
         onClose={closeAllPopups}
         handleSubmit={closeAllPopups}
         onSubmitContactForm={handleSubmitContactForm}
+      />
+      <InfoTooltip
+        isOpen={isInfoTooltipPopupOpen}
+        onClose={handleInfoTooltipPopupClose}
+        title={titleInfoTooltipPopup}
       />
     </div>
   );
