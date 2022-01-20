@@ -178,7 +178,7 @@ function Footer({ onContactForm }) {
           </div>
           <button
             className={`button button_footer ${
-              location !== "/" ? "button_disabled" : ""
+              location.pathname === "/" ? "" : "button_disabled"
             }`}
             onClick={onContactForm}
           >
