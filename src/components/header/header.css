@@ -10,8 +10,6 @@
   min-width: 320px;
   width: 92%;
   z-index: 100;
-
-  outline: red 1px solid;
 }
 
 .header__logo {
@@ -113,7 +111,7 @@
 
 @media screen and (max-width: 650px) {
   .header {
-    padding: 0px 0px 7px 7px;
+    padding: 0px 0px 0px 7px;
     min-height: 30px;
     width: 100%;
   }
