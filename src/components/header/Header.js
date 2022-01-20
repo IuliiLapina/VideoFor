@@ -26,7 +26,7 @@ function Header() {
 
             <ul className="header__column-links">
               <li className="header__list-item">
-                <Link to="/eng#products_eng" className="header__link">
+                <Link to="/eng#products_eng" className="header__link" onClick={handleClick}>
                 Products
                 </Link>
               </li>
