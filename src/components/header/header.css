@@ -1,5 +1,5 @@
 .header {
-  min-height: 60px;
+  min-height: 50px;
   padding: 10px 83px 0 100px;
   display: flex;
   justify-content: space-between;
@@ -7,8 +7,11 @@
   position: fixed;
   background: #040404;
   max-width: 1320px;
-  width: 87%;
+  min-width: 320px;
+  width: 92%;
   z-index: 100;
+
+  outline: red 1px solid;
 }
 
 .header__logo {
@@ -40,7 +43,7 @@
   list-style: none;
   font-size: 20px;
   line-height: 27px;
-  padding: 1px 1px 0;
+  padding: 1px 64px 0 0;
 }
 
 .header__language-item {
@@ -90,7 +93,7 @@
   .header__language {
     font-size: 16px;
     line-height: 22px;
-    padding: 0;
+    padding: 4px 20px 0px 0;
   }
 
   .header__language-item {
@@ -99,7 +102,6 @@
 
   .header__language-link_active {
     font-size: 24px;
-    line-height: 33px;
   }
 }
 
@@ -148,6 +150,7 @@
     line-height: 19px;
     width: 100%;
     justify-content: center;
+    padding: 1px 69px 0 0px;
   }
 
   .header__language-item {
@@ -213,6 +216,5 @@
 }
 @media screen and (max-width: 320px) {
   .header__language {
-    padding-right: 62px;
   }
 }
