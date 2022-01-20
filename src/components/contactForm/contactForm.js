@@ -14,30 +14,6 @@ function ContactForm({ isOpen, onClose, onSubmitContactForm }) {
   const location = useLocation();
   let isEngPage = location.pathname.search(/eng/g);
   const topic = location.pathname;
-/*
-  const emailRef = React.useRef("");
-  const phoneRef = React.useRef("");
-  const nameRef = React.useRef("");
-  const commentRef = React.useRef("");
-  function handleSubmit(e) {
-    e.preventDefault();
-
-    onSubmitContactForm({
-      email: emailRef.current.value,
-      phone: phoneRef.current.value,
-      name: nameRef.current.value,
-      comment: commentRef.current.value,
-      topic: location.pathname,
-    });
-
-    phoneRef.current.value = "";
-    emailRef.current.value = "";
-    nameRef.current.value = "";
-    commentRef.current.value = "";
-    setIsChoicePhone(false);
-    setIsChoiceEmail(false);
-  }
-*/
 
 function handleSubmit(e) {
   e.preventDefault();
@@ -132,6 +108,8 @@ function handleSubmit(e) {
                   type="tel"
                   placeholder="Phone"
                   onChange={handleChangePhone}
+                  minLength={3}
+                  maxLebgth={40}
                   required
                 />
                 <input
@@ -141,6 +119,7 @@ function handleSubmit(e) {
                   type="text"
                   placeholder="Name"
                   onChange={handleChangeName}
+                  minLength={2}
                   required
                 />
 
@@ -217,6 +196,7 @@ function handleSubmit(e) {
                   type="text"
                   placeholder="Name"
                   onChange={handleChangeName}
+                  minLength={2}
                   required
                 />
 
@@ -323,6 +303,8 @@ function handleSubmit(e) {
                   type="tel"
                   placeholder="Телефон"
                   onChange={handleChangePhone}
+                  minLength={3}
+                  maxLebgth={40}
                   required
                 />
                 <input
@@ -330,6 +312,7 @@ function handleSubmit(e) {
                   className="form__input form__input_popup"
                   type="text"
                   placeholder="Имя"
+                  minLength={2}
                   onChange={handleChangeName}
                   required
                 />
@@ -399,6 +382,7 @@ function handleSubmit(e) {
                   type="email"
                   placeholder="E-mail"
                   onChange={handleChangeEmail}
+                  minLength={2}
                   required
                 />
                 <input
@@ -406,6 +390,7 @@ function handleSubmit(e) {
                   className="form__input form__input_popup"
                   type="text"
                   placeholder="Имя"
+                  minLength={2}
                   onChange={handleChangeName}
                   required
                 />

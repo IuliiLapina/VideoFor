@@ -330,7 +330,7 @@ function App() {
 
         <Route path="*">
             <PageNotFound />
-          </Route>
+        </Route>
       </Switch>
       <Footer onContactForm={handleContactFormPopupOpen} />
 
