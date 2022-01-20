@@ -62,7 +62,7 @@ function handleSubmit(e) {
   return (
     <>
       {isEngPage !== -1 ? (
-        <div className={`popup ${isOpen ? "popup_opened" : ""} }`}>
+        <div className={`popup ${isOpen ? "popup_opened" : ""} }`} lang="en-US">
           <div className="popup__container">
             <button
               className="popup__close-btn"

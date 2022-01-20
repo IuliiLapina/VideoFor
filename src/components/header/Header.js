@@ -14,7 +14,7 @@ function Header() {
   return (
     <>
       {isEngPage !== -1 ? (
-        <header className="header">
+        <header className="header" lang="en-US">
           <Link className="header__link" to="/eng">
             <img className="header__logo" src={logo} alt="Логотип 'VideoFor'" />
           </Link>
@@ -26,7 +26,7 @@ function Header() {
 
             <ul className="header__column-links">
               <li className="header__list-item">
-                <Link to="/eng#products_eng" className="header__link" onClick={handleClick}>
+                <Link to="/eng#products_eng" className="header__link">
                 Products
                 </Link>
               </li>

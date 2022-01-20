@@ -19,6 +19,7 @@ function InfoEng({ title, onSubmitInfoForm }) {
   return (
     <section
       className={`info ${location.pathname !== "/eng" ? "info_eng" : ""}`}
+      lang="en-US"
     >
       <h2 className="chapter">{title}</h2>
       <form className="form" name="form-info-email" onSubmit={handleSubmit}>

@@ -6,7 +6,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 function ServicesEng() {
   return (
-    <section className="services" id="services_eng">
+    <section className="services" id="services_eng" lang="en-US">
       <h2 className="chapter">OUR SERVICES</h2>
       <ul className="cards">
         <li className="card card_eng">

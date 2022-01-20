@@ -8,7 +8,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 function ProductsEng() {
   return (
-    <section className="products" id="products_eng">
+    <section className="products" id="products_eng" lang="en-US">
       <h2 className="chapter">OUR PRODUCTION</h2>
       <ul className="cards">
         <li className="card">
