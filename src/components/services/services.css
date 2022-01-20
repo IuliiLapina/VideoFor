@@ -37,23 +37,20 @@
   }
 
   .button_card-services {
-    padding: 0 59px;
+    margin-top: 20px;
+    padding: 7px 34px 7px;
   }
 
   .card__logo_services {
     width: 133px;
     height: 40px;
   }
-
-  .button_card-services {
-    padding: 7px 34px 7px;
-  }
 }
 
 @media screen and (max-width: 670px) {
   .button_card-services {
     padding: 6px 44px 6px;
-    margin: 20px 127px 0 0;
+    margin: 20px 0px 0 0;
   }
 }
 

@@ -88,7 +88,7 @@
 .button_card {
   font-size: 17px;
   line-height: 23px;
-  margin-top: 15px;
+  margin: 15px 0 10px;
   padding: 12px 55px 13px;
   background: rgba(208, 222, 231, 0);
 }
@@ -115,10 +115,6 @@
   .card__image {
     width: 94%;
     height: 51%;
-  }
-  .button_card {
-    margin-left: 0;
-    margin-right: auto;
   }
 }
 
@@ -164,11 +160,11 @@
   .button_card {
     font-size: 16px;
     line-height: 22px;
-    margin: 20px 171px 0 0;
-    padding: 7px 30px 7px;
+    margin: 15px 0px 0 0px;
+    padding: 12px 30px 12px;
   }
   .button_card-eng {
-    margin: 14px 171px 0 0;
+    margin: 14px 0px 0 10px;
     padding: 13px 71px 13px;
   }
 }
@@ -182,10 +178,6 @@
   .card {
     width: 100%;
   }
-
-  .button_card {
-    margin: 20px 145px 0 0;
-  }
 }
 
 @media screen and (max-width: 712px) {
@@ -198,8 +190,7 @@
   .button_card {
     font-size: 12px;
     line-height: 16px;
-    margin: 17px 127px 0 0;
-    padding: 6px 41px 6px;
+    margin: 17px 0px 0 0;
   }
 }
 @media screen and (max-width: 580px) {
