@@ -209,7 +209,7 @@
   }
 
   .article__image-container {
-    height: 498px;
+    height: 520px;
     overflow: hidden;
     padding: 0px 0 0;
   }
@@ -220,6 +220,41 @@
     align-items: center;
     justify-content: flex-end;
     padding: 16px 0 0;
+  }
+  .article__image-container_medium {
+    height: 416px;
+  }
+  .article__image-container_mini {
+    height: 502px;
+  }
+  .article__image-container_max {
+    height: 434px;
+  }
+  .article__image-container_medium-traffic {
+    height: 372px;
+  }
+  .article__image-container_mini-traffic {
+    height: 348px;
+    padding-top: 5px;
+  }
+  .article__image-container_mini-beach {
+    height: 540px;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0 115px;
+    justify-content: center;
+  }
+  .article__image-container_medium-beach {
+    height: 404px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .article__image-container_medium-maxi-beach {
+    height: 525px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   .article__image {
     padding-top: 0px;
@@ -367,22 +402,6 @@
   .article__list-item_point:first-child {
     padding-top: 23px;
   }
-  .article__image-container_medium {
-    height: 416px;
-  }
-  .article__image-container_mini {
-    height: 502px;
-  }
-  .article__image-container_max {
-    height: 434px;
-  }
-  .article__image-container_medium-traffic {
-    height: 372px;
-  }
-  .article__image-container_mini-traffic {
-    height: 348px;
-    padding-top: 5px;
-  }
 }
 @media screen and (max-width: 600px) {
   .article__container {
@@ -441,6 +460,21 @@
   .article__image-container_mini-plus {
     height: 240px;
     padding: 2px 0 0;
+  }
+  .article__image-container_medium-beach {
+    height: 300px;
+    padding: 6px 0 0 45px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .article__image-container_mini-beach {
+    height: 220px;
+    padding: 3px 0 0;
+  }
+  .article__image-container_max-beach {
+    height: 250px;
+    padding: 4px 0 0;
   }
   .article__list {
     padding: 0px 0 15px;

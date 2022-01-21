@@ -172,7 +172,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini-plus">
+              <div className="article__image-container article__image-container_medium-beach">
                 <img
                   className="article__image"
                   src={circle}
@@ -252,7 +252,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini-plus">
+              <div className="article__image-container article__image-container_mini-beach">
                 <img
                   className="article__image"
                   src={jump}
@@ -342,7 +342,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini-plus">
+              <div className="article__image-container article__image-container_max-beach">
                 <img
                   className="article__image"
                   src={tower}
@@ -410,7 +410,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini-plus">
+              <div className="article__image-container article__image-container_max-beach">
                 <img
                   className="article__image"
                   src={people}
@@ -479,7 +479,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini-plus">
+              <div className="article__image-container article__image-container_max-beach">
                 <img
                   className="article__image"
                   src={swimming}
@@ -711,7 +711,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini-plus">
+              <div className={`article__image-container  ${window.innerWidth < 1100 ? "article__image-container_mini-beach" : "article__image-container_mini-plus"}`}>
                 <img
                   className="article__image"
                   src={circle}
@@ -812,7 +812,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_medium">
+              <div className={`article__image-container ${window.innerWidth < 1100 ? "article__image-container_medium-beach" : "article__image-container_medium"}`}>
                 <img
                   className="article__image"
                   src={jump}
@@ -928,7 +928,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini">
+              <div className={`article__image-container ${window.innerWidth < 1100 ? "article__image-container_medium-maxi-beach" : "article__image-container_mini"}`}>
                 <img
                   className="article__image"
                   src={tower}
@@ -991,7 +991,7 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_max">
+              <div className={`article__image-container ${window.innerWidth < 1100 ? "article__image-container_mini" : "article__image-container_max"}`}>
                 <img
                   className="article__image"
                   src={people}
