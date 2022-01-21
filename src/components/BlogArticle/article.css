@@ -208,8 +208,13 @@
   height: 780px;
 }
 .article__image-container_mini-traffic {
-  height: 630px;
-  padding-top: 5px;
+  height: auto;
+  padding-top: 11px;
+}
+
+.article__image-container_mini-traffic-road {
+  height: 606px;
+  display: flex;
 }
 
 @media screen and (max-width: 1100px) {
@@ -281,6 +286,22 @@
     height: 312px;
     padding-top: 0px;
   }
+  .article__image-container_max-traffic {
+    height: 480px;
+    display: flex;
+    padding: 0px 0 0;
+  }
+  .article__image-container_medium-traffic-light {
+    height: 335px;
+    display: flex;
+    padding: 5px 0 0;
+  }
+  .article__image-container_medium-traffic-road{
+    height: 370px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
   .article__image {
     padding-top: 0px;
     height: 115%;
@@ -329,6 +350,7 @@
     padding: 50px 0 0px;
     font-size: 20px;
     line-height: 30px;
+    width: 60%;
   }
 
   .article__subtitle_left {
