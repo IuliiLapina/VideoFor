@@ -16,7 +16,9 @@
 
 .card__logo_services {
   width: 155px;
-  height: 56px;
+  padding-top: 5px;
+  height: 46px;
+  padding-bottom: 5px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -44,6 +46,7 @@
   .card__logo_services {
     width: 133px;
     height: 40px;
+    padding: 0;
   }
 }
 

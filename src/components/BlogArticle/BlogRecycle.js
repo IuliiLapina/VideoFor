@@ -329,7 +329,7 @@ function BlogRecycle() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container ">
+              <div className={`article__image-container article__image-container_max-recycle-trash-can`}>
                 <img
                   className="article__image"
                   src={trash_can_mini}

@@ -42,6 +42,9 @@
   height: 786px;
 }
 
+.article__image-container_max-recycle-trash-can{
+  height: auto;
+}
 .article__image-container_max-recycle {
   height: 645px;
   overflow: hidden;

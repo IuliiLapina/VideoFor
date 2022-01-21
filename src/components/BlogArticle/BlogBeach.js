@@ -7,7 +7,6 @@ import tower from "../../images/article/tower.png";
 import people from "../../images/article/people.png";
 import swimming from "../../images/article/swimming.png";
 import Blog from "../blog/Blog";
-import { Link } from "react-router-dom";
 
 function BlogBeach() {
   const [isOpenBlog, setIsOpenBlog] = React.useState(false);

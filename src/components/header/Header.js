@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import logo from "../../images/logo/logo.svg";
+import logo from "../../images/logo/logo.png";
 import { useLocation } from "react-router-dom";
 
 function Header() {

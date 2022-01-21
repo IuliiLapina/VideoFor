@@ -1,7 +1,7 @@
 import React from "react";
 import design from "../../images/services/design.png";
 import research from "../../images/services/research.png";
-import logo from "../../images/logo/logo.svg";
+import logo from "../../images/logo/logo.png";
 import { HashLink as Link } from "react-router-hash-link";
 
 function Services() {
