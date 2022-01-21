@@ -17,7 +17,7 @@ function BlogRecycle() {
         {window.innerWidth > 1100 ? (
           <>
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini-plus">
+              <div className={`article__image-container ${window.innerWidth > 1100 ? 'article__image-container_max-recycle' : 'article__image-container_medium-maxi-beach'}`}>
                 <img
                   className="article__image"
                   src={garbage_in_the_sea}
@@ -107,7 +107,7 @@ function BlogRecycle() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container">
+              <div className="article__image-container article__image-container_mega-max-recycle">
                 <img
                   className="article__image"
                   src={garbage_bottle}
@@ -200,7 +200,7 @@ function BlogRecycle() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_medium">
+              <div className="article__image-container article__image-container_mega-max-recycle">
                 <img
                   className="article__image"
                   src={trash_can}
@@ -400,7 +400,7 @@ function BlogRecycle() {
         ) : (
           <>
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini-plus">
+              <div className={`article__image-container ${window.innerWidth < 1100 ? 'article__image-container_mini-recycle' : ''} ${window.innerWidth < 500 ? 'article__image-container_mini-plus-recycle' : ''}`}>
                 <img
                   className="article__image"
                   src={garbage_in_the_sea}
@@ -466,7 +466,7 @@ function BlogRecycle() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container">
+              <div className={`article__image-container ${window.innerWidth < 1100 ? 'article__image-container_medium-traffic' : ''} ${window.innerWidth < 500 ? 'article__image-container_medium-recycle' : ''}`}>
                 <img
                   className="article__image"
                   src={garbage_bottle}
@@ -542,7 +542,7 @@ function BlogRecycle() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_medium">
+              <div className={`article__image-container ${window.innerWidth < 1100 ? 'article__image-container_mini-recycle' : 'article__image-container_medium'} ${window.innerWidth < 500 ? 'article__image-container_mini-plus-recycle-trash-cah' : ''}`}>
                 <img
                   className="article__image"
                   src={trash_can}
@@ -643,7 +643,7 @@ function BlogRecycle() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container ">
+              <div className={`article__image-container ${window.innerWidth < 1100 ? 'article__image-container_mini-recycle' : ''} ${window.innerWidth < 500 ? 'article__image-container_medium-beach' : ''}`}>
                 <img
                   className="article__image"
                   src={trash_can_mini}
