@@ -7,16 +7,19 @@ import tower from "../../images/article/tower.png";
 import people from "../../images/article/people.png";
 import swimming from "../../images/article/swimming.png";
 import Blog from "../blog/Blog";
+import { Link } from "react-router-dom";
 
 function BlogBeach() {
   const [isOpenBlog, setIsOpenBlog] = React.useState(false);
   function openBlog() {
     setIsOpenBlog(true);
   }
-
+  function componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   return (
     <>
-      <section className="article" id="blog-beach-article">
+      <section className="article">
         {window.innerWidth < 330 ? (
           <>
             <div className="article__container">
@@ -521,7 +524,7 @@ function BlogBeach() {
           </>
         ) : (
           <>
-            <div className="article__container">
+            <div className="article__container" id="top">
               <div className="article__image-container ">
                 <img
                   className="article__image"
@@ -576,7 +579,13 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className={`article__image-container ${window.innerWidth > 1100 ? "article__image-container_max" : "article__image-container_mini-plus"}`}>
+              <div
+                className={`article__image-container ${
+                  window.innerWidth > 1100
+                    ? "article__image-container_max"
+                    : "article__image-container_mini-plus"
+                }`}
+              >
                 <img
                   className="article__image"
                   src={hand}
@@ -711,7 +720,13 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className={`article__image-container  ${window.innerWidth < 1100 ? "article__image-container_mini-beach" : "article__image-container_mini-plus"}`}>
+              <div
+                className={`article__image-container  ${
+                  window.innerWidth < 1100
+                    ? "article__image-container_mini-beach"
+                    : "article__image-container_mini-plus"
+                }`}
+              >
                 <img
                   className="article__image"
                   src={circle}
@@ -812,7 +827,13 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className={`article__image-container ${window.innerWidth < 1100 ? "article__image-container_medium-beach" : "article__image-container_medium"}`}>
+              <div
+                className={`article__image-container ${
+                  window.innerWidth < 1100
+                    ? "article__image-container_medium-beach"
+                    : "article__image-container_medium"
+                }`}
+              >
                 <img
                   className="article__image"
                   src={jump}
@@ -928,7 +949,13 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className={`article__image-container ${window.innerWidth < 1100 ? "article__image-container_medium-maxi-beach" : "article__image-container_mini"}`}>
+              <div
+                className={`article__image-container ${
+                  window.innerWidth < 1100
+                    ? "article__image-container_medium-maxi-beach"
+                    : "article__image-container_mini"
+                }`}
+              >
                 <img
                   className="article__image"
                   src={tower}
@@ -991,7 +1018,13 @@ function BlogBeach() {
             </div>
 
             <div className="article__container">
-              <div className={`article__image-container ${window.innerWidth < 1100 ? "article__image-container_mini" : "article__image-container_max"}`}>
+              <div
+                className={`article__image-container ${
+                  window.innerWidth < 1100
+                    ? "article__image-container_mini"
+                    : "article__image-container_max"
+                }`}
+              >
                 <img
                   className="article__image"
                   src={people}
@@ -1154,6 +1187,12 @@ function BlogBeach() {
           </>
         )}
       </section>
+      {window.innerWidth > 500 ? (
+        <button
+        className="article__button_arroy"
+        onClick={componentDidMount}
+      ></button>
+      ) : ''}
 
       <button className="blog__button" onClick={openBlog}>
         ДРУГИЕ СТАТЬИ

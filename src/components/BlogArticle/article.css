@@ -5,6 +5,22 @@
   align-items: flex-end;
 }
 
+.article__button_arroy {
+  background-image: url(../../images/article/button_arrow-up.svg);
+  background-size: 36px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  left: 95%;
+}
+
 .article__container {
   display: grid;
   grid-template-columns: 0.83fr 1fr;
@@ -226,6 +242,12 @@
     height: 520px;
     overflow: hidden;
     padding: 0px 0 0;
+  }
+
+  .article__button_arroy {
+    background-size: 26px;
+    width: 26px;
+    height: 26px;
   }
 
   .article__image-container_mini-plus {

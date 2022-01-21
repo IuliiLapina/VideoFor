@@ -11,6 +11,9 @@ function BlogRecycle() {
   function openBlog() {
     setIsOpenBlog(true);
   }
+  function componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   return (
     <>
       <section className="article" id="blog-recycle">
@@ -698,7 +701,12 @@ function BlogRecycle() {
           </>
         )}
       </section>
-
+      {window.innerWidth > 500 ? (
+        <button
+        className="article__button_arroy"
+        onClick={componentDidMount}
+      ></button>
+      ) : ''}
       <button className="blog__button" onClick={openBlog}>
         ДРУГИЕ СТАТЬИ
       </button>
