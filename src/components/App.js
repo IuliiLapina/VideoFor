@@ -43,6 +43,8 @@ import InfoTooltip from "./infoTooltip/InfoTooltip";
 import PageNotFound from "./page-not-found/PageNotFound";
 import { TelegramApi } from "../utils/Api.js";
 
+import ScrollToTop from "./ScrollToTop";
+
 function App() {
   const location = useLocation();
   const isEngPage = location.pathname.search(/eng/g);
@@ -52,6 +54,7 @@ function App() {
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
     React.useState(false);
   const [titleInfoTooltipPopup, setTitleInfoTooltipPopup] = React.useState("");
+
   //Обработчики открытия попапов
   function handleContactFormPopupOpen() {
     setContactFormPopupOpen(true);
@@ -142,6 +145,7 @@ function App() {
       <Switch>
         <Route exact path="/">
           <main className="content">
+            <ScrollToTop />
             <Promo onContactForm={handleContactFormPopupOpen} />
             <Products />
             <Advantage onContactForm={handleContactFormPopupOpen} />
@@ -157,6 +161,7 @@ function App() {
 
         <Route path="/eng">
           <main className="content">
+            <ScrollToTop />
             <PromoEng onContactForm={handleContactFormPopupOpen} />
             <ProductsEng />
             <AdvantageEng onContactForm={handleContactFormPopupOpen} />
@@ -171,6 +176,7 @@ function App() {
         </Route>
 
         <Route path="/blog-beach">
+          <ScrollToTop />
           <main className="content">
             <BlogBeach />
             <Info
@@ -181,6 +187,7 @@ function App() {
         </Route>
 
         <Route path="/blog-recycle">
+          <ScrollToTop />
           <main className="content">
             <BlogRecycle />
             <Info
@@ -191,6 +198,8 @@ function App() {
         </Route>
 
         <Route path="/blog-traffic">
+          <ScrollToTop />
+
           <main className="content">
             <BlogTraffic />
             <Info
@@ -329,7 +338,7 @@ function App() {
         </Route>
 
         <Route path="*">
-            <PageNotFound />
+          <PageNotFound />
         </Route>
       </Switch>
       <Footer onContactForm={handleContactFormPopupOpen} />
