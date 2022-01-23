@@ -22,6 +22,12 @@ function Services() {
             по индивидуальному заказу
           </p>
           <img className="card__image" src={design} alt="Логотип 'VideoFor'" />
+          <span className="card__under-image_before"></span>
+
+          <p className="card__under-image card__under-image_services">
+            ПРОЕКТИРОВАНИЕ СИСТЕМ<br />
+            ПО ИНДИВИДУАЛЬНОМУ ЗАКАЗУ
+          </p>
           <Link className="card__link" to="/design-service#design">
             <button className="button button_card button_card-services">
               Подробнее об услуге
@@ -30,7 +36,7 @@ function Services() {
         </li>
 
         <li className="card">
-          <p className="card__status card__status_services">Предложение</p>
+          <p className="card__status card__status_services ">Предложение</p>
           <img
             className="card__logo card__logo_services"
             src={logo}
@@ -45,6 +51,12 @@ function Services() {
             src={research}
             alt="Логотип 'VideoFor'"
           />
+          <span className="card__under-image_before-services"></span>
+
+          <p className="card__under-image card__under-image_services">
+            ВЫПОЛНЕНИЕ НИОКР <br />
+            ПО ИНДИВИДУАЛЬНОМУ ЗАКАЗУ
+          </p>
           <Link className="card__link" to="/r-d-service#r-d">
             <button className="button button_card button_card-services">
               Подробнее об услуге
