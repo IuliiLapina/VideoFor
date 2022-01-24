@@ -33,9 +33,7 @@ function Products() {
           )}
           <img className="card__image" src={trafic} alt="Логотип 'VideoFor'" />
           <span className="card__under-image_before"></span>
-          <p className="card__under-image">
-            УМНЫЙ ГОРОД
-          </p>
+          <p className="card__under-image">УМНЫЙ ГОРОД</p>
           <Link className="card__link" to="/smart-city#city">
             <button className="button button_card">Подробнее о продукте</button>
           </Link>
@@ -62,10 +60,8 @@ function Products() {
           )}
           <img className="card__image" src={beach} alt="Логотип 'VideoFor'" />
           <span className="card__under-image_before"></span>
-          
-          <p className="card__under-image">
-            УМНЫЙ ПЛЯЖ
-          </p>
+
+          <p className="card__under-image">УМНЫЙ ПЛЯЖ</p>
           <Link className="card__link" to="/smart-beach#beach">
             <button className="button button_card">Подробнее о продукте</button>
           </Link>
@@ -96,9 +92,7 @@ function Products() {
           />
           <span className="card__under-image_before"></span>
 
-          <p className="card__under-image">
-            УМНОЕ ПРОСТРАНСТВО
-          </p>
+          <p className="card__under-image">УМНОЕ ПРОСТРАНСТВО</p>
           <Link className="card__link" to="/smart-space#space">
             <button className="button button_card">Подробнее о продукте</button>
           </Link>
@@ -130,8 +124,8 @@ function Products() {
           />
           <span className="card__under-image_before"></span>
 
-                    <p className="card__under-image card__under-image_services">
-            УМНЫЕ СТАНЦИИ РАЗДЕЛЬНОГО <br/>
+          <p className="card__under-image card__under-image_services">
+            УМНЫЕ СТАНЦИИ РАЗДЕЛЬНОГО <br />
             СБОРА МУСОРА И ОТХОДОВ
           </p>
           <Link className="card__link" to="/smart-waste-sites#waste-sites">
