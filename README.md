@@ -1,6 +1,6 @@
 # VideoFor
 Мультиязычный сайт-визитка.
-http://www.videofor.ru
+<br/> http://www.videofor.ru
 
 ## Функционал
 * смена языка
