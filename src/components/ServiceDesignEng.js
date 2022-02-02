@@ -4,7 +4,7 @@ import drawings from "../images/services-pages/drawings.png";
 
 function ServiceDesignEng({ onContactForm }) {
   return (
-    <section className="advantage-page" id="design-eng">
+    <section className="advantage-page" id="design-eng" lang="en-US">
       <div className="advantage-page__container">
         <img
           className="advantage-page__image"

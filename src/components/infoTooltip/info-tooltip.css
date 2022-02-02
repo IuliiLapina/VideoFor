@@ -1,0 +1,40 @@
+.popup__container_info-tooltip {
+  max-width: 768px;
+  min-height: 630px;
+}
+
+.popup__title_info-tooltip {
+  padding-top: 260px;
+}
+
+.popup__contact-container_info-tooltip {
+  padding-top: 10px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.info-tooltip__image {
+  animation: rotation infinite 7s linear;
+}
+
+@media screen and (max-width: 900px) {
+  .popup__container_info-tooltip {
+    max-width: 300px;
+    min-height: 437px;
+  }
+  .popup__title_info-tooltip {
+    padding-top: 165px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .popup__close-btn_info-tooltip {
+    top: 20px;
+    right: 20px;
+  }
+}

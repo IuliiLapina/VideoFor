@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import Header from "./header/Header";
 import Promo from "./promo/Promo";
@@ -10,7 +11,7 @@ import Info from "./info/Info";
 import Blog from "./blog/Blog";
 import Partners from "./partners/Partners";
 import Footer from "./footer/Footer";
-import InfoTooltip from "./infoTooltip/InfoTooltip";
+import ContactForm from "./contactForm/contactForm";
 
 import BlogBeach from "./BlogArticle/BlogBeach.js";
 import BlogRecycle from "./BlogArticle/BlogRecycle";
@@ -38,53 +39,104 @@ import AdvantageSmartWasteSitesEng from "./advantege-page/AdvantageSmartWasteSit
 import ServiceDesignEng from "./ServiceDesignEng";
 import ServiceRDEng from "./ServiceRDEng";
 
+import InfoTooltip from "./infoTooltip/InfoTooltip";
+import PageNotFound from "./page-not-found/PageNotFound";
 import { TelegramApi } from "../utils/Api.js";
 
+import ScrollToTop from "./ScrollToTop";
+
 function App() {
+  const location = useLocation();
+  const isEngPage = location.pathname.search(/eng/g);
+
+  const [isContactFormPopupOpen, setContactFormPopupOpen] =
+    React.useState(false);
   const [isInfoTooltipPopupOpen, setInfoTooltipPopupOpen] =
     React.useState(false);
+  const [titleInfoTooltipPopup, setTitleInfoTooltipPopup] = React.useState("");
 
   //Обработчики открытия попапов
+  function handleContactFormPopupOpen() {
+    setContactFormPopupOpen(true);
+  }
   function handleInfoTooltipPopupOpen() {
     setInfoTooltipPopupOpen(true);
   }
 
   //Обработчик закрытия попапов
   function closeAllPopups() {
+    setContactFormPopupOpen(false);
+  }
+  function handleInfoTooltipPopupClose() {
     setInfoTooltipPopupOpen(false);
+  }
+
+  function handleInfoTooltipContent(title) {
+    setTitleInfoTooltipPopup(title);
+  }
+
+  //подписаться на блог по email - сообщение в телеграмм
+  function handleSubmitInfoFormBlog(info) {
+    TelegramApi.sendMessageInfoEmail(info)
+      .then(() => {
+        handleInfoTooltipContent(
+          `${
+            isEngPage !== 1
+              ? "МЫ СООБЩИМ ВАМ О НОВЫХ СТАТЬЯХ"
+              : "WE WILL INFORM  YOU ABOUT NEW ARTICLES"
+          }`
+        );
+        handleInfoTooltipPopupOpen();
+        closeAllPopups();
+      })
+      .catch((err) => {
+        handleInfoTooltipContent("Ooops" + err);
+        handleInfoTooltipPopupOpen();
+        console.log(err);
+      });
   }
 
   //запросить информацию по email - сообщение в телеграмм
   function handleSubmitInfoForm(info) {
     TelegramApi.sendMessageInfoEmail(info)
-      .then(closeAllPopups())
-      .then(console.log(info))
-      .catch((err) => console.log(err));
+      .then(() => {
+        handleInfoTooltipContent(
+          `${
+            isEngPage !== 1
+              ? "СКОРО С ВАМИ СВЯЖЕМСЯ"
+              : "WE WILL CONTACT YOU SOON"
+          }`
+        );
+        handleInfoTooltipPopupOpen();
+        closeAllPopups();
+      })
+      .catch((err) => {
+        handleInfoTooltipContent("Ooops" + err);
+        handleInfoTooltipPopupOpen();
+        console.log(err);
+      });
   }
 
   //форма "свяжитесь со мной"- сообщение в телеграмм
-
   function handleSubmitContactForm(info) {
     TelegramApi.sendMessageContactPhoneEng(info)
-      .then(closeAllPopups())
-      .catch((err) => console.log(err));
-  }
-  /*
-
-     //форма "свяжитесь со мной"- сообщение в телеграмм
-     function handleSubmitContactForm(info) {
-      const json = JSON.stringify({
-        name: info.name,
-        phone: info.phone,
-        email: info.email,
-        comment: info.comment,
-        topic: info.topic
+      .then(() => {
+        handleInfoTooltipContent(
+          `${
+            isEngPage !== 1
+              ? "СКОРО С ВАМИ СВЯЖЕМСЯ"
+              : "WE WILL CONTACT YOU SOON"
+          }`
+        );
+        handleInfoTooltipPopupOpen();
+        closeAllPopups();
+      })
+      .catch((err) => {
+        handleInfoTooltipContent("Ooops" + err);
+        handleInfoTooltipPopupOpen();
+        console.log(err);
       });
-      TelegramApi.sendMessageContactPhoneEng(json)
-        .then(console.log(info))
-        .catch((err) => console.log(err));
-    }
-  */
+  }
 
   return (
     <div className="page">
@@ -93,9 +145,10 @@ function App() {
       <Switch>
         <Route exact path="/">
           <main className="content">
-            <Promo onContactForm={handleInfoTooltipPopupOpen} />
+            <ScrollToTop />
+            <Promo onContactForm={handleContactFormPopupOpen} />
             <Products />
-            <Advantage onContactForm={handleInfoTooltipPopupOpen} />
+            <Advantage onContactForm={handleContactFormPopupOpen} />
             <Services />
             <Info
               title={"Запросить подробную информацию"}
@@ -108,9 +161,10 @@ function App() {
 
         <Route path="/eng">
           <main className="content">
-            <PromoEng onContactForm={handleInfoTooltipPopupOpen} />
+            <ScrollToTop />
+            <PromoEng onContactForm={handleContactFormPopupOpen} />
             <ProductsEng />
-            <AdvantageEng onContactForm={handleInfoTooltipPopupOpen} />
+            <AdvantageEng onContactForm={handleContactFormPopupOpen} />
             <ServicesEng />
             <InfoEng
               title={"Request detailed information"}
@@ -122,38 +176,42 @@ function App() {
         </Route>
 
         <Route path="/blog-beach">
+          <ScrollToTop />
           <main className="content">
             <BlogBeach />
             <Info
               title={"Получать новые публикации"}
-              onSubmitInfoForm={handleSubmitInfoForm}
+              onSubmitInfoForm={handleSubmitInfoFormBlog}
             />
           </main>
         </Route>
 
         <Route path="/blog-recycle">
+          <ScrollToTop />
           <main className="content">
             <BlogRecycle />
             <Info
               title={"Получать новые публикации"}
-              onSubmitInfoForm={handleSubmitInfoForm}
+              onSubmitInfoForm={handleSubmitInfoFormBlog}
             />
           </main>
         </Route>
 
         <Route path="/blog-traffic">
+          <ScrollToTop />
+
           <main className="content">
             <BlogTraffic />
             <Info
               title={"Получать новые публикации"}
-              onSubmitInfoForm={handleSubmitInfoForm}
+              onSubmitInfoForm={handleSubmitInfoFormBlog}
             />
           </main>
         </Route>
 
         <Route exact path="/smart-city">
           <main className="content">
-            <AdvantageSmartCity onContactForm={handleInfoTooltipPopupOpen} />
+            <AdvantageSmartCity onContactForm={handleContactFormPopupOpen} />
             <Info
               title={"Запросить подробную информацию"}
               onSubmitInfoForm={handleSubmitInfoForm}
@@ -163,7 +221,7 @@ function App() {
 
         <Route path="/smart-city/eng">
           <main className="content">
-            <AdvantageSmartCityEng onContactForm={handleInfoTooltipPopupOpen} />
+            <AdvantageSmartCityEng onContactForm={handleContactFormPopupOpen} />
             <InfoEng
               title={"Request detailed information"}
               onSubmitInfoForm={handleSubmitInfoForm}
@@ -173,7 +231,7 @@ function App() {
 
         <Route exact path="/smart-beach">
           <main className="content">
-            <AdvantageSmartBeach onContactForm={handleInfoTooltipPopupOpen} />
+            <AdvantageSmartBeach onContactForm={handleContactFormPopupOpen} />
             <Info
               title={"Запросить подробную информацию"}
               onSubmitInfoForm={handleSubmitInfoForm}
@@ -184,7 +242,7 @@ function App() {
         <Route path="/smart-beach/eng">
           <main className="content">
             <AdvantageSmartBeachEng
-              onContactForm={handleInfoTooltipPopupOpen}
+              onContactForm={handleContactFormPopupOpen}
             />
             <InfoEng
               title={"Request detailed information"}
@@ -195,7 +253,7 @@ function App() {
 
         <Route exact path="/smart-space">
           <main className="content">
-            <AdvantageSmartSpace onContactForm={handleInfoTooltipPopupOpen} />
+            <AdvantageSmartSpace onContactForm={handleContactFormPopupOpen} />
             <Info
               title={"Запросить подробную информацию"}
               onSubmitInfoForm={handleSubmitInfoForm}
@@ -206,7 +264,7 @@ function App() {
         <Route path="/smart-space/eng">
           <main className="content">
             <AdvantageSmartSpaceEng
-              onContactForm={handleInfoTooltipPopupOpen}
+              onContactForm={handleContactFormPopupOpen}
             />
             <InfoEng
               title={"Request detailed information"}
@@ -218,7 +276,7 @@ function App() {
         <Route exact path="/smart-waste-sites">
           <main className="content">
             <AdvantageSmartWasteSites
-              onContactForm={handleInfoTooltipPopupOpen}
+              onContactForm={handleContactFormPopupOpen}
             />
             <Info
               title={"Запросить подробную информацию"}
@@ -230,7 +288,7 @@ function App() {
         <Route path="/smart-waste-sites/eng">
           <main className="content">
             <AdvantageSmartWasteSitesEng
-              onContactForm={handleInfoTooltipPopupOpen}
+              onContactForm={handleContactFormPopupOpen}
             />
             <InfoEng
               title={"Request detailed information"}
@@ -241,7 +299,7 @@ function App() {
 
         <Route exact path="/design-service">
           <main className="content">
-            <ServiceDesign onContactForm={handleInfoTooltipPopupOpen} />
+            <ServiceDesign onContactForm={handleContactFormPopupOpen} />
             <Info
               title={"Запросить подробную информацию"}
               onSubmitInfoForm={handleSubmitInfoForm}
@@ -251,7 +309,7 @@ function App() {
 
         <Route path="/design-service/eng">
           <main className="content">
-            <ServiceDesignEng onContactForm={handleInfoTooltipPopupOpen} />
+            <ServiceDesignEng onContactForm={handleContactFormPopupOpen} />
             <InfoEng
               title={"Request detailed information"}
               onSubmitInfoForm={handleSubmitInfoForm}
@@ -261,7 +319,7 @@ function App() {
 
         <Route exact path="/r-d-service">
           <main className="content">
-            <ServiceRD onContactForm={handleInfoTooltipPopupOpen} />
+            <ServiceRD onContactForm={handleContactFormPopupOpen} />
             <Info
               title={"Запросить подробную информацию"}
               onSubmitInfoForm={handleSubmitInfoForm}
@@ -271,21 +329,30 @@ function App() {
 
         <Route path="/r-d-service/eng">
           <main className="content">
-            <ServiceRDEng onContactForm={handleInfoTooltipPopupOpen} />
+            <ServiceRDEng onContactForm={handleContactFormPopupOpen} />
             <InfoEng
               title={"Request detailed information"}
               onSubmitInfoForm={handleSubmitInfoForm}
             />
           </main>
         </Route>
-      </Switch>
-      <Footer onContactForm={handleInfoTooltipPopupOpen} />
 
-      <InfoTooltip
-        isOpen={isInfoTooltipPopupOpen}
+        <Route path="*">
+          <PageNotFound />
+        </Route>
+      </Switch>
+      <Footer onContactForm={handleContactFormPopupOpen} />
+
+      <ContactForm
+        isOpen={isContactFormPopupOpen}
         onClose={closeAllPopups}
         handleSubmit={closeAllPopups}
         onSubmitContactForm={handleSubmitContactForm}
+      />
+      <InfoTooltip
+        isOpen={isInfoTooltipPopupOpen}
+        onClose={handleInfoTooltipPopupClose}
+        title={titleInfoTooltipPopup}
       />
     </div>
   );

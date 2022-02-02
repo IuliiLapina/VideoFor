@@ -4,7 +4,7 @@ import beach from "../../images/advantage-pages/beach.png";
 
 function AdvantageSmartBeachEng({ onContactForm }) {
   return (
-    <section className="advantage-page" id="beach-eng">
+    <section className="advantage-page" id="beach-eng" lang="en-US">
       <div className="advantage-page__container">
         <img
           className="advantage-page__image"

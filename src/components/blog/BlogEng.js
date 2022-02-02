@@ -6,7 +6,7 @@ import blog_image3 from "../../images/blog/blog-image3.png";
 
 function BlogEng() {
   return (
-    <section className="blog" id="blog_eng">
+    <section className="blog" id="blog_eng" lang="en-US">
       <h2 className="chapter">VIDEOFOR BLOG</h2>
       <ul className="blog__card-list">
         <li className="blog__card blog__card_eng">

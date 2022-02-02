@@ -8,7 +8,7 @@ import { HashLink as Link } from "react-router-hash-link";
 
 function ProductsEng() {
   return (
-    <section className="products" id="products_eng">
+    <section className="products" id="products_eng" lang="en-US">
       <h2 className="chapter">OUR PRODUCTION</h2>
       <ul className="cards">
         <li className="card">
@@ -23,6 +23,10 @@ function ProductsEng() {
             violations and road accidents
           </p>
           <img className="card__image" src={trafic} alt="Логотип 'VideoFor'" />
+          <span className="card__under-image_before"></span>
+          <p className="card__under-image">
+            SMART SITY
+          </p>
           <Link className="card__link" to="/smart-city/eng#city-eng">
             <button className="button button_card button_card-eng">DETAILS</button>
           </Link>
@@ -40,6 +44,10 @@ function ProductsEng() {
             areas, automated announcement system, instant rescue call
           </p>
           <img className="card__image" src={beach} alt="Логотип 'VideoFor'" />
+          <span className="card__under-image_before"></span>
+          <p className="card__under-image">
+            SMART BEACH
+          </p>
           <Link className="card__link" to="/smart-beach/eng#beach-eng">
             <button className="button button_card button_card-eng">DETAILS</button>
           </Link>
@@ -61,6 +69,10 @@ function ProductsEng() {
             src={security}
             alt="Логотип 'VideoFor'"
           />
+          <span className="card__under-image_before"></span>
+                    <p className="card__under-image">
+            SMART SPACE
+          </p>
           <Link className="card__link" to="/smart-space/eng#space-eng">
             <button className="button button_card button_card-eng">DETAILS</button>
           </Link>
@@ -82,6 +94,10 @@ function ProductsEng() {
             src={monitoring}
             alt="Логотип 'VideoFor'"
           />
+          <span className="card__under-image_before"></span>
+                    <p className={`card__under-image ${window.innerWidth <= 580 ? '' : 'card__under-image_services'}`}>
+            SMART STATIONS FOR GARBAGE <br/>AND WASTE SORTING
+          </p>
           <Link className="card__link" to="/smart-waste-sites/eng#waste-sites-eng">
             <button className="button button_card button_card-eng">DETAILS</button>
           </Link>

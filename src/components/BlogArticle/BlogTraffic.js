@@ -11,6 +11,9 @@ function BlogRecycle() {
   function openBlog() {
     setIsOpenBlog(true);
   }
+  function componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   return (
     <>
       <section className="article" id="blog-traffic">
@@ -132,7 +135,7 @@ function BlogRecycle() {
 
             <div className="article__container">
             <div className={`article__image-container  ${
-                  window.innerWidth > 1100 ? "article__image-container_mini-traffic" : "article__image-container_mini-traffic"
+                  window.innerWidth > 1100 ? "article__image-container_mini-traffic" : "article__image-container_medium-traffic-light"
                 }`}>
                 <img
                   className="article__image"
@@ -178,7 +181,7 @@ function BlogRecycle() {
               {window.innerWidth > 1100 ? (
                 ""
               ) : (
-                <p className="article__text article__text-second">
+                <p className="article__text">
                   Также, «Видеофор» акцентировали внимание на оптимизации
                   вычислительных алгоритмов, что позволило им значительно
                   снизить требования вычислительным мощностям. Это в свою
@@ -242,7 +245,9 @@ function BlogRecycle() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_mini-traffic ">
+              <div className={`article__image-container  ${
+                  window.innerWidth > 1100 ? "article__image-container_mini-traffic" : "article__image-container_mini-traffic"
+                }`}>
                 <img
                   className="article__image"
                   src={lattice}
@@ -318,7 +323,9 @@ function BlogRecycle() {
             </div>
 
             <div className="article__container">
-              <div className="article__image-container article__image-container_medium-traffic ">
+              <div className={`article__image-container  ${
+                  window.innerWidth > 1100 ? "article__image-container_mini-traffic-road" : "article__image-container_medium-traffic-road"
+                }`}>
                 <img
                   className="article__image"
                   src={traffic_jam}
@@ -623,7 +630,12 @@ function BlogRecycle() {
           </>
         )}
       </section>
-
+      {window.innerWidth > 500 ? (
+        <button
+        className="article__button_arroy"
+        onClick={componentDidMount}
+      ></button>
+      ) : ''}
       <button className="blog__button" onClick={openBlog}>
         ДРУГИЕ СТАТЬИ
       </button>

@@ -13,7 +13,7 @@ function Footer({ onContactForm }) {
   return (
     <>
       { isEngPage !== -1 ? (
-        <footer className="footer">
+        <footer className="footer" lang="en-US">
           <div className="footer__resident-container">
             <p className="footer__resident">Resident</p>
             <img
@@ -178,7 +178,7 @@ function Footer({ onContactForm }) {
           </div>
           <button
             className={`button button_footer ${
-              location !== "/" ? "button_disabled" : ""
+              location.pathname === "/" ? "" : "button_disabled"
             }`}
             onClick={onContactForm}
           >

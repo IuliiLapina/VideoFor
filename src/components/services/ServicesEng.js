@@ -1,12 +1,12 @@
 import React from "react";
 import design from "../../images/services/design.png";
 import research from "../../images/services/research.png";
-import logo from "../../images/logo/logo.svg";
+import logo from "../../images/logo/logo.png";
 import { HashLink as Link } from "react-router-hash-link";
 
 function ServicesEng() {
   return (
-    <section className="services" id="services_eng">
+    <section className="services" id="services_eng" lang="en-US">
       <h2 className="chapter">OUR SERVICES</h2>
       <ul className="cards">
         <li className="card card_eng">
@@ -20,6 +20,11 @@ function ServicesEng() {
             Design of video analytics systems for an individual order
           </p>
           <img className="card__image" src={design} alt="Логотип 'VideoFor'" />
+          <span className="card__under-image_before-services-eng"></span>
+
+          <p className="card__under-image card__under-image_services-eng">
+           CUSTOMIZED VIDEO ANALISTICS <br/> BY INDIVIDUAL ORDER
+          </p>
           <Link className="card__link" to="/design-service/eng#design-eng">
             <button className="button button_card button_card-eng">
               DETAILS
@@ -42,6 +47,11 @@ function ServicesEng() {
             src={research}
             alt="Логотип 'VideoFor'"
           />
+          <span className="card__under-image_before-services-eng"></span>
+
+                    <p className="card__under-image card__under-image_services-eng">
+            R&amp;D PERFOMANCE <br/> BY INDIVIDUAL ORDER
+          </p>
           <Link className="card__link" to="/r-d-service/eng#r-d-eng">
             <button className="button button_card button_card-eng">
               DETAILS

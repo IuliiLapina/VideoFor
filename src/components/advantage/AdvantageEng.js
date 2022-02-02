@@ -10,7 +10,7 @@ function AdvantageEng({ onContactForm }) {
   const windowWidtn = window.innerWidth;
 
   return (
-    <section className="advantage" id="advantage_eng">
+    <section className="advantage" id="advantage_eng" lang="en-US">
       <h2 className="chapter">OUR ADVANTAGES</h2>
       <ul className="advantage__list advantage__list_eng">
         <li className="advantage__list-iteam">

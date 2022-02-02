@@ -3,7 +3,7 @@ import promo from "../../images/promo/promo.png";
 
 function PromoEng({ onContactForm }) {
   return (
-    <section className="promo">
+    <section className="promo" lang="en-US">
       <h1 className="promo__title">FOR BUSINESS. FOR CITY. FOR YOU.</h1>
       <p className="promo__subtitle">
         Unique solutions and software based on computer vision

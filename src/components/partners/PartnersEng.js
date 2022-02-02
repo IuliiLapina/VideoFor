@@ -5,7 +5,7 @@ import rostelecom from "../../images/partners/rostelecom.png";
 
 function PartnersEng() {
   return (
-    <section className="partners">
+    <section className="partners" lang="en-US">
       <h2 className="chapter">PARTNERS AND CLIENTS</h2>
       <ul className="partners__logo-zone">
         <li className="partners__list-item">
