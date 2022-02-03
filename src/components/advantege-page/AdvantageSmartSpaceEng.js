@@ -9,7 +9,7 @@ function AdvantageSmartSpaceEng({ onContactForm }) {
         <img
           className="advantage-page__image"
           src={house}
-          alt="Логотип 'VideoFor'"
+          alt="Space with people"
         />
         <div className="advantage-page__container-text advantage-page__container-text_big-heaght ">
           <h2 className="advantage-page__title">SMART SPACE</h2>
@@ -34,7 +34,7 @@ function AdvantageSmartSpaceEng({ onContactForm }) {
         <img
           className="advantage-page__image advantage-page__image_right advantage-page__image_smart-space"
           src={place}
-          alt="Логотип 'VideoFor'"
+          alt="Square with people"
         />
         <div className="advantage-page__container-text advantage-page__container-text_right advantage-page__container-text_smart-space">
           <h2 className="advantage-page__title advantage-page__title_right">

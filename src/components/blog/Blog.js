@@ -22,7 +22,7 @@ function Blog() {
             <img
               className="blog__image"
               src={blog_image1}
-              alt="Логотип 'VideoFor'"
+              alt="Мужчина на пляже"
             />
             <p className="blog__data">8 декабря 2021</p>
             <p className="blog__subtitle">
@@ -36,7 +36,7 @@ function Blog() {
             <img
               className="blog__image"
               src={blog_image3}
-              alt="Логотип 'VideoFor'"
+              alt="Мусорный бак"
             />
             <p className="blog__data">18 декабря 2021</p>
             <p className="blog__subtitle">
@@ -50,7 +50,7 @@ function Blog() {
             <img
               className="blog__image"
               src={blog_image2}
-              alt="Логотип 'VideoFor'"
+              alt="Светофор"
             />
             <p className="blog__data">20 декабря 2021</p>
             <p className="blog__subtitle">

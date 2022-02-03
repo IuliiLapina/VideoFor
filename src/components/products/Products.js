@@ -18,7 +18,7 @@ function Products() {
           <img
             className="card__logo"
             src={logo_sova}
-            alt="Логотип 'VideoFor'"
+            alt="Логотип 'Сова'"
           />
           {windowWidtn <= 768 ? (
             <p className="card__subtitle">
@@ -31,7 +31,7 @@ function Products() {
               правил дорожного движения, аварий
             </p>
           )}
-          <img className="card__image" src={trafic} alt="Логотип 'VideoFor'" />
+          <img className="card__image" src={trafic} alt="Дорога" />
           <span className="card__under-image_before"></span>
           <p className="card__under-image">УМНЫЙ ГОРОД</p>
           <Link className="card__link" to="/smart-city#city">
@@ -44,7 +44,7 @@ function Products() {
           <img
             className="card__logo"
             src={logo_sova}
-            alt="Логотип 'VideoFor'"
+            alt="Логотип 'Сова'"
           />
           {windowWidtn <= 768 ? (
             <p className="card__subtitle">
@@ -58,7 +58,7 @@ function Products() {
               спасателей
             </p>
           )}
-          <img className="card__image" src={beach} alt="Логотип 'VideoFor'" />
+          <img className="card__image" src={beach} alt="Пляж" />
           <span className="card__under-image_before"></span>
 
           <p className="card__under-image">УМНЫЙ ПЛЯЖ</p>
@@ -72,7 +72,7 @@ function Products() {
           <img
             className="card__logo"
             src={logo_sova}
-            alt="Логотип 'VideoFor'"
+            alt="Логотип 'Сова'"
           />
           {windowWidtn <= 768 ? (
             <p className="card__subtitle">
@@ -88,7 +88,7 @@ function Products() {
           <img
             className="card__image"
             src={security}
-            alt="Логотип 'VideoFor'"
+            alt="Вокзал"
           />
           <span className="card__under-image_before"></span>
 
@@ -103,7 +103,7 @@ function Products() {
           <img
             className="card__logo"
             src={logo_sova}
-            alt="Логотип 'VideoFor'"
+            alt="Логотип 'Сова'"
           />
           {windowWidtn <= 768 ? (
             <p className="card__subtitle">
@@ -120,7 +120,7 @@ function Products() {
           <img
             className="card__image"
             src={monitoring}
-            alt="Логотип 'VideoFor'"
+            alt="Мусорный бак"
           />
           <span className="card__under-image_before"></span>
 

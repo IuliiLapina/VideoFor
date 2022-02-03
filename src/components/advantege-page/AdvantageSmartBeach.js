@@ -8,9 +8,8 @@ function AdvantageSmartBeach({ onContactForm }) {
       <div className="advantage-page__container" >
         <img
           className="advantage-page__image"
-          
           src={women}
-          alt="Логотип 'VideoFor'"
+          alt="Женщина в воде"
         />
         <div className="advantage-page__container-text advantage-page__container-text_litle">
           <h2 className="advantage-page__title">УМНЫЙ ПЛЯЖ</h2>
@@ -30,7 +29,7 @@ function AdvantageSmartBeach({ onContactForm }) {
         <img
           className="advantage-page__image advantage-page__image_right"
           src={beach}
-          alt="Логотип 'VideoFor'"
+          alt="Пляж, вид сверху"
         />
         <div className="advantage-page__container-text advantage-page__container-text_right">
           <h2 className="advantage-page__title advantage-page__title_right">

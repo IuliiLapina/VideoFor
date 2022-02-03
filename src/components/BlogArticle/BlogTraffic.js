@@ -26,7 +26,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={road}
-                  alt="Логотип 'VideoFor'"
+                  alt="Дорожная пробка"
                 />
               </div>
               <div className="article__container-text">
@@ -140,7 +140,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={traffic_lights}
-                  alt="Логотип 'VideoFor'"
+                  alt="Светофор"
                 />
               </div>
               <div className="article__container-text">
@@ -251,7 +251,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={lattice}
-                  alt="Логотип 'VideoFor'"
+                  alt="Решетка"
                 />
               </div>
               <div className="article__container-text">
@@ -329,7 +329,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={traffic_jam}
-                  alt="Логотип 'VideoFor'"
+                  alt="Дорожный затор"
                 />
               </div>
               <div className="article__container-text">
@@ -393,7 +393,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={road}
-                  alt="Логотип 'VideoFor'"
+                  alt="Дорожная пробка"
                 />
               </div>
               <div className="article__container-text">
@@ -466,7 +466,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={traffic_lights}
-                  alt="Логотип 'VideoFor'"
+                  alt="Светофор"
                 />
               </div>
               <div className="article__container-text">
@@ -548,7 +548,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={lattice}
-                  alt="Логотип 'VideoFor'"
+                  alt="Решетка"
                 />
               </div>
               <div className="article__container-text">
@@ -591,7 +591,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={traffic_jam}
-                  alt="Логотип 'VideoFor'"
+                  alt="Дорожный затор"
                 />
               </div>
               <div className="article__container-text">

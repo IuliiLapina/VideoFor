@@ -14,7 +14,7 @@ function PromoEng({ onContactForm }) {
         <img
           className="promo__picture"
           src={promo}
-          alt="Арт-изображение 'Нейросети'"
+          alt="Art 'Neural Networks'"
         />
       </div>
       <button

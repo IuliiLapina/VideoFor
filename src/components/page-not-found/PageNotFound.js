@@ -7,7 +7,7 @@ function PageNotFound() {
       <img
         className="page-not-found__image"
         src={page_not_found}
-        alt="Логотип 'VideoFor'"
+        alt="404 изображение"
       />
     </div>
   );

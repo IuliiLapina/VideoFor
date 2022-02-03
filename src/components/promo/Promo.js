@@ -14,7 +14,7 @@ function Promo({onContactForm}) {
         <img
           className="promo__picture"
           src={promo}
-          alt="Арт-изображение 'Нейросети'"
+          alt="Арт 'Нейросети'"
         />
       </div>
       <button className="button" type="button" onClick={onContactForm}>Связаться с нами</button>

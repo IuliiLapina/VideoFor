@@ -16,13 +16,13 @@ function ProductsEng() {
           <img
             className="card__logo"
             src={logo_sova}
-            alt="Логотип 'VideoFor'"
+            alt="'Owl' logo"
           />
           <p className="card__subtitle card__subtitle_eng">
             Detailed 24-hour traffic analysis, registration of traffic
             violations and road accidents
           </p>
-          <img className="card__image" src={trafic} alt="Логотип 'VideoFor'" />
+          <img className="card__image" src={trafic} alt="Road" />
           <span className="card__under-image_before"></span>
           <p className="card__under-image">
             SMART SITY
@@ -37,13 +37,13 @@ function ProductsEng() {
           <img
             className="card__logo"
             src={logo_sova}
-            alt="Логотип 'VideoFor'"
+            alt="'Owl' logo"
           />
           <p className="card__subtitle card__subtitle_eng">
             Tracking of drowning people, notification of swimmers in restricted
             areas, automated announcement system, instant rescue call
           </p>
-          <img className="card__image" src={beach} alt="Логотип 'VideoFor'" />
+          <img className="card__image" src={beach} alt="Beach" />
           <span className="card__under-image_before"></span>
           <p className="card__under-image">
             SMART BEACH
@@ -58,7 +58,7 @@ function ProductsEng() {
           <img
             className="card__logo"
             src={logo_sova}
-            alt="Логотип 'VideoFor'"
+            alt="'Owl' logo"
           />
           <p className="card__subtitle card__subtitle_eng">
             Preservation of monuments, public spaces, playgrounds. Protection
@@ -67,7 +67,7 @@ function ProductsEng() {
           <img
             className="card__image"
             src={security}
-            alt="Логотип 'VideoFor'"
+            alt="Space"
           />
           <span className="card__under-image_before"></span>
                     <p className="card__under-image">
@@ -83,7 +83,7 @@ function ProductsEng() {
           <img
             className="card__logo"
             src={logo_sova}
-            alt="Логотип 'VideoFor'"
+            alt="'Owl' logo"
           />
           <p className="card__subtitle card__subtitle_eng">
             Monitoring the operation of stations for garbage and waste sorting,
@@ -92,7 +92,7 @@ function ProductsEng() {
           <img
             className="card__image"
             src={monitoring}
-            alt="Логотип 'VideoFor'"
+            alt="Trash can"
           />
           <span className="card__under-image_before"></span>
                     <p className={`card__under-image ${window.innerWidth <= 580 ? '' : 'card__under-image_services'}`}>

@@ -17,7 +17,7 @@ function InfoTooltip({ isOpen, onClose, title }) {
           <img
             className="info-tooltip__image"
             src={camera}
-            alt="Логотип 'VideoFor'"
+            alt="Camera"
           />
         </div>
       </div>

@@ -21,7 +21,7 @@ function Services() {
             <br />
             по индивидуальному заказу
           </p>
-          <img className="card__image" src={design} alt="Логотип 'VideoFor'" />
+          <img className="card__image" src={design} alt="Арт проектирование" />
           <span className="card__under-image_before"></span>
 
           <p className="card__under-image card__under-image_services">
@@ -49,7 +49,7 @@ function Services() {
           <img
             className="card__image"
             src={research}
-            alt="Логотип 'VideoFor'"
+            alt="Арт исследование"
           />
           <span className="card__under-image_before-services"></span>
 

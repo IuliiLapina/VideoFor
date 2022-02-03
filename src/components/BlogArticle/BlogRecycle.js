@@ -24,7 +24,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={garbage_in_the_sea}
-                  alt="Логотип 'VideoFor'"
+                  alt="Бутылка в море"
                 />
               </div>
               <div className="article__container-text">
@@ -114,7 +114,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={garbage_bottle}
-                  alt="Логотип 'VideoFor'"
+                  alt="Много бутылок"
                 />
               </div>
               <div className="article__container-text">
@@ -207,7 +207,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={trash_can}
-                  alt="Логотип 'VideoFor'"
+                  alt="Мусорный бак"
                 />
               </div>
               <div className="article__container-text">
@@ -333,7 +333,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={trash_can_mini}
-                  alt="Логотип 'VideoFor'"
+                  alt="Мусорка в парке"
                 />
               </div>
               <div className="article__container-text">
@@ -407,7 +407,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={garbage_in_the_sea}
-                  alt="Логотип 'VideoFor'"
+                  alt="Бутылка в море"
                 />
               </div>
               <div className="article__container-text">
@@ -473,7 +473,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={garbage_bottle}
-                  alt="Логотип 'VideoFor'"
+                  alt="Много бутылок"
                 />
               </div>
               <div className="article__container-text">
@@ -549,7 +549,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={trash_can}
-                  alt="Логотип 'VideoFor'"
+                  alt="Мусорный бак"
                 />
               </div>
               <div className="article__container-text">
@@ -650,7 +650,7 @@ function BlogRecycle() {
                 <img
                   className="article__image"
                   src={trash_can_mini}
-                  alt="Логотип 'VideoFor'"
+                  alt="Мусорка в парке"
                 />
               </div>
               <div className="article__container-text">

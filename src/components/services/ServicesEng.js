@@ -14,12 +14,12 @@ function ServicesEng() {
           <img
             className="card__logo card__logo_services"
             src={logo}
-            alt="Логотип 'VideoFor'"
+            alt="'VideoFor' logo"
           />
           <p className="card__subtitle card__subtitle_services card__subtitle_services-eng">
             Design of video analytics systems for an individual order
           </p>
-          <img className="card__image" src={design} alt="Логотип 'VideoFor'" />
+          <img className="card__image" src={design} alt="Art design" />
           <span className="card__under-image_before-services-eng"></span>
 
           <p className="card__under-image card__under-image_services-eng">
@@ -37,7 +37,7 @@ function ServicesEng() {
           <img
             className="card__logo card__logo_services"
             src={logo}
-            alt="Логотип 'VideoFor'"
+            alt="'VideoFor' logo"
           />
           <p className="card__subtitle card__subtitle_services card__subtitle_services-eng">
             Research and development work for an individual order
@@ -45,7 +45,7 @@ function ServicesEng() {
           <img
             className="card__image"
             src={research}
-            alt="Логотип 'VideoFor'"
+            alt="Art research"
           />
           <span className="card__under-image_before-services-eng"></span>
 

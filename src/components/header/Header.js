@@ -31,7 +31,7 @@ function Header() {
       {isEngPage !== -1 ? (
         <header className="header" lang="en-US">
           <Link className="header__link" to="/eng">
-            <img className="header__logo" src={logo} alt="Логотип 'VideoFor'" />
+            <img className="header__logo" src={logo} alt="'Videofor' logo" />
           </Link>
           <nav className="header__menu">
             <input

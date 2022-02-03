@@ -9,7 +9,7 @@ function ServiceRD({ onContactForm }) {
         <img
           className="advantage-page__image"
           src={desktop}
-          alt="Логотип 'VideoFor'"
+          alt="Экран ноутбука"
         />
         <div className="advantage-page__container-text advantage-page__container-text_services-rd">
           <h2 className="advantage-page__title advantage-page__title_big advantage-page__title_services advantage-page__title_services-rd">
@@ -34,7 +34,7 @@ function ServiceRD({ onContactForm }) {
         <img
           className="advantage-page__image advantage-page__image_right advantage-page__image_services"
           src={code}
-          alt="Логотип 'VideoFor'"
+          alt="Кусок кода"
         />
         <div className="advantage-page__container-text advantage-page__container-text_right advantage-page__container-text_services-right-rd">
           <h2 className="advantage-page__title advantage-page__title_right advantage-page__title_right-rd">

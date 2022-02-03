@@ -9,7 +9,7 @@ function AdvantageSmartCityEng({ onContactForm }) {
         <img
           className="advantage-page__image"
           src={city_traffic_jam}
-          alt="Логотип 'VideoFor'"
+          alt="Avenue"
         />
         <div className="advantage-page__container-text advantage-page__container-text_litle">
           <h2 className="advantage-page__title">SMART CITY</h2>
@@ -34,7 +34,7 @@ function AdvantageSmartCityEng({ onContactForm }) {
         <img
           className="advantage-page__image advantage-page__image_right"
           src={city_road}
-          alt="Логотип 'VideoFor'"
+          alt="City road"
         />
         <div className="advantage-page__container-text advantage-page__container-text_right">
           <h2 className="advantage-page__title advantage-page__title_right">

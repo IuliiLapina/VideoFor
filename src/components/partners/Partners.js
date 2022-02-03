@@ -31,7 +31,7 @@ function Partners() {
             <img
               className="partners__logo"
               src={protey}
-              alt="Логотип Мегафон"
+              alt="Логотип Протей IT-Инжиниринг"
             />
           </a>
         </li>

@@ -9,7 +9,7 @@ function ServiceDesignEng({ onContactForm }) {
         <img
           className="advantage-page__image"
           src={camcorders}
-          alt="Логотип 'VideoFor'"
+          alt="Lots of cameras pointing at people"
         />
         <div className="advantage-page__container-text advantage-page__container-text_services advantage-page__container-text_services-eng">
           <h2 className="advantage-page__title advantage-page__title_big advantage-page__title_services">
@@ -37,7 +37,7 @@ function ServiceDesignEng({ onContactForm }) {
         <img
           className="advantage-page__image advantage-page__image_right advantage-page__image_services"
           src={drawings}
-          alt="Логотип 'VideoFor'"
+          alt="Drawings on the table"
         />
         <div className="advantage-page__container-text advantage-page__container-text_right advantage-page__container-text_services-right">
           <h2 className="advantage-page__title advantage-page__title_right">

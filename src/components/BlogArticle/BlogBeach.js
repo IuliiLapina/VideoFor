@@ -26,7 +26,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={beach}
-                  alt="Логотип 'VideoFor'"
+                  alt="Дети на пляже"
                 />
               </div>
               <div className="article__container-text">
@@ -83,7 +83,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={hand}
-                  alt="Логотип 'VideoFor'"
+                  alt="Руки погружаются в воду"
                 />
               </div>
               <div className="article__container-text">
@@ -178,7 +178,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={circle}
-                  alt="Логотип 'VideoFor'"
+                  alt="Мужчина с спасательным кругом"
                 />
               </div>
               <div className="article__container-text">
@@ -258,7 +258,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={jump}
-                  alt="Логотип 'VideoFor'"
+                  alt="Люди прыгают с моста в воду"
                 />
               </div>
               <div className="article__container-text">
@@ -348,7 +348,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={tower}
-                  alt="Логотип 'VideoFor'"
+                  alt="Спасательная вышка"
                 />
               </div>
               <div className="article__container-text">
@@ -416,7 +416,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={people}
-                  alt="Логотип 'VideoFor'"
+                  alt="Пляж с людьми"
                 />
               </div>
               <div className="article__container-text">
@@ -485,7 +485,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={swimming}
-                  alt="Логотип 'VideoFor'"
+                  alt="Люди плывут"
                 />
               </div>
               <div className="article__container-text">
@@ -528,7 +528,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={beach}
-                  alt="Логотип 'VideoFor'"
+                  alt="Дети на пляже"
                 />
               </div>
               <div className="article__container-text">
@@ -588,7 +588,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={hand}
-                  alt="Логотип 'VideoFor'"
+                  alt="Руки погружаются в воду"
                 />
               </div>
               <div className="article__container-text">
@@ -729,7 +729,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={circle}
-                  alt="Логотип 'VideoFor'"
+                  alt="Мужчина с спасательным кругом"
                 />
               </div>
               <div className="article__container-text">
@@ -836,7 +836,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={jump}
-                  alt="Логотип 'VideoFor'"
+                  alt="Люди прыгают с моста в воду"
                 />
               </div>
               <div className="article__container-text">
@@ -958,7 +958,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={tower}
-                  alt="Логотип 'VideoFor'"
+                  alt="Спасательная вышка"
                 />
               </div>
               <div className="article__container-text">
@@ -1027,7 +1027,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={people}
-                  alt="Логотип 'VideoFor'"
+                  alt="Пляж с людьми"
                 />
               </div>
               <div className="article__container-text">
@@ -1130,7 +1130,7 @@ function BlogBeach() {
                 <img
                   className="article__image"
                   src={swimming}
-                  alt="Логотип 'VideoFor'"
+                  alt="Люди плывут"
                 />
               </div>
               <div className="article__container-text">

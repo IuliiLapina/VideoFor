@@ -13,7 +13,7 @@ function PartnersEng() {
             <img
               className="partners__logo"
               src={rostelecom}
-              alt="Логотип Ростелеком"
+              alt="Rostelecom logo"
             />
           </a>
         </li>
@@ -22,7 +22,7 @@ function PartnersEng() {
             <img
               className="partners__logo"
               src={megafon}
-              alt="Логотип Мегафон"
+              alt="Megaphone logo"
             />
           </a>
         </li>
@@ -31,7 +31,7 @@ function PartnersEng() {
             <img
               className="partners__logo"
               src={protey}
-              alt="Логотип Мегафон"
+              alt="Logo Proteus IT engineering"
             />
           </a>
         </li>

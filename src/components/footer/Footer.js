@@ -19,7 +19,7 @@ function Footer({ onContactForm }) {
             <img
               className="footer__logo"
               src={skolkovo}
-              alt="Логотип Мегафон"
+              alt="Skolkovo logo"
             />
           </div>
           <div className="footer__column">
@@ -64,7 +64,7 @@ function Footer({ onContactForm }) {
                 <img
                   className="footer__info-icon"
                   src={email}
-                  alt="Логотип Мегафон"
+                  alt="Mail icon"
                 />
                 <p className="footer__info-text"> info@videofor.ru</p>
               </li>
@@ -72,7 +72,7 @@ function Footer({ onContactForm }) {
                 <img
                   className="footer__info-icon"
                   src={phone}
-                  alt="Логотип Мегафон"
+                  alt="Phone icon"
                 />
                 <p className="footer__info-text">+7 (908) 088-80-08</p>
               </li>
@@ -80,7 +80,7 @@ function Footer({ onContactForm }) {
                 <img
                   className="footer__info-icon"
                   src={place}
-                  alt="Логотип Мегафон"
+                  alt="Geopoint icon"
                 />
                 <p className="footer__info-text">
                   St. Petersburg, 
@@ -97,7 +97,7 @@ function Footer({ onContactForm }) {
           >
             To contact us
           </button>
-          <img className="footer__promo" src={girl} alt="Логотип Мегафон" />
+          <img className="footer__promo" src={girl} alt="Art girl" />
         </footer>
       ) : (
         <footer className="footer">
@@ -107,7 +107,7 @@ function Footer({ onContactForm }) {
             <img
               className="footer__logo"
               src={skolkovo}
-              alt="Логотип Мегафон"
+              alt="Логотип Сколково"
             />
           </div>
           <div className="footer__column">
@@ -152,7 +152,7 @@ function Footer({ onContactForm }) {
                 <img
                   className="footer__info-icon"
                   src={email}
-                  alt="Логотип Мегафон"
+                  alt="Иконка почта"
                 />
                 <p className="footer__info-text"> info@videofor.ru</p>
               </li>
@@ -160,7 +160,7 @@ function Footer({ onContactForm }) {
                 <img
                   className="footer__info-icon"
                   src={phone}
-                  alt="Логотип Мегафон"
+                  alt="Иконка телефон"
                 />
                 <p className="footer__info-text">+7 (908) 088-80-08</p>
               </li>
@@ -168,7 +168,7 @@ function Footer({ onContactForm }) {
                 <img
                   className="footer__info-icon"
                   src={place}
-                  alt="Логотип Мегафон"
+                  alt="Иконка геоточка"
                 />
                 <p className="footer__info-text">
                   г. Санкт-Петербург, Константиновский пр. 11, оф. 314
@@ -184,7 +184,7 @@ function Footer({ onContactForm }) {
           >
             Связаться с нами
           </button>
-          <img className="footer__promo" src={girl} alt="Логотип Мегафон" />
+          <img className="footer__promo" src={girl} alt="Арт девочка" />
         </footer>
       )}
     </>

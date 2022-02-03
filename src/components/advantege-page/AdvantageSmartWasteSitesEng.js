@@ -9,7 +9,7 @@ function AdvantageSmartSitesEng({ onContactForm }) {
         <img
           className="advantage-page__image"
           src={full_tank}
-          alt="Логотип 'VideoFor'"
+          alt="Overflowing trash can"
         />
         <div className="advantage-page__container-text  advantage-page__container-text_big-heaght">
           <h2 className="advantage-page__title advantage-page__title_big">
@@ -37,7 +37,7 @@ function AdvantageSmartSitesEng({ onContactForm }) {
         <img
           className="advantage-page__image advantage-page__image_right advantage-page__image_right-eng"
           src={iron_tank}
-          alt="Логотип 'VideoFor'"
+          alt="Garbage bins"
         />
         <div className="advantage-page__container-text advantage-page__container-text_right advantage-page__container-text_smart-space">
           <h2 className="advantage-page__title advantage-page__title_right advantage-page__title_right-eng">

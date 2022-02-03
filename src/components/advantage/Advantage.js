@@ -18,7 +18,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={percent_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка 90%"
             />
             <p className="advantage__subtitle">Точность работы детекторов</p>
           </li>
@@ -26,7 +26,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={coat_of_arms_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка герб РФ"
             />
               <p className="advantage__subtitle">Российская разработка</p>
           </li>
@@ -34,7 +34,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={customization_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка настройки"
             />
             <p className="advantage__subtitle">
               Индивидуальная настройка детекторов
@@ -44,7 +44,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={like_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка лайк"
             />
               <p className="advantage__subtitle">
                 Разработан с учётом UI/UX технологий
@@ -54,7 +54,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={module_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка микросхема"
             />
               <p className="advantage__subtitle">
                 Встроим в уже установленную систему
@@ -64,7 +64,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={support_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка лампочка"
             />
               <p className="advantage__subtitle">
               Использование собственных ноу-хау 
@@ -77,7 +77,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={percent_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка 90%"
             />
             <p className="advantage__subtitle">Точность работы детекторов</p>
           </li>
@@ -85,7 +85,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={coat_of_arms_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка герф РФ"
             />
               <p className="advantage__subtitle">
                 Полностью российская разработка
@@ -95,7 +95,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={customization_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка настройки"
             />
             <p className="advantage__subtitle">
               Индивидуальная настройка детекторов
@@ -105,7 +105,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={like_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка лайк"
             />
               <p className="advantage__subtitle">
                 Разработан с учетом user intelligence и user experience
@@ -116,7 +116,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={module_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка микросхема"
             />
               <p className="advantage__subtitle">
               Встроим в уже установленную систему
@@ -126,7 +126,7 @@ function Advantage({ onContactForm }) {
             <img
               className="advantage__icon"
               src={support_1440px}
-              alt="Логотип 'VideoFor'"
+              alt="Иконка лампочка"
             />
               <p className="advantage__subtitle">
               Использование собственных ноу-хау 

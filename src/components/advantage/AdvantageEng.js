@@ -17,7 +17,7 @@ function AdvantageEng({ onContactForm }) {
           <img
             className="advantage__icon"
             src={percent_1440px}
-            alt="Логотип 'VideoFor'"
+            alt="Icon 90%"
           />
           <p className="advantage__subtitle">The accuracy of the detectors</p>
         </li>
@@ -25,7 +25,7 @@ function AdvantageEng({ onContactForm }) {
           <img
             className="advantage__icon"
             src={coat_of_arms_1440px}
-            alt="Логотип 'VideoFor'"
+            alt="Russian coat of arms icon"
           />
           <p className="advantage__subtitle">Completely Russian development</p>
         </li>
@@ -33,7 +33,7 @@ function AdvantageEng({ onContactForm }) {
           <img
             className="advantage__icon"
             src={customization_1440px}
-            alt="Логотип 'VideoFor'"
+            alt="Settings icon"
           />
           <p className="advantage__subtitle">
             Initial customization of the detectors
@@ -43,7 +43,7 @@ function AdvantageEng({ onContactForm }) {
           <img
             className="advantage__icon"
             src={like_1440px}
-            alt="Логотип 'VideoFor'"
+            alt="Like icon"
           />
           <p className="advantage__subtitle">
             Developed with a view to UI/UX technologies
@@ -53,7 +53,7 @@ function AdvantageEng({ onContactForm }) {
           <img
             className="advantage__icon"
             src={module_1440px}
-            alt="Логотип 'VideoFor'"
+            alt="Microchip icon"
           />
           <p className="advantage__subtitle">
             Ability to embed into an already installed system
@@ -63,7 +63,7 @@ function AdvantageEng({ onContactForm }) {
           <img
             className="advantage__icon"
             src={support_1440px}
-            alt="Логотип 'VideoFor'"
+            alt="Light bulb icon"
           />
           {windowWidtn <= 560 ? (
             <p className="advantage__subtitle">

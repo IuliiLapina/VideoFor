@@ -14,7 +14,7 @@ function BlogEng() {
             <img
               className="blog__image blog__image_eng"
               src={blog_image1}
-              alt="Логотип 'VideoFor'"
+              alt="Man on the beach"
             />
             <p className="blog__data blog__data_eng">8 December 2021</p>
             <p className="blog__subtitle blog__subtitle_eng">
@@ -28,7 +28,7 @@ function BlogEng() {
             <img
               className="blog__image blog__image_eng"
               src={blog_image3}
-              alt="Логотип 'VideoFor'"
+              alt="Trash can"
             />
             <p className="blog__data blog__data_eng">18 December 2021</p>
             <p className="blog__subtitle blog__subtitle_eng">
@@ -42,7 +42,7 @@ function BlogEng() {
             <img
               className="blog__image blog__image_eng"
               src={blog_image2}
-              alt="Логотип 'VideoFor'"
+              alt="Traffic lights"
             />
             <p className="blog__data blog__data_eng">20 December 2021</p>
             <p className="blog__subtitle blog__subtitle_eng">
