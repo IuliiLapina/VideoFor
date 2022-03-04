@@ -70,7 +70,7 @@
 }
 .header__language {
   display: flex;
-  align-items: self-end;
+  align-items: flex-end;
   margin: 0;
   list-style: none;
   font-size: 20px;
