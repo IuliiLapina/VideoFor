@@ -40,9 +40,9 @@
 }
 
 .footer__logo {
-  width: 119px;
-  height: 119px;
-  padding: 0 78px 0 15px;
+  width: 120px;
+  height: 85px;
+  padding: 20px 93px 0 1px;
 }
 
 .footer__promo {
@@ -119,9 +119,7 @@
   .button_footer {
     left: 12%;
   }
-  .footer__logo {
-    padding: 0px 20px 0 0;
-  }
+
 }
 
 @media screen and (max-width: 1070px) {
@@ -157,20 +155,16 @@
     padding: 17px 23px 0 0;
   }
 
-  .footer__resident {
-    text-align: center;
-  }
+  .footer__logo {
+    width: 73px;
+    height: 52px;
+    padding: 19px 23px 0 0;
+}
 
   .footer__link {
     font-size: 14px;
     line-height: 19px;
     padding: 0 0 10px 0;
-  }
-
-  .footer__logo {
-    width: 70px;
-    height: 70px;
-    padding: 0;
   }
 
   .footer__column {
@@ -200,6 +194,7 @@
   .footer__resident {
     font-size: 16px;
     line-height: 22px;
+    text-align: center;
   }
 
   .footer__link-info {
@@ -246,7 +241,7 @@
 
 @media screen and (max-width: 540px) {
   .button_footer {
-    top: -196px;
+    top: -315px;
     left: 50%;
     padding: 9px 47px;
     font-size: 14px;
@@ -266,16 +261,20 @@
     flex-direction: row;
     padding: 7px 12px 0 0;
   }
-
+  .footer__logo {
+    width: 66px;
+    height: 47px;
+    padding: 5px 5px 0 0;
+  }
   .footer__resident {
     font-size: 12px;
     line-height: 16px;
   }
 
-  .footer__logo {
-    width: 47px;
+  .footer__logo_eng {
+    width: 66px;
     height: 47px;
-    padding: 3px 0 0;
+    padding: 10px 0px 0 10px;
   }
 
   .footer__column {

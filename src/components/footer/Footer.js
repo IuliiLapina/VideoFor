@@ -1,6 +1,7 @@
 import React from "react";
 import girl from "../../images/promo/girl.png";
-import skolkovo from "../../images/partners/skolkovo.png";
+import sk_ru from "../../images/partners/Sk_ru.png";
+import sk_eng from "../../images/partners/Sk_eng.png";
 import email from "../../images/footer/email.svg";
 import phone from "../../images/footer/phone.svg";
 import place from "../../images/footer/place.svg";
@@ -14,14 +15,11 @@ function Footer({ onContactForm }) {
     <>
       { isEngPage !== -1 ? (
         <footer className="footer" lang="en-US">
-          <div className="footer__resident-container">
-            <p className="footer__resident">Resident</p>
             <img
-              className="footer__logo"
-              src={skolkovo}
+              className="footer__logo footer__logo_eng"
+              src={sk_eng}
               alt="Skolkovo logo"
             />
-          </div>
           <div className="footer__column">
             <ul className="footer__column-links footer__column-links_eng">
               <li className="footer__link">
@@ -101,15 +99,11 @@ function Footer({ onContactForm }) {
         </footer>
       ) : (
         <footer className="footer">
-          <div className="footer__resident-container">
-            <p className="footer__resident">Резидент</p>
-
             <img
               className="footer__logo"
-              src={skolkovo}
+              src={sk_ru}
               alt="Логотип Сколково"
             />
-          </div>
           <div className="footer__column">
             <ul className="footer__column-links">
               <li className="footer__link">
